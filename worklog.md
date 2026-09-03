@@ -36,3 +36,25 @@ Stage Summary:
 - Product fully repositioned as "Customized Software" with zero contract-themed remnants in user-visible UI
 - New assets in public/assets/img/customized.svg + public/assets/img/page-contract/{customized-mockup,custom-flow,delivery-process,feature-*}.svg
 - Asset script persisted at scripts/make_customized_assets.py for regeneration
+
+---
+Task ID: 3
+Agent: main (Super Z)
+Task: Rename products — AccountingPhelo (Financials), HRPhelo (HRMS), MarketingPhelo (CRM), WorkPhelo (complete suite)
+
+Work Log:
+- data.ts: PRODUCTS titles/descs renamed (AccountingPhelo/HRPhelo/MarketingPhelo; Customized Software kept), OTHER_PRODUCTS card titles + descs updated, TESTIMONIALS quotes now reference WorkPhelo / AccountingPhelo
+- Header.tsx: BRAND_TITLE (logo data-title) -> product names; Products mega menu entries now lead with product names + category-prefixed descriptions
+- HomePage.tsx: hero "WorkPhelo is a complete suite..."; service tab titles -> product names; Going Global copy "WorkPhelo applications are easier to deploy..."
+- FinancialPage.tsx: hero, Why AccountingPhelo?, Automate Finance, feature slides, reports grid, competitive table (name + active-class check) -> AccountingPhelo
+- PayrollPage.tsx: hero, Why HRPhelo?, benefits heading -> HRPhelo
+- CrmPage.tsx: Why MarketingPhelo? (x2), copy, pricing -> MarketingPhelo
+- FacturaApp.tsx: demo modal hidden product values -> AccountingPhelo/HRPhelo/MarketingPhelo
+- layout.tsx: title "Datrix Tech Solutions | WorkPhelo Business Management Software" + suite-focused meta description
+- factura.css: .navbar-brand:after text-transform capitalize -> none so CamelCase names render correctly
+- Restarted dev server (stale .next after concurrent production build); verified via agent-browser: home hero, service tabs, mega menu, all 3 product pages (logo data-title + hero), competitive table header, demo modal product values (AccountingPhelo/HRPhelo/MarketingPhelo), testimonial band
+- bun run build: compiled successfully
+
+Stage Summary:
+- Site now uses the Phelo product family: WorkPhelo suite = AccountingPhelo + HRPhelo + Customized Software + MarketingPhelo, under Datrix Tech Solutions brand
+- Routes/classes (/financial, /payroll, /crm, .contract) unchanged; only user-visible naming updated

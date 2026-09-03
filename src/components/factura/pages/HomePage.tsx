@@ -11,8 +11,8 @@ const SERVICE_TABS = [
     id: "financials",
     label: "Financials",
     img: "/assets/img/Financials.svg",
-    title: "Financial Software",
-    text: "Automate all finance processes with Datrix Tech Solutions. Its comprehensive and flexible financial management features allow you to track the flow of money in and out of your company in a secure and accurate environment. Sophisticated functionality streamlines transactions and provides instant access to all your financial data, from summary views to transaction-level drill-down details.",
+    title: "AccountingPhelo",
+    text: "Automate all finance processes with AccountingPhelo. Its comprehensive and flexible financial management features allow you to track the flow of money in and out of your company in a secure and accurate environment. Sophisticated functionality streamlines transactions and provides instant access to all your financial data, from summary views to transaction-level drill-down details.",
     btn: "financial",
     href: "/financial",
   },
@@ -20,8 +20,8 @@ const SERVICE_TABS = [
     id: "hr",
     label: "HRMS",
     img: "/assets/img/payroll.svg",
-    title: "HRMS Software",
-    text: "Automate HR and Payroll processes and save 70% of your time. This Software as a Service (SaaS) hosted platform requires no additional infrastructure or database. Simply install and manage payrolls, notifications, and keep all sensitive employee information safe on the same platform.",
+    title: "HRPhelo",
+    text: "Automate HR and Payroll processes and save 70% of your time with HRPhelo. This Software as a Service (SaaS) hosted platform requires no additional infrastructure or database. Simply install and manage payrolls, notifications, and keep all sensitive employee information safe on the same platform.",
     btn: "payroll",
     href: "/payroll",
   },
@@ -38,8 +38,8 @@ const SERVICE_TABS = [
     id: "CRM",
     label: "CRM",
     img: "/assets/img/CRM.svg",
-    title: "CRM Software",
-    text: "Improve Customer satisfaction, increase retention and grow sales exponentially with Datrix’s CRM software - the strategic customer relationship management tool empowering your Sales, Marketing and Customer Support teams. Keep everything on the same page using a transparent system that’s fully customisable and extremely user friendly reducing training time to a minimum.",
+    title: "MarketingPhelo",
+    text: "Improve Customer satisfaction, increase retention and grow sales exponentially with MarketingPhelo - the strategic customer relationship management tool empowering your Sales, Marketing and Customer Support teams. Keep everything on the same page using a transparent system that’s fully customisable and extremely user friendly reducing training time to a minimum.",
     btn: "crm",
     href: "/crm",
   },
@@ -70,7 +70,7 @@ export default function HomePage({
                 <img src="/assets/img/payroll.svg" className="mobile-img" alt="" />
                 <h1>Making Business Smarter</h1>
                 <p className="paragraph2">
-                  Datrix is a complete suite of functionality tools for
+                  WorkPhelo is a complete suite of functionality tools for
                   managing your business smartly.
                 </p>
                 <a
@@ -179,8 +179,8 @@ export default function HomePage({
               <p>
                 We often play an advisory role for our clients helping them
                 make the right decisions and hence accelerate growth. With a
-                faster, smaller and lighter mechanism, Datrix softwares are
-                easier to deploy, install, maintain and upgrade. This is
+                faster, smaller and lighter mechanism, WorkPhelo applications
+                are easier to deploy, install, maintain and upgrade. This is
                 affordable technological assistance that your business needs.
               </p>
             </div>

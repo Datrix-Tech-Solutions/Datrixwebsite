@@ -15,10 +15,10 @@ export type RouteKey =
 
 const BRAND_TITLE: Record<string, string> = {
   home: "",
-  financial: "Financials",
-  payroll: "HRMS",
+  financial: "AccountingPhelo",
+  payroll: "HRPhelo",
   contract: "Customized Software",
-  crm: "CRM",
+  crm: "MarketingPhelo",
   "contact-us": "",
   privacy: "",
   terms: "",
@@ -200,19 +200,21 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                 <ul className="row">
                   <li className="nav-item financial col-sm-12 col-md-6">
                     <a className="financial" href="#/financial" onClick={go("/financial")}>
-                      Financials
+                      AccountingPhelo
                     </a>
                     <p className="financial">
-                      Datrix is online accounting software for your business.
+                      Financials — AccountingPhelo is online accounting software
+                      for your business.
                     </p>
                   </li>
                   <li className="nav-item payroll col-sm-12 col-md-6">
                     <a className="payroll" href="#/payroll" onClick={go("/payroll")}>
-                      HRMS
+                      HRPhelo
                     </a>
                     <p className="payroll">
-                      Datrix HRMS is an innovative system for easy management of
-                      Payroll and HR for small to medium and large organization.
+                      HRMS — HRPhelo is an innovative system for easy management
+                      of Payroll and HR for small to medium and large
+                      organizations.
                     </p>
                   </li>
                 </ul>
@@ -230,11 +232,11 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                   </li>
                   <li className="nav-item crm col-sm-12 col-md-6">
                     <a className="crm" href="#/crm" onClick={go("/crm")}>
-                      CRM
+                      MarketingPhelo
                     </a>
                     <p className="crm">
-                      Datrix CRM manages your sales pipeline, stay on top of
-                      employee activities, and close more deals.
+                      CRM — MarketingPhelo manages your sales pipeline, stay on
+                      top of employee activities, and close more deals.
                     </p>
                   </li>
                 </ul>

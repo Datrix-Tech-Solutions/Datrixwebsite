@@ -6,9 +6,9 @@ import "../styles/factura.css";
 import "../styles/factura-fix.css";
 
 export const metadata: Metadata = {
-  title: "Datrix Tech Solutions | Business Management Software",
+  title: "Datrix Tech Solutions | WorkPhelo Business Management Software",
   description:
-    "Datrix is a complete suite of functionality tools for managing your business smartly. Online accounting software, HRMS, Customized Software and CRM.",
+    "WorkPhelo by Datrix Tech Solutions is a complete suite of functionality tools for managing your business smartly. AccountingPhelo online accounting software, HRPhelo HRMS, Customized Software and MarketingPhelo CRM.",
   robots: "index, follow",
   icons: {
     icon: "/assets/img/datrix-mark.png",

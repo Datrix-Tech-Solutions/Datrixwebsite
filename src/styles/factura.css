@@ -195,7 +195,7 @@
         bottom: -12px;
         right: 29px;
         font-size: 12px;
-        text-transform: capitalize;
+        text-transform: none;
  }
 
 .dropdown .dropdown-menu{

@@ -7,23 +7,23 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "“I am finding more and more use for Datrix every day. I am amazed at how powerful the application can be and I have no hesitation in recommending it to others that are looking for the right software for their business”",
+      "“I am finding more and more use for WorkPhelo every day. I am amazed at how powerful the application can be and I have no hesitation in recommending it to others that are looking for the right software for their business”",
     name: "Prince Andrews L.Zutah",
     role: "Head of IT, Bisvel Group of Companies",
   },
   {
     quote:
-      "“We’re consistently amazed by the flexibility and simplicity of Datrix. Our initial experience was in provisioning the desktop version. We migrated to Datrix Web for our clients and Project accounting, group consolidated reports etc. has been made simple. It is now an integral part of our solutions provided for our client businesses”",
+      "“We’re consistently amazed by the flexibility and simplicity of WorkPhelo. Our initial experience was in provisioning the desktop version. We migrated to WorkPhelo Web for our clients and Project accounting, group consolidated reports etc. has been made simple. It is now an integral part of our solutions provided for our client businesses”",
     name: "Martin Owusu",
     role: "Head Application Development & Business Services – Qualtek Limited -Ghana",
   },
   {
-    quote: "“In case I haven't said it enough already, I LOVE Datrix”",
+    quote: "“In case I haven't said it enough already, I LOVE WorkPhelo”",
     name: "Inna Oleksiichuk",
     role: "Director, MilaVitsa",
   },
   {
-    quote: "“Datrix makes accounting needs so quick and easy”",
+    quote: "“AccountingPhelo makes accounting needs so quick and easy”",
     name: "Isaac Barkah",
     role: "Emerald Properties",
   },
@@ -68,16 +68,16 @@ export const PRODUCTS: Record<string, Product> = {
     slug: "/financial",
     label: "Financials",
     className: "financial",
-    title: "Financials",
-    desc: "Datrix is online accounting software for your business.",
+    title: "AccountingPhelo",
+    desc: "AccountingPhelo is online accounting software for your business.",
     packImg: "/assets/img/pack-payroll.svg",
   },
   payroll: {
     slug: "/payroll",
     label: "HRMS",
     className: "payroll",
-    title: "HRMS",
-    desc: "Datrix HRMS is an innovative system for easy management of Payroll and HR for small to medium and large organization.",
+    title: "HRPhelo",
+    desc: "HRPhelo is an innovative system for easy management of Payroll and HR for small to medium and large organization.",
     packImg: "/assets/img/pack-payroll.svg",
   },
   contract: {
@@ -92,8 +92,8 @@ export const PRODUCTS: Record<string, Product> = {
     slug: "/crm",
     label: "CRM",
     className: "crm",
-    title: "CRM",
-    desc: "Datrix CRM manages your sales pipeline, stay on top of employee activities, and close more deals.",
+    title: "MarketingPhelo",
+    desc: "MarketingPhelo manages your sales pipeline, stay on top of employee activities, and close more deals.",
     packImg: "/assets/img/pack-crm.svg",
   },
 };
@@ -101,23 +101,23 @@ export const PRODUCTS: Record<string, Product> = {
 /** "Check out our other products" card sets, exactly as on each page */
 export const OTHER_PRODUCTS: Record<string, Product[]> = {
   financial: [
-    { ...PRODUCTS.payroll, title: "Datrix HRMS", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix HRMS helps businesses from different industries." },
+    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how HRPhelo helps businesses from different industries." },
     { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
-    { ...PRODUCTS.crm, title: "Datrix CRM", packImg: "/assets/img/pack-crm.svg", desc: "Learn how Datrix CRM helps businesses from different industries." },
+    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "Learn how MarketingPhelo helps businesses from different industries." },
   ],
   payroll: [
-    { ...PRODUCTS.financial, title: "Datrix Financial", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix Financial helps businesses from different industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how AccountingPhelo helps businesses from different industries." },
     { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
-    { ...PRODUCTS.crm, title: "Datrix CRM", packImg: "/assets/img/pack-crm.svg", desc: "Learn how Datrix CRM helps businesses from different industries." },
+    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "Learn how MarketingPhelo helps businesses from different industries." },
   ],
   contract: [
-    { ...PRODUCTS.financial, title: "Datrix Financial", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix Financial helps businesses from different industries." },
-    { ...PRODUCTS.payroll, title: "Datrix HRMS", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix HRMS helps businesses from different industries." },
-    { ...PRODUCTS.crm, title: "Datrix CRM", packImg: "/assets/img/pack-crm.svg", desc: "Learn how Datrix CRM helps businesses from different industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how AccountingPhelo helps businesses from different industries." },
+    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how HRPhelo helps businesses from different industries." },
+    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "Learn how MarketingPhelo helps businesses from different industries." },
   ],
   crm: [
-    { ...PRODUCTS.financial, title: "Datrix Financial", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix Financial helps businesses from different industries." },
-    { ...PRODUCTS.payroll, title: "Datrix HRMS", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix HRMS helps businesses from different industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how AccountingPhelo helps businesses from different industries." },
+    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how HRPhelo helps businesses from different industries." },
     { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
   ],
 };
