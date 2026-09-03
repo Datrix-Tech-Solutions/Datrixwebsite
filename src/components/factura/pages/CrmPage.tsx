@@ -117,10 +117,10 @@ export default function CrmPage({
         <div className="container">
           <div className="row mb-5">
             <div className="col-sm-12 col-md-12">
-              <h2 className="text-center">Why Factura CRM?</h2>
+              <h2 className="text-center">Why Datrix CRM?</h2>
               <p style={{ textAlign: "justify" }}>
                 Improve Customer satisfaction, increase retention and grow
-                sales exponentially with Factura’s CRM software - the strategic
+                sales exponentially with Datrix’s CRM software - the strategic
                 customer relationship management tool empowering your Sales,
                 Marketing and Customer Support teams. Keep everything on the
                 same page using a transparent system that’s fully customisable
@@ -128,7 +128,7 @@ export default function CrmPage({
                 minimum. A CRM system can do miracles for your business. It
                 can make internal communication a breeze, it boosts
                 productivity, makes way for increased deal conversion rates and
-                keeps your customers happy. Factura offers 360-degree customer
+                keeps your customers happy. Datrix offers 360-degree customer
                 knowledge on a single platform, bringing phone, email, quotes,
                 reports and all activity history available at one place giving
                 your sales team to reduce its involvement in tedious processes
@@ -206,11 +206,11 @@ export default function CrmPage({
           <div className="row sectionPadding">
             <div className="col-xs-12 col-sm-12 col-md-6 m-auto">
               <div>
-                <img src="/assets/img/page-crm/why-CRM.svg" alt="Why Factura CRM" />
+                <img src="/assets/img/page-crm/why-CRM.svg" alt="Why Datrix CRM" />
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 ml-auto">
-              <h2>Why Factura CRM ?</h2>
+              <h2>Why Datrix CRM ?</h2>
               <div>
                 <h3>Flexible</h3>
                 <p>
@@ -222,7 +222,7 @@ export default function CrmPage({
               <div>
                 <h3>Affordable</h3>
                 <p>
-                  With Factura CRM’s low, predictable pricing, you can build a
+                  With Datrix CRM’s low, predictable pricing, you can build a
                   CRM system that supports your big ideas, instead of limiting
                   them.
                 </p>

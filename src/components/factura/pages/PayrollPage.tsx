@@ -106,7 +106,7 @@ export default function PayrollPage({
                   Efficient, Flexible &amp; Complete HRMS Solution
                 </h1>
                 <p className="paragraph2 mb-4">
-                  Factura HRMS is an innovative system for easy management of
+                  Datrix HRMS is an innovative system for easy management of
                   Payroll and HR for small to medium and large organization.
                 </p>
                 <a
@@ -137,13 +137,13 @@ export default function PayrollPage({
         <div className="container">
           <div className="row mb-5">
             <div className="col-sm-12 col-md-12">
-              <h2 className="text-center">Why Factura HRMS?</h2>
+              <h2 className="text-center">Why Datrix HRMS?</h2>
               <p style={{ textAlign: "justify" }}>
                 Seize the opportunity to take your organization a step closer
                 to success by optimizing cost, and making strategic
-                people-oriented business decisions with Factura's HR and
+                people-oriented business decisions with Datrix's HR and
                 Payroll Software; an efficient, flexible and innovative system
-                for small, medium and large organizations. Factura's HR and
+                for small, medium and large organizations. Datrix's HR and
                 Payroll Software is easy to install, integrates seamlessly with
                 third-party systems, takes minimal training time and reduces
                 workload significantly. Manage recruitment, integration,
@@ -152,7 +152,7 @@ export default function PayrollPage({
                 one place. Get timely notifications, enjoy features like
                 assessment and appraisal, create memos, payslips and enable
                 employees to participate in HR processes transparently with
-                Factura's highly user-friendly softwares.
+                Datrix's highly user-friendly softwares.
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function PayrollPage({
       <section className="payroll-features-points sectionPadding" id="features">
         <div className="container">
           <h2 className="text-center">
-            Factura HRMS Offers Your Organization a host of Benefits
+            Datrix HRMS Offers Your Organization a host of Benefits
           </h2>
           <div className="row mt5">
             {BENEFITS.map((b) => (

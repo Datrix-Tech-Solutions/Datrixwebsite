@@ -18,10 +18,10 @@ const FEATURE_SLIDES = [
     title: "Accounting",
     blocks: [
       {
-        p: "Factura accounting software provides an integrated way to bank, invoice and manage your company finances.",
+        p: "Datrix accounting software provides an integrated way to bank, invoice and manage your company finances.",
       },
       {
-        h: "Factura Financials gives you full control!",
+        h: "Datrix Financials gives you full control!",
         p: "Take full control over your accounting and payroll* information with real-time visibility on bank balances, sales, upcoming bills, profitability and KPI’s.",
       },
     ],
@@ -31,11 +31,11 @@ const FEATURE_SLIDES = [
     title: "Inventory",
     blocks: [
       {
-        p: "Factura’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyse and report on your inventory, helping you manage your stock position and cost.",
+        p: "Datrix’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyse and report on your inventory, helping you manage your stock position and cost.",
       },
       {
         h: "Sophisticated & Real-Time!",
-        p: "Factura’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyze and report on your inventory, helping you manage your stock position and cost. Enjoy full stock visibility in real-time too.",
+        p: "Datrix’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyze and report on your inventory, helping you manage your stock position and cost. Enjoy full stock visibility in real-time too.",
       },
     ],
   },
@@ -44,7 +44,7 @@ const FEATURE_SLIDES = [
     title: "Sales & Purchase",
     blocks: [
       {
-        p: "Factura allows you to create sales automation workflows to proactively manage your sales.",
+        p: "Datrix allows you to create sales automation workflows to proactively manage your sales.",
       },
       {
         h: "Effectively drive sales performance",
@@ -61,7 +61,7 @@ const FEATURE_SLIDES = [
     title: "Order & POS",
     blocks: [
       {
-        p: "Streamline and manage your order fulfillment and returns effectively by using Factura’s embedded business processes.",
+        p: "Streamline and manage your order fulfillment and returns effectively by using Datrix’s embedded business processes.",
       },
       {
         h: "The perfect POS software solution",
@@ -78,11 +78,11 @@ const FEATURE_SLIDES = [
     title: "Business Intelligence & Productivity",
     blocks: [
       {
-        p: "Factura includes numerous productivity tools to let you run your business more effectively and efficiently – increasing your profitability.",
+        p: "Datrix includes numerous productivity tools to let you run your business more effectively and efficiently – increasing your profitability.",
       },
       {
         h: "Sophisticated and Customizable Dashboards",
-        p: "Get real-time visibility across the business including bank balances, sales, upcoming bills, profitability and KPIs with Factura’s business intelligence software.",
+        p: "Get real-time visibility across the business including bank balances, sales, upcoming bills, profitability and KPIs with Datrix’s business intelligence software.",
       },
       {
         h: "Value-Added Insights",
@@ -111,27 +111,27 @@ const REPORTS = [
   {
     img: "features-multi-comp.svg",
     title: "Multi Companies / Group Consolidation",
-    text: "Factura makes it easy to manage the financials for multiple entities, whether your business structure is simple or complex, domestic or global.",
+    text: "Datrix makes it easy to manage the financials for multiple entities, whether your business structure is simple or complex, domestic or global.",
   },
   {
     img: "features-profit-cntr.svg",
     title: "Cost / Profit Centre",
-    text: "Dimensions can do many things for any organization running Factura. They allow a company to have a very simple chart of accounts, while maintaining the ability to report and analyze data on multiple different levels and criteria.",
+    text: "Dimensions can do many things for any organization running Datrix. They allow a company to have a very simple chart of accounts, while maintaining the ability to report and analyze data on multiple different levels and criteria.",
   },
   {
     img: "features-bank-reconcile.svg",
     title: "Bank Reconciliation",
-    text: "Easily reconcile your bank statement against your bank account register to keep your Factura account accurate.",
+    text: "Easily reconcile your bank statement against your bank account register to keep your Datrix account accurate.",
   },
   {
     img: "features-budget-wth-variance.svg",
     title: "Budgets with Variance Analysis",
-    text: "Taking care of the budgeting process is no longer a challenging task with Factura’s powerful and intuitive Budgeting feature.",
+    text: "Taking care of the budgeting process is no longer a challenging task with Datrix’s powerful and intuitive Budgeting feature.",
   },
   {
     img: "features-depreciation.svg",
     title: "Fixed Assets",
-    text: "Fixed assets in Factura help you keep track of business assets that are depreciated over time. That depreciation expense can be claimed as a tax benefit.",
+    text: "Fixed assets in Datrix help you keep track of business assets that are depreciated over time. That depreciation expense can be claimed as a tax benefit.",
   },
 ];
 
@@ -147,7 +147,7 @@ const TABLE_ROWS = [
 ];
 
 const COMPARE: { name: string; ticks: boolean[] }[] = [
-  { name: "Factura Financials", ticks: [true, true, true, true, true, true, true, true] },
+  { name: "Datrix Financials", ticks: [true, true, true, true, true, true, true, true] },
   { name: "Tally", ticks: [true, true, false, false, true, false, true, true] },
   { name: "Troyee", ticks: [true, false, false, false, true, false, true, true] },
   { name: "Quickbooks", ticks: [true, false, true, true, false, false, true, true] },
@@ -273,12 +273,12 @@ export default function FinancialPage({
               <div className="factura-intro">
                 <img src="/assets/img/Financials.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
-                  Factura is online accounting
+                  Datrix is online accounting
                   <br />
                   software for your business.
                 </h1>
                 <p className="paragraph2 mb-4">
-                  See why more than 6,000 users choose factura.
+                  See why more than 6,000 users choose Datrix.
                 </p>
                 <a
                   href="#"
@@ -308,19 +308,19 @@ export default function FinancialPage({
         <div className="container">
           <div className="row mb-5">
             <div className="col-sm-12 col-md-12">
-              <h2 className="text-center">Why Factura Finance?</h2>
+              <h2 className="text-center">Why Datrix Finance?</h2>
               <p>
-                Automate all finance processes with Factura Softwares. Its
+                Automate all finance processes with Datrix Tech Solutions. Its
                 comprehensive and flexible financial management features allow
                 you to track the flow of money in and out of your company in a
                 secure and accurate environment. Sophisticated functionality
                 streamlines transactions and provides instant access to all
                 your financial data, from summary views to transaction-level
                 drill-down details. Track all accounting activity with
-                Factura's general ledger and easily generate financial
+                Datrix's general ledger and easily generate financial
                 statements, budgets and other advanced financial reports. With
                 highly customizable fields, easy to navigate menus and grids
-                integrated with advanced search capabilities Factura softwares
+                integrated with advanced search capabilities Datrix softwares
                 make complicated finance process accessible to anyone who can
                 operate a computer. Here’s delivering the power of meaningful
                 data at the click of a button, the foolproof way of lending
@@ -335,7 +335,7 @@ export default function FinancialPage({
               <img src="/assets/img/page-financials/automate-finance.svg" alt="Automate Finance" />
             </div>
             <div className="col-md-7 ml-auto">
-              <h2>Automate Finance with Factura</h2>
+              <h2>Automate Finance with Datrix</h2>
               <ul className="checklist">
                 {CHECKLIST.map((c, i) => (
                   <li key={i}>
@@ -397,8 +397,8 @@ export default function FinancialPage({
                   {COMPARE.map((col) => (
                     <ul className="text-center" key={col.name}>
                       <li
-                        className={`p-2 colorWhite${col.name === "Factura Financials" ? " active" : ""}`}
-                        style={col.name === "Factura Financials" ? { height: 77 } : undefined}
+                        className={`p-2 colorWhite${col.name === "Datrix Financials" ? " active" : ""}`}
+                        style={col.name === "Datrix Financials" ? { height: 77 } : undefined}
                       >
                         {col.name}
                       </li>

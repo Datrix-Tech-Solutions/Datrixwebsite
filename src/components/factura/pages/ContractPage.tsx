@@ -50,9 +50,9 @@ const FEATURES_GRID = [
 const LIFECYCLE = [
   "Greater efficiency at every stage of contract lifecycle.",
   "Stay on top of autorenewals.",
-  "Centralized storage and tracking for greater visibility. By centralizing contract storage and offering advanced reporting capabilities, Factura Contract makes the entire contract lifecycle transparent, collaborative and clear.",
+  "Centralized storage and tracking for greater visibility. By centralizing contract storage and offering advanced reporting capabilities, Datrix Contract makes the entire contract lifecycle transparent, collaborative and clear.",
   "Improved collaboration capabilities and robust access controls. Assign granular access rights by user or user group to ensure your contracts and associated data are secure while improving collaboration with centralized review process.",
-  "Cloud-based or on-premises deployments. Factura partners with the most secure hosting providers to reduce your cost and burden on your IT organization.",
+  "Cloud-based or on-premises deployments. Datrix partners with the most secure hosting providers to reduce your cost and burden on your IT organization.",
 ];
 
 export default function ContractPage({
@@ -137,19 +137,19 @@ export default function ContractPage({
         <div className="container">
           <div className="row mb-5">
             <div className="col-sm-12 col-md-12">
-              <h2 className="text-center">Why Factura Contract?</h2>
+              <h2 className="text-center">Why Datrix Contract?</h2>
               <p>
                 Help your business reach the wide world without getting stuck
-                in complex paper work and accounts keeping. Factura makes
+                in complex paper work and accounts keeping. Datrix makes
                 contract management a breeze by making contract lifecycle
-                transparent, collaborative and clear. Factura’s Contract
+                transparent, collaborative and clear. Datrix’s Contract
                 Software standardizes contract drafting and approval, giving
                 you greater control and efficiency at every stage of the
                 contract lifecycle. It further helps you manage the complete
                 lifecycle of the contract and automates repeatable tasks. Save
                 time and effort with easy search options, quick uploads, timely
                 alerts, reminders, notifications and more with the highly user
-                friendly and customizable Factura software that give your
+                friendly and customizable Datrix software that give your
                 business an all-round cover for Contract Management even
                 providing insight to help you make better decisions.
               </p>
@@ -216,7 +216,7 @@ export default function ContractPage({
         <div className="container">
           <div className="row sectionPadding align-items-center">
             <div className="col-md-6">
-              <h2>Factura Contract Offers</h2>
+              <h2>Datrix Contract Offers</h2>
               <ul className="checklist">
                 {LIFECYCLE.map((c, i) => (
                   <li key={i}>

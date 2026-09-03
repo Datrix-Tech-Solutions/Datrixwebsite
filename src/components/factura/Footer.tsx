@@ -53,8 +53,18 @@ export default function Footer({ navigate }: { navigate: (to: string) => void })
     <footer className="home-footer">
       <div className="container footer-bottom">
         <div className="row subfooter">
+          <div className="col-md-12">
+            <div className="footer-brand">
+              <a href="#/" onClick={go("/")} aria-label="Datrix Tech Solutions - Home">
+                <img src="/assets/img/datrix-logo-white.png" alt="Datrix Tech Solutions" />
+              </a>
+              <span className="footer-tagline">
+                Smart software <span className="dot">for</span> smart businesses
+              </span>
+            </div>
+          </div>
           <div className="col-md-6">
-            <p>&copy; Copyright 2019 - Factura</p>
+            <p>&copy; Copyright 2019 - Datrix Tech Solutions</p>
           </div>
           <div className="col-md-6 text-right">
             <ul className="social-links" style={{ listStyle: "none", margin: 0 }}>

@@ -71,13 +71,13 @@ export default function WorldMap() {
             })),
           },
           areasSettings: {
-            unlistedAreasColor: "#00A8B4",
-            outlineColor: "#00A8B4",
+            unlistedAreasColor: "#F7941D",
+            outlineColor: "#F7941D",
             outlineThickness: "0",
           },
           imagesSettings: {
-            color: "#585869",
-            rollOverColor: "#00A8B4",
+            color: "#21346B",
+            rollOverColor: "#E07E0A",
             selectedColor: "#ffffff",
             pauseDuration: 2,
             animationDuration: 3,
@@ -91,7 +91,7 @@ export default function WorldMap() {
             color: "#ffffff",
             cornerRadius: 2,
             fillAlpha: 1,
-            fillColor: "#134377",
+            fillColor: "#21346B",
           },
         });
       } catch {

@@ -45,7 +45,7 @@ export default function ContactPage() {
           <div className="row align-items-center height100">
             <div className="col-md-6 col-sm-12">
               <div className="contactIllustrator">
-                <img src="/assets/img/contact.svg" alt="Contact Factura" />
+                <img src="/assets/img/contact.svg" alt="Contact Datrix Tech Solutions" />
               </div>
               <div className="contanctInfo">
                 <h3>Contact Us</h3>

@@ -6,12 +6,12 @@ import "../styles/factura.css";
 import "../styles/factura-fix.css";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Datrix Tech Solutions | Business Management Software",
   description:
-    "Factura is a complete suite of functionality tools for managing your business smartly. Online accounting software, HRMS, Contract Management and CRM.",
+    "Datrix is a complete suite of functionality tools for managing your business smartly. Online accounting software, HRMS, Contract Management and CRM.",
   robots: "index, follow",
   icons: {
-    icon: "/assets/img/logo.svg",
+    icon: "/assets/img/datrix-mark.png",
   },
 };
 

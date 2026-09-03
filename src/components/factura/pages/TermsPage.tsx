@@ -3,7 +3,7 @@
 import React from "react";
 
 export default function TermsPage() {
-  const mail = "pankaj@facturasoftwares.com";
+  const mail = "pankaj@datrixtechsolutions.com";
   return (
     <div className="wrapper">
       <section className="normal-page">
@@ -14,7 +14,7 @@ export default function TermsPage() {
               <h4>Last Updated: June 9, 2023</h4>
               <div className="terms">
                 <p>
-                  Welcome to the Factura Softwares (&ldquo;Factura&rdquo;,{" "}
+                  Welcome to the Datrix Tech Solutions (&ldquo;Datrix&rdquo;,{" "}
                   &ldquo;us&rdquo; &ldquo;we&rdquo; or &ldquo;our&rdquo;)
                   website. Please read these Terms of Service (the
                   &ldquo;Terms&rdquo;) carefully. They govern your use of our
@@ -59,7 +59,7 @@ export default function TermsPage() {
                         <u>Use Restrictions</u>. Except as otherwise expressly
                         authorized in these Terms, you will not, and will
                         ensure your employees, contractors, and other persons
-                        associated with your Factura account
+                        associated with your Datrix account
                         (&ldquo;Authorized Users&rdquo;) do not, and will not
                         encourage or assist third parties to: (i) reverse
                         engineer, decompile, disassemble, or otherwise attempt
@@ -103,7 +103,7 @@ export default function TermsPage() {
                       <li>
                         <u>Authorized Users; Accounts</u>. As part of the
                         registration process, you will identify an
-                        administrative username and password for your Factura
+                        administrative username and password for your Datrix
                         account. You represent and warrant that all
                         registration information, including with respect to the
                         list of domains owned or controlled by you for
@@ -131,7 +131,7 @@ export default function TermsPage() {
                       </li>
                       <li>
                         <u>Reservation of Rights</u>. As between the parties,
-                        Factura owns all right, title, and interest in the
+                        Datrix owns all right, title, and interest in the
                         Services, and you own all right, title, and interest
                         in any application(s) and/or material(s) that are
                         developed by you on the Services or uploaded to the
@@ -152,7 +152,7 @@ export default function TermsPage() {
                     hereby grant you a limited, non-exclusive,
                     non-transferable, non-sublicensable license worldwide
                     (with the exception of jurisdictions whose laws do not
-                    permit engaging in business with Factura or use of the
+                    permit engaging in business with Datrix or use of the
                     Services) for you to access and use the Services for your
                     internal business purposes.
                   </li>
@@ -338,11 +338,11 @@ export default function TermsPage() {
                     <ul>
                       <li>
                         In the event of any loss or corruption of any data
-                        associated with the Services, Factura will use
+                        associated with the Services, Datrix will use
                         commercially reasonable efforts to restore the lost or
                         corrupted data from the latest relevant backup
-                        maintained by Factura. EXCEPT FOR THE FOREGOING,
-                        Factura WILL NOT BE RESPONSIBLE FOR ANY LOSS,
+                        maintained by Datrix. EXCEPT FOR THE FOREGOING,
+                        Datrix WILL NOT BE RESPONSIBLE FOR ANY LOSS,
                         DESTRUCTION, ALTERATION, UNAUTHORIZED DISCLOSURE OR
                         CORRUPTION OF ANY DATA.
                       </li>
@@ -378,7 +378,7 @@ export default function TermsPage() {
                   </li>
                   <li>
                     <h5>Indemnity</h5>
-                    You will indemnify and hold harmless Factura and its
+                    You will indemnify and hold harmless Datrix and its
                     officers, directors, employees, and agents, from and
                     against any claims, disputes, demands, liabilities,
                     damages, losses, and costs and expenses, including,

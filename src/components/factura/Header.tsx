@@ -158,7 +158,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
           onClick={go("/")}
           data-title={dataTitle}
         >
-          <img src="/assets/img/logo.svg" alt="Factura" />
+          <img src="/assets/img/datrix-logo.png" alt="Datrix Tech Solutions" />
         </a>
         <button
           className={`navbar-toggler${menuOpen ? "" : " collapsed"}`}
@@ -203,7 +203,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       Financials
                     </a>
                     <p className="financial">
-                      Factura is online accounting software for your business.
+                      Datrix is online accounting software for your business.
                     </p>
                   </li>
                   <li className="nav-item payroll col-sm-12 col-md-6">
@@ -211,7 +211,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       HRMS
                     </a>
                     <p className="payroll">
-                      Factura HRMS is an innovative system for easy management of
+                      Datrix HRMS is an innovative system for easy management of
                       Payroll and HR for small to medium and large organization.
                     </p>
                   </li>
@@ -224,7 +224,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       Contract
                     </a>
                     <p className="contract">
-                      Factura standardizes contract drafting and approval, giving
+                      Datrix standardizes contract drafting and approval, giving
                       you greater control and efficiency at every stage.
                     </p>
                   </li>
@@ -233,7 +233,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       CRM
                     </a>
                     <p className="crm">
-                      Factura CRM manages your sales pipeline, stay on top of
+                      Datrix CRM manages your sales pipeline, stay on top of
                       employee activities, and close more deals.
                     </p>
                   </li>

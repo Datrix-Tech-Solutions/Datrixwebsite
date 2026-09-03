@@ -12,7 +12,7 @@ const SERVICE_TABS = [
     label: "Financials",
     img: "/assets/img/Financials.svg",
     title: "Financial Software",
-    text: "Automate all finance processes with Factura Softwares. Its comprehensive and flexible financial management features allow you to track the flow of money in and out of your company in a secure and accurate environment. Sophisticated functionality streamlines transactions and provides instant access to all your financial data, from summary views to transaction-level drill-down details.",
+    text: "Automate all finance processes with Datrix Tech Solutions. Its comprehensive and flexible financial management features allow you to track the flow of money in and out of your company in a secure and accurate environment. Sophisticated functionality streamlines transactions and provides instant access to all your financial data, from summary views to transaction-level drill-down details.",
     btn: "financial",
     href: "/financial",
   },
@@ -30,7 +30,7 @@ const SERVICE_TABS = [
     label: "Contract",
     img: "/assets/img/contract.svg",
     title: "Contract Software",
-    text: "Help your business reach the wide world without getting stuck in complex paper work and accounts keeping. Factura makes contract management a breeze by making contract lifecycle transparent, collaborative and clear. Factura’s Contract Software standardizes contract drafting and approval, giving you greater control and efficiency at every stage of the contract lifecycle.",
+    text: "Help your business reach the wide world without getting stuck in complex paper work and accounts keeping. Datrix makes contract management a breeze by making contract lifecycle transparent, collaborative and clear. Datrix’s Contract Software standardizes contract drafting and approval, giving you greater control and efficiency at every stage of the contract lifecycle.",
     btn: "contract",
     href: "/contract",
   },
@@ -39,7 +39,7 @@ const SERVICE_TABS = [
     label: "CRM",
     img: "/assets/img/CRM.svg",
     title: "CRM Software",
-    text: "Improve Customer satisfaction, increase retention and grow sales exponentially with Factura’s CRM software - the strategic customer relationship management tool empowering your Sales, Marketing and Customer Support teams. Keep everything on the same page using a transparent system that’s fully customisable and extremely user friendly reducing training time to a minimum.",
+    text: "Improve Customer satisfaction, increase retention and grow sales exponentially with Datrix’s CRM software - the strategic customer relationship management tool empowering your Sales, Marketing and Customer Support teams. Keep everything on the same page using a transparent system that’s fully customisable and extremely user friendly reducing training time to a minimum.",
     btn: "crm",
     href: "/crm",
   },
@@ -70,7 +70,7 @@ export default function HomePage({
                 <img src="/assets/img/payroll.svg" className="mobile-img" alt="" />
                 <h1>Making Business Smarter</h1>
                 <p className="paragraph2">
-                  Factura is a complete suite of functionality tools for
+                  Datrix is a complete suite of functionality tools for
                   managing your business smartly.
                 </p>
                 <a
@@ -169,9 +169,9 @@ export default function HomePage({
               <h3>Going Global</h3>
               <p>
                 We operate in the global business landscape and understand the
-                need to go local. This is why Factura is always near you. No
+                need to go local. This is why Datrix is always near you. No
                 matter which part of the world you are based in or who your
-                customers are, Factura will have a hyper-local software
+                customers are, Datrix will have a hyper-local software
                 solution to simplify your business processes, leaving you with
                 more time to focus on humane aspects and initiate innovative
                 thinking.
@@ -179,7 +179,7 @@ export default function HomePage({
               <p>
                 We often play an advisory role for our clients helping them
                 make the right decisions and hence accelerate growth. With a
-                faster, smaller and lighter mechanism, Factura softwares are
+                faster, smaller and lighter mechanism, Datrix softwares are
                 easier to deploy, install, maintain and upgrade. This is
                 affordable technological assistance that your business needs.
               </p>

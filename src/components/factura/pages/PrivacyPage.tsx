@@ -3,7 +3,7 @@
 import React from "react";
 
 export default function PrivacyPage() {
-  const mail = "pankaj@facturasoftwares.com";
+  const mail = "pankaj@datrixtechsolutions.com";
   return (
     <div className="wrapper">
       <section className="normal-page">
@@ -14,8 +14,8 @@ export default function PrivacyPage() {
               <h4>Last Updated: June 9, 2023</h4>
               <div className="terms">
                 <p>
-                  Legal entity name (doing business as Factura Softwares)
-                  (&ldquo;Company,&rdquo; &ldquo;Factura&rdquo; &ldquo;we,&rdquo;{" "}
+                  Legal entity name (doing business as Datrix Tech Solutions)
+                  (&ldquo;Company,&rdquo; &ldquo;Datrix&rdquo; &ldquo;we,&rdquo;{" "}
                   &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respect your privacy
                   and is committed to protecting it through our compliance with
                   this policy. By using our Services, you understand that we
@@ -46,8 +46,8 @@ export default function PrivacyPage() {
                   <li>
                     The types of personal information we may collect from you
                     or that you may provide when you visit our website{" "}
-                    <a href="https://www.facturasoftwares.com">
-                      https://www.facturasoftwares.com
+                    <a href="https://www.datrixtechsolutions.com">
+                      https://www.datrixtechsolutions.com
                     </a>{" "}
                     (&ldquo;Website&rdquo;) and/or access Services (as defined
                     in the <a href="#/terms">Terms of Service</a>); and
