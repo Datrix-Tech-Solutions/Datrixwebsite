@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" font-family="Arial, 'Segoe UI', sans-serif">
+<circle cx="150" cy="170" r="120" fill="#EEF1F8"/>
+<rect x="52" y="60" width="180" height="220" rx="10" fill="#21346B"/>
+<rect x="52" y="60" width="180" height="30" rx="10" fill="#1B2A57"/>
+<circle cx="68" cy="75" r="4.5" fill="#E31B22"/><circle cx="82" cy="75" r="4.5" fill="#F7941D"/><circle cx="96" cy="75" r="4.5" fill="#fff" opacity="0.6"/>
+<rect x="68" y="106" width="100" height="10" rx="5" fill="#fff" opacity="0.9"/>
+<rect x="68" y="128" width="70" height="44" rx="6" fill="#F7941D"/>
+<rect x="148" y="128" width="70" height="44" rx="6" fill="#34497F"/>
+<rect x="68" y="182" width="150" height="8" rx="4" fill="#8FA0C9"/>
+<rect x="68" y="198" width="120" height="8" rx="4" fill="#8FA0C9"/>
+<rect x="68" y="214" width="136" height="8" rx="4" fill="#8FA0C9"/>
+<rect x="68" y="238" width="60" height="22" rx="11" fill="#F7941D"/>
+<path d="M52 118l-8 0m8 104h-8M232 118h8m-8 104h8" stroke="#F7941D" stroke-width="3" stroke-linecap="round"/>
+<path d="M244 170h56m0 0-12-10m12 10-12 10" stroke="#F7941D" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="356" cy="170" r="96" fill="#F6E8D8" opacity="0.55"/>
+<rect x="292" y="82" width="160" height="176" rx="10" fill="#fff" stroke="#E8ECF4"/>
+<path d="M292 92a10 10 0 0 1 10-10h140a10 10 0 0 1 10 10v18H292Z" fill="#F7941D"/>
+<circle cx="306" cy="96" r="4" fill="#fff" opacity="0.85"/><circle cx="318" cy="96" r="4" fill="#fff" opacity="0.6"/>
+<rect x="308" y="126" width="56" height="8" rx="4" fill="#C9D2E6"/>
+<rect x="308" y="144" width="128" height="44" rx="6" fill="#EEF1F8"/>
+<path d="M318 178l14-14 12 8 18-20 14 10 20-16" stroke="#21346B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="308" y="198" width="60" height="22" rx="6" fill="#21346B"/>
+<rect x="308" y="228" width="128" height="8" rx="4" fill="#EEF1F8"/>
+<circle cx="418" cy="234" r="22" fill="#F7941D"/>
+<path d="M408 234l7 7 13-15" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M262 60l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" fill="#E31B22"/>
+<circle cx="248" cy="262" r="5" fill="#440E62" opacity="0.55"/>
+<ellipse cx="250" cy="300" rx="180" ry="8" fill="#21346B" opacity="0.08"/>
+</svg>

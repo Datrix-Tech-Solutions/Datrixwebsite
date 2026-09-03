@@ -27,7 +27,7 @@ const BODY_CLASSES: Record<RouteKey, { cls: string; id: string }> = {
 const MODAL_PRODUCT: Partial<Record<RouteKey, { value: string; cls: string }>> = {
   financial: { value: "Financials", cls: "financial" },
   payroll: { value: "HRMS", cls: "payroll" },
-  contract: { value: "Contract", cls: "contract" },
+  contract: { value: "Customized Software", cls: "contract" },
   crm: { value: "CRM", cls: "crm" },
   "contact-us": { value: "", cls: "" },
   privacy: { value: "", cls: "" },

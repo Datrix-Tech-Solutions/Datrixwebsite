@@ -18,3 +18,21 @@ Stage Summary:
 - Key assets: public/assets/img/datrix-logo.png, datrix-logo-white.png, datrix-mark.png
 - Scripts persisted in /home/z/my-project/scripts/ for future asset regeneration
 - Note: hero product videos (public/assets/vid/*.mp4) still contain original screen-recording footage (not re-colorable)
+
+---
+Task ID: 2
+Agent: main (Super Z)
+Task: Rename the "Contract Software" product to "Customized Software" across the entire site (consistent UX rename, not just visible text)
+
+Work Log:
+- Renamed every user-visible occurrence: home service tab, Products mega menu entry + desc, Features dropdown (8 new items), PRODUCTS.contract label/title/desc in data.ts, OTHER_PRODUCTS card titles/descs ("Datrix Contract" -> "Customized Software"), demo modal hidden product value, layout.tsx meta description, logo brand-title (data-title)
+- Rewrote ContractPage.tsx content: hero "Customized Software, Built For You." + 4 new intro points, "Why Datrix Customized Software?" paragraph, 8 new feature cards (Tailored Workflows, Integrations, Scalability, Security, Web & Mobile, Analytics, Support, Ownership), "Datrix Customized Software Offers" checklist, "From Idea To Launch" block
+- Replaced contract.mp4 hero video with purpose-built dashboard mockup SVG (contract UI footage contradicted the new product name)
+- Generated 12 brand-colored SVG assets via scripts/make_customized_assets.py: customized.svg (modular app illustration for home tab + hero mobile), customized-mockup.svg (hero desktop), custom-flow.svg (idea-to-launch), delivery-process.svg (5-step Discover->Design->Develop->Deploy->Support diagram), 8 gradient feature icons matching existing red->orange icon language
+- Internal route /contract, .contract CSS classes and file names kept unchanged (deep links + theme intact)
+- bun run build passed; verified visually via agent-browser: home tab, customized hero (desktop + mobile), features grid, offers diagram, mega menu, features dropdown, demo modal, financial page other-products band
+
+Stage Summary:
+- Product fully repositioned as "Customized Software" with zero contract-themed remnants in user-visible UI
+- New assets in public/assets/img/customized.svg + public/assets/img/page-contract/{customized-mockup,custom-flow,delivery-process,feature-*}.svg
+- Asset script persisted at scripts/make_customized_assets.py for regeneration

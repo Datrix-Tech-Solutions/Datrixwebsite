@@ -17,7 +17,7 @@ const BRAND_TITLE: Record<string, string> = {
   home: "",
   financial: "Financials",
   payroll: "HRMS",
-  contract: "Contract",
+  contract: "Customized Software",
   crm: "CRM",
   "contact-us": "",
   privacy: "",
@@ -44,14 +44,14 @@ const FEATURES_MENU: Partial<
     { label: "All Features", slug: "/payroll#features" },
   ],
   contract: [
-    { label: "All In One Contract", slug: "/contract#features" },
-    { label: "Multiple Approvals", slug: "/contract#features" },
-    { label: "Document Management", slug: "/contract#features" },
-    { label: "Permission Settings", slug: "/contract#features" },
-    { label: "Searching", slug: "/contract#features" },
-    { label: "Costing", slug: "/contract#features" },
-    { label: "Budgeting", slug: "/contract#features" },
-    { label: "Centralized Dashboards", slug: "/contract#features" },
+    { label: "Tailored Workflows", slug: "/contract#features" },
+    { label: "Seamless Integrations", slug: "/contract#features" },
+    { label: "Scalable Architecture", slug: "/contract#features" },
+    { label: "Enterprise Security", slug: "/contract#features" },
+    { label: "Web & Mobile Apps", slug: "/contract#features" },
+    { label: "Analytics & Reporting", slug: "/contract#features" },
+    { label: "Dedicated Support", slug: "/contract#features" },
+    { label: "Complete Ownership", slug: "/contract#features" },
     { label: "All Features", slug: "/contract#features" },
   ],
   crm: [
@@ -221,11 +221,11 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                 <ul className="row">
                   <li className="nav-item contract col-sm-12 col-md-6">
                     <a className="contract" href="#/contract" onClick={go("/contract")}>
-                      Contract
+                      Customized Software
                     </a>
                     <p className="contract">
-                      Datrix standardizes contract drafting and approval, giving
-                      you greater control and efficiency at every stage.
+                      Datrix designs bespoke software around your exact
+                      workflows — web, mobile and integrations you fully own.
                     </p>
                   </li>
                   <li className="nav-item crm col-sm-12 col-md-6">

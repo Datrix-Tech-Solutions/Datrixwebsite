@@ -82,10 +82,10 @@ export const PRODUCTS: Record<string, Product> = {
   },
   contract: {
     slug: "/contract",
-    label: "Contract",
+    label: "Customized Software",
     className: "contract",
-    title: "Contract",
-    desc: "Datrix standardizes contract drafting and approval, giving you greater control and efficiency at every stage.",
+    title: "Customized Software",
+    desc: "Datrix designs bespoke software around your exact workflows — web, mobile and integrations you fully own.",
     packImg: "/assets/img/pack-contract.svg",
   },
   crm: {
@@ -102,12 +102,12 @@ export const PRODUCTS: Record<string, Product> = {
 export const OTHER_PRODUCTS: Record<string, Product[]> = {
   financial: [
     { ...PRODUCTS.payroll, title: "Datrix HRMS", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix HRMS helps businesses from different industries." },
-    { ...PRODUCTS.contract, title: "Datrix Contract", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Contract helps businesses from different industries." },
+    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
     { ...PRODUCTS.crm, title: "Datrix CRM", packImg: "/assets/img/pack-crm.svg", desc: "Learn how Datrix CRM helps businesses from different industries." },
   ],
   payroll: [
     { ...PRODUCTS.financial, title: "Datrix Financial", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix Financial helps businesses from different industries." },
-    { ...PRODUCTS.contract, title: "Datrix Contract", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Contract helps businesses from different industries." },
+    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
     { ...PRODUCTS.crm, title: "Datrix CRM", packImg: "/assets/img/pack-crm.svg", desc: "Learn how Datrix CRM helps businesses from different industries." },
   ],
   contract: [
@@ -118,7 +118,7 @@ export const OTHER_PRODUCTS: Record<string, Product[]> = {
   crm: [
     { ...PRODUCTS.financial, title: "Datrix Financial", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix Financial helps businesses from different industries." },
     { ...PRODUCTS.payroll, title: "Datrix HRMS", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how Datrix HRMS helps businesses from different industries." },
-    { ...PRODUCTS.contract, title: "Datrix Contract", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Contract helps businesses from different industries." },
+    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
   ],
 };
 
