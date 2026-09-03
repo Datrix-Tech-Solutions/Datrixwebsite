@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow" />
+
+  <title>Factura Financials</title>
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <style type="text/css">@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/latin-ext/300/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/arabic/300/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/hebrew/300/normal.woff2);unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/hebrew/500/normal.woff2);unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic-ext/500/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/latin-ext/500/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/arabic/500/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic/500/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/jquery.min.js" type="a08dd3e2327154afc35ddb73-text/javascript"></script>
+</head>
+
+<body class="body-financial " id=""><header class="main-header">
+	<nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand Financials" href="index.php" data-title="Financials"><img src="assets/img/logo.svg"></a>
+    <button class="navbar-toggler collapsed" id="nav-icon3" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExample05" style="">
+      <div class="nav-item dropdown mega-menu navbar-nav">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+        <ul class="productMenu dropdown-menu row" aria-labelledby="dropdown03">
+          <li>
+            <ul class="row">
+              <li class="nav-item financial col-sm-12 col-md-6">
+               <a class="financial" href="financial.php">Financials</a>
+               <p class="financial">Factura is online accounting software for your business.</p></a>
+             </li>
+             <li class="nav-item payroll col-sm-12 col-md-6">
+              <a class="payroll" href="payroll.php">HRMS</a>
+              <p class="payroll">Factura HRMS is an innovative system for easy management of Payroll and HR for small to medium and large organization.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="row">
+           <li class="nav-item contract col-sm-12 col-md-6">
+            <a class="contract" href="contract.php">Contract</a>
+            <p class="contract">Factura standardizes contract drafting and approval, giving you greater control and efficiency at every stage.</p>
+          </li>
+          <li class="nav-item crm col-sm-12 col-md-6">
+            <a class="crm" href="crm.php">CRM</a>
+            <p class="crm">Factura CRM manages your sales pipeline, stay on top of employee activities, and close more deals.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <ul class="navbar-nav ml-auto">
+      <style>
+   .dropdown .dropdown-menu a {
+    margin-left: 0;
+    padding: 5px 10px;
+    display: block;
+    font-size: 13px;
+}</style>
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+      <div class="dropdown-menu financialMegaMenu" aria-labelledby="dropdown04" style="width: 1024px;font-size: 13px;">
+        <ul class="row">
+          <li class="col">
+            <h4>Purchases</h4>
+            <ul class="">
+              <!-- accounting.php -->
+              <li><a class="" href="">Reorder Levels</a></li> 
+              <li><a class="" href="">Requisitions</a></li>
+              <li><a class="" href="">Purchase Orders</a></li>            
+              <li><a class="" href="">Invoicing</a></li>
+              <li><a class="" href="">Receipt Notes</a></li>
+              <li><a class="" href="">Additional Cost</a></li>
+              <li><a class="" href="">Purchase Returns</a></li>           
+
+              <!-- <li><a class="" href="">Purchase Registers, etc.</a></li> -->
+              <li><a class="" href="">O/S Payables</a></li>
+              <li><a class="" href="">Aging Analysis</a></li>
+              <li><a class="" href="">Budget Control*</a></li>
+              <li><a class="" href="">Multilevel Approvals</a></li>
+            </ul>
+          </li>
+          <li class="col">
+            <h4>Sales</h4>
+            <ul class="">
+              <li><a class="" href="#">Quotations/Enquiries</a></li>
+              <li><a class="" href="#">Sales Orders</a></li>
+              <li><a class="" href="#">Invoicing</a></li>
+              <li><a class="" href="#">Customisable Templates</a></li>
+              <li><a class="" href="#">POS</a></li>              
+              <li><a class="" href="#">Delivery Notes/Waybills</a></li>
+              <li><a class="" href="#">Sales Returns</a></li>
+              <li><a class="" href="#">Sales Commission</a></li>
+              <!-- <li><a class="" href="#">Multiple Invoice printable template</a></li> -->
+              <!-- <li><a class="" href="#">Sales Register, etc.</a></li> -->
+              <li><a class="" href="#">O/S Receivables</a></li>
+              <li><a class="" href="">Aging Analysis</a></li>
+              <li><a class="" href="#">Multiple Price Levels</a></li>
+              <li><a class="" href="#">Cost Centers</a></li>
+            </ul>
+          </li>          
+          <li class="col">
+            <h4>Inventory</h4>
+            <ul class="">
+              <li><a class="" href="#">Costing & Valuations</a></li>
+              <li><a class="" href="#">Simple & Advanced UOM</a></li>
+              <li><a class="" href="#">Barcode</a></li>
+              <li><a class="" href="#">Stock Categorizations</a></li>
+              <li><a class="" href="#">Multi Location</a></li>
+
+              <li><a class="" href="#">Serial Number Tracking</a></li>
+              <li><a class="" href="#">Batch Tracking</a></li>
+              <li><a class="" href="#">Stock Substitute</a></li>
+
+              <li><a class="" href="#">Movement Analysis</a></li>
+              <li><a class="" href="#">Inventory Budgeting</a></li>
+              <li><a class="" href="#">Fast/Slow Moving items</a></li>
+              <li><a class="" href="#">Profit Analysis</a></li>
+            </ul>
+          </li>
+          <li class="col">
+            <h4>Manufacturing</h4>
+            <ul class="">
+              <li><a class="" href="#">Bill of Material (BOM)</a></li>
+              <li><a class="" href="#">Item Kit</a></li>
+              <li><a class="" href="#">Stock Journal</a></li>
+              <li><a class="" href="#">Production Planning</a></li>
+              <li><a class="" href="#">Discrete/Mixed-mode Manufacturing</a></li>
+              <li><a class="" href="#">Work Schedule Mgmt.*</a></li>
+              <li><a class="" href="#">Quality Control*</a></li>
+              <li><a class="" href="#">Production Analysis</a></li>
+              <li><a class="" href="#">MPS/MRP*</a></li>
+              <li><a class="" href="#">Costing</a></li>
+            </ul>
+          </li>
+          <li class="col">
+            <h4>Accounting</h4>
+            <ul class="">
+              <li><a class="" href="#">General Ledger</a></li>
+              <li><a class="" href="#">Accounts Receivable</a></li>
+              <li><a class="" href="#">Accounts Payable</a></li>
+              <li><a class="" href="#">Fixed Assets*</a></li>
+              <li><a class="" href="#">Bank Reconciliation</a></li>
+
+              <li><a class="" href="#">Data Import</a></li>
+              
+              <li><a class="" href="#">Cost Centre Allocations</a></li>
+              <li><a class="" href="#">Multi Currency</a></li>
+              <li><a class="" href="#">Project Accounting</a></li>
+              
+              <li><a class="" href="#">Memorised Voucher</a></li>
+              
+              <li><a class="" href="#">Budget / Scenarios</a></li>
+              <li><a class="" href="#">Document Attachments</a></li>
+              <li><a class="" href="#">Business Intelligence</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </li>
+        <!-- <li class="nav-item"> <a class="nav-link" href="industries.php">Industries</a> </li> -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+      <div class="dropdown-menu financialMegaMenu" aria-labelledby="dropdown04">
+        <ul class="row">
+          <li class="col">
+            <!-- <h4>Title</h4> -->
+            <ul class="">
+              <li><a class="" href="accounting.php">Construction</a></li>
+              <li><a class="" href="">Credit Society</a></li>
+              <li><a class="" href="">Educational Institutions</a></li>
+              <li><a class="" href="#">Manufacturing</a></li>
+            </ul>
+          </li>
+          <li class="col">
+            <!-- <h4>Title</h4> -->
+            <ul class="">
+              <li><a class="" href="#">NGO</a></li>
+              <li><a class="" href="#">Oil & Gas</a></li>
+              <li><a class="" href="#">Retail / Trading</a></li>
+              <li><a class="" href="#">Transport / Rental</a></li>              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </li>    
+    <li class="nav-item"> <a class="nav-link" href="contact-us.php">Contact us</a> </li> 
+
+      <li> <a href="#" class="request-btn financial" data-toggle="modal" data-target="#request-demo-form">Request A Demo</a> </li>
+  </div>
+</nav>
+</header>
+
+
+<div class="modal fade" id="request-demo-form" tabindex="-1" role="dialog" aria-labelledby="request-demo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title color" id="exampleModalLabel">Request A Demo</h5>
+        <button type="button" class="close color" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" id='requestForm' name='requestForm'>
+          <input type='hidden' name='type' value="request">
+          <div class="form-group">
+            <input type="text" class="form-control form-default" id="sub_fn" name='sub_fn'placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-default" id="sub_company" name='sub_company' placeholder="Company / Organization" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-default" id="sub_email" name='sub_email' placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-default" id="sub_phone" name='sub_phone' placeholder="Phone Number">
+          </div>
+          
+          <input type="hidden" class="form-control" id="sub_product" name="sub_product" value="Financials">
+
+          <div class="form-group">
+            <input type="submit" name='req-demo' id='req-demo' value='Request Now' class="request-btn big financial">
+          </div>
+        </form>
+        <div class="sub_response"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+<div class='sidebar-navbar'>
+	<ul class="nav">
+		<li class=""> <a href="#clients">Clients</a> </li>
+		<li class=""> <a href="#testimonials">Testimonials</a> </li> 
+		<li class=""> <a href="#industries">Industries</a> </li> 
+		<li class=""> <a href="#features">Features</a> </li>
+	</ul>
+</div>
+
+<section class="financial-banner topBannerSection">
+	<div class="container">
+		<div class="row align-items-center height100">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="factura-intro">
+					<img src="assets/img/Financials.svg" class="mobile-img">
+					<h1 class="mb-3">Factura is online accounting<br>software for your business.</h1>
+					<p class="paragraph2 mb-4">See why more than 6,000 users choose factura.</p>
+					<a href='#' class="request-btn big financial" data-toggle="modal" data-target="#request-demo-form">Request A Demo</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 p0">
+				<div class="main-illustration desktop-img">
+					<video class='videos' autoplay loop muted>
+					  <source src="assets/vid/finance.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="overview sectionPadding bgGray">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-sm-12 col-md-12">
+				<h2 class="text-center">Why Factura Finance?</h2>
+				<p>Automate all finance processes with Factura Softwares. Its comprehensive and flexible financial management features allow you to track the flow of money in and out of your company in a secure and accurate environment. Sophisticated functionality streamlines transactions and provides instant access to all your financial data, from summary views to transaction-level drill-down details. Track all accounting activity with Factura's general ledger and easily generate financial statements, budgets and other advanced financial reports. With highly customizable fields, easy to navigate menus and grids integrated with advanced search capabilities Factura softwares make complicated finance process accessible to anyone who can operate a computer. Here’s delivering the power of meaningful data at the click of a button, the foolproof way of lending your business a huge strategic advantage over others.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+		<div class="row align-items-center">
+			<div class="col-md-4">
+				<img src="assets/img/page-financials/automate-finance.svg">
+			</div>
+			<div class="col-md-7 ml-auto">
+				<h2>Automate Finance with Factura</h2>
+				<ul class="checklist">
+					<li><span class="color fa-check-circle"></span> Comprehensive and flexible features to track the flow of money in and out of your company in a secure and accurate environment.</li>
+					<li><span class="color fa-check-circle"></span>Instant access to all your financial data, from summary views to transaction-level drill-down details.</li>
+					<li><span class="color fa-check-circle"></span>Track all accounting activity with general ledger and generate financial statements, reports & budgets.</li>
+					<li><span class="color fa-check-circle"></span>Highly customizable fields, easy to navigate menus and grids integrated with advanced search capabilities make complicated finance process accessible to anyone.</li>
+					<li><span class="color fa-check-circle"></span><p>Here’s delivering the power of meaningful data at the click of a button, the foolproof way of lending your business a huge strategic advantage over others.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features sectionPadding"  id="features">
+		<div class="container">
+			<h2 class="text-center">Features</h2>
+			<div class="row position-relative" id="feature1">
+				<div class="col-xs-12 col-sm-12 col-md-6  pl-4">
+					<div class="summary row align-items-center height100" id='panImage'>
+						<div class="col">
+							<div class="desktop-screen desktop-img" >
+								<img src="assets/img/page-financials/screen-Accounting-Screenshot.jpg" id='featureImg'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5 offset-md-1">
+					<div class="easyToMigratePadding row align-items-center feature-content height100" data-src='assets/img/page-financials/screen-Accounting-Screenshot.jpg'>
+						<div class="col">
+							<div class="desktop-screen mobile-img">
+								<img src="assets/img/page-financials/screen-Accounting-Screenshot.jpg" id=''>
+							</div>
+							<h3>Accounting</h3>
+							<p>Factura accounting software provides an integrated way to bank, invoice and manage your company finances.</p>
+							<h4>Factura Financials gives you full control!</h4>
+							<p>Take full control over your accounting and payroll* information with real-time visibility on bank balances, sales, upcoming bills, profitability and KPI’s.</p>
+						</div>
+					</div>
+
+					<div class="easyToMigratePadding row align-items-center feature-content height100" data-src='assets/img/page-financials/screen-Inventory-Screenshot.jpg'>
+						<div class="col">
+							<div class="desktop-screen mobile-img">
+								<img src="assets/img/page-financials/screen-Inventory-Screenshot.jpg" id=''>
+							</div>
+							<h3>Inventory</h3>
+							<p>Factura’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyse and report on your inventory, helping you manage your stock position and cost.</p>
+							<h4>Sophisticated & Real-Time!</h4>
+							<p>Factura’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyze and report on your inventory, helping you manage your stock position and cost. Enjoy full stock visibility in real-time too.</p>
+						</div>
+					</div>
+
+					<div class="easyToMigratePadding row  align-items-center feature-content height100" data-src='assets/img/page-financials/screen-sales-purchase.jpg'>
+						<div class="col">
+							<div class="desktop-screen mobile-img">
+								<img src="assets/img/page-financials/screen-sales-purchase.jpg" id=''>
+							</div>
+							<h3>Sales & Purchase</h3>
+							<p>Factura allows you to create sales automation workflows to proactively manage your sales.</p>
+							<h4>Effectively drive sales performance</h4>
+							<p>Sales staff can create quotes (which convert to sales orders and invoices), based on standard items and pricing in the system.</p>
+							<h4>Track, Report & Visualise</h4>
+							<p>It tracks operational and financial data—by the business driver—to give you superior reporting power and a complete view of your organization. Create any kind of report, dashboard, or visualization you want—with exactly the metrics that matter</p>
+						</div>
+					</div>
+
+					<div class="easyToMigratePadding row align-items-center feature-content height100" data-src='assets/img/page-financials/screen-pos.jpg'>
+						<div class="col">
+							<div class="desktop-screen mobile-img">
+								<img src="assets/img/page-financials/screen-pos.jpg" id=''>
+							</div>
+							<h3>Order & POS</h3>
+							<p>Streamline and manage your order fulfillment and returns effectively by using Factura’s embedded business processes.</p>
+							<h4>The perfect POS software solution</h4>
+							<p>Keep track of inventory across multiple stores, seamless syncing of stock. Use automated reordering based on specified stock levels, and adjust reorder points and restock levels to make sure you never have too much or too little stock on your shelves.</p>
+							<h4>Quick Inventory Lookups</h4>
+							<p>Move stock between stores or your warehouse with stock transfers, and quickly perform inventory lookups across all your sales channels.</p>
+						</div>
+					</div>
+
+					<div class="easyToMigratePadding row align-items-center feature-content height100" data-src='assets/img/page-financials/screen-Business-Intelligrnce.jpg'>
+						<div class="col">
+							<div class="desktop-screen mobile-img">
+								<img src="assets/img/page-financials/screen-Business-Intelligrnce.jpg" id=''>
+							</div>
+							<h3>Business Intelligence & Productivity</h3>
+							<p>Factura includes numerous productivity tools to let you run your business more effectively and efficiently – increasing your profitability. </p>
+							<h4>Sophisticated and Customizable Dashboards</h4>
+							<p>Get real-time visibility across the business including bank balances, sales, upcoming bills, profitability and KPIs with Factura’s business intelligence software.</p>
+							<h4>Value-Added Insights</h4>
+							<p>Understand true value-added insights and gain instant visibility to identify issues, trends, and opportunities and immediately drill down to the underlying transaction and take action.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="financial-features-points mb80 features-points">
+		<div class="container">
+			<h2 class="text-center">Over 150+ reports with many customization options</h2>
+			<div class="row mb-5 mt5">	
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-accounting.svg" class="mb-4">
+					<h3 class="mainHeading3">Project Accounting</h3>
+					<p class="">Start and finish projects on time, stay on top of project costs and revenue, and keep projects productive and profitable.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-multi-curr.svg" class="mb-4">
+					<h3 class="mainHeading3">Multi Currency</h3>
+					<p class="">Easy multi-currency accounting. Create invoices, reconcile accounts and get paid in any currency.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-approval-work.svg" class="mb-4">
+					<h3 class="mainHeading3">Approval Workflow</h3>
+					<p class="">Simple, multi-level approvals for any transaction. Approval process can be triggered based on the value of the transaction.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-multi-comp.svg" class="mb-4">
+					<h3 class="mainHeading3">Multi Companies / Group Consolidation</h3>
+					<p class="">Factura makes it easy to manage the financials for multiple entities, whether your business structure is simple or complex, domestic or global.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-profit-cntr.svg" class="mb-4">
+					<h3 class="mainHeading3">Cost / Profit Centre</h3>
+					<p class="">Dimensions can do many things for any organization running Factura. They allow a company to have a very simple chart of accounts, while maintaining the ability to report and analyze data on multiple different levels and criteria.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-bank-reconcile.svg" class="mb-4">
+					<h3 class="mainHeading3">Bank Reconciliation</h3>
+					<p class="">Easily reconcile your bank statement against your bank account register to keep your Factura account accurate.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-budget-wth-variance.svg" class="mb-4">
+					<h3 class="mainHeading3">Budgets with Variance Analysis</h3>
+					<p class="">Taking care of the budgeting process is no longer a challenging task with Factura’s powerful and intuitive Budgeting feature. </p>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/page-financials/features-depreciation.svg" class="mb-4">
+					<h3 class="mainHeading3">Fixed Assets</h3>
+					<p class="">Fixed assets in Factura help you keep track of business assets that are depreciated over time. That depreciation expense can be claimed as a tax benefit.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="financial-table-section height100">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="position-relative financial-table">
+						<div class="d-inline-flex position-absolute">
+							<ul class="text-left" style="width: auto;">
+								<li style="background-color: transparent;" class="mt-3 p-3"></li>
+								<li class="mt-1 p-2">Accounts &amp; Inventory</li>
+								<li class="mt-1 p-2">Budgets</li>
+								<li class="mt-1 p-2">Comprehensive Fixed Assets</li>
+								<li class="mt-1 p-2">Project Accounting</li>
+								<li class="mt-1 p-2">Multilevel Approval Workflow & Via Email</li>
+								<li class="mt-1 p-2">Analytics / BI Reports</li>
+								<li class="mt-1 p-2">100% Feature Parity in Desktop & Web Versions</li>
+								<li class="mt-1 p-2">Ability to Handle Large Data & Hundreds of Users with Blazing Speed</li>
+							</ul>
+							<ul class="text-center">
+								<li class="active p-3 colorWhite" style="height:77px">Factura Financials</li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+							</ul>
+							<ul class="text-center">
+								<li class="p-2 colorWhite">Tally</li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+							</ul>
+							<ul class="text-center">
+								<li class="p-2 colorWhite">Troyee</li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+							</ul>
+							<ul class="text-center">
+								<li class="p-2 colorWhite">Quickbooks</li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/cross.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+								<li class="p-2"><img src="assets/img/tick.svg"></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="clients bgGray" id='industries'>
+		<h2 class="text-center mb-4">Industries</h2>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col">
+					<ul class="industies-slider">
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Construction.svg">
+							</a>
+							<p>Construction</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Credit-Soc.svg">
+							</a>
+							<p>Credit Society</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Education.svg">
+							</a>
+							<p>Educational Institutions</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Manufacturing.svg">
+							</a>
+							<p>Manufacturing</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-NGO.svg">
+							</a>
+							<p>NGO</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Oil-Gas.svg">
+							</a>
+							<p>Oil & Gas</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Retail.svg">
+							</a>
+							<p>Retail / Trading</p>
+						</li>
+						<li>
+							<a href='' class="industries-icon">
+								<img src="assets/img/page-financials/industries-Transport.svg">
+							</a>
+							<p>Transport / Rental</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonial2 sectionPadding" id="testimonials">
+		<div class="container-fluid">
+			<div class="row align-items-center justify-content-md-center">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<div class="clients-slider testimonial-slider">
+						<div>
+							<div class="single-client-testimonial">
+								<p class="text-center mb-5">“I am finding more and more use for Factura every day. I am amazed at how powerful the application can be and I have no hesitation in recommending it to others that are looking for the right software for their business”</p>
+								<div class="media">
+									<div class="media-img">
+										<img src='assets/img/testimonial-avatar.png'>
+									</div>
+									<div class="media-body text-left">
+										<h3 class="colorWhite mt-2">Prince Andrews L.Zutah</h3>
+										<p>Head of IT, Bisvel Group of Companies</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="single-client-testimonial">
+								<p class="text-center mb-5">“We’re consistently amazed by the flexibility and simplicity of Factura. Our initial experience was in provisioning the desktop version. We migrated to Factura Web for our clients and Project accounting, group consolidated reports etc. has been made simple. It is now an integral part of our solutions provided for our client businesses”</p>
+								<div class="media">
+									<div class="media-img">
+										<img src='assets/img/testimonial-avatar.png'>
+									</div>
+									<div class="media-body text-left">
+										<h3 class="colorWhite mt-2">Martin Owusu</h3>
+										<p>Head Application Development & Business Services – Qualtek Limited -Ghana</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="single-client-testimonial">
+								<p class="text-center mb-5">“In case I haven't said it enough already, I LOVE Factura”</p>
+								<div class="media">
+									<div class="media-img">
+										<img src='assets/img/testimonial-avatar.png'>
+									</div>
+									<div class="media-body text-left">
+										<h3 class="colorWhite mt-2">Inna Oleksiichuk</h3>
+										<p>Director, MilaVitsa</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="single-client-testimonial">
+								<p class="text-center mb-5">“Factura makes accounting needs so quick and easy”</p>
+								<div class="media">
+									<div class="media-img">
+										<img src='assets/img/testimonial-avatar.png'>
+									</div>
+									<div class="media-body text-left">
+										<h3 class="colorWhite mt-2">Isaac Barkah</h3>
+										<p>Emerald Properties</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="case-study">
+						<a href='#' class="request-btn color big">Read Case Study<span class="fa-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="clients" id='clients'>
+		<h2 class="text-center mb-4">Trusted By</h2>
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col">
+					<ul class="clients-list">
+						<li><a href=''><img src="assets/img/page-financials/clogo-baxoil-logo.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-pbsl-logo.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-eib-logo.jpg"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-dainikamadershomoy-logo.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-delta-airlines-logo.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-emerald-logo.jpg"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-GNLOGO.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-jewels-mart-logo.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-rrgobal-logo.png"></a></li>
+						<li><a href=''><img src="assets/img/page-financials/clogo-ustc-logo.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	</div>
+<!--- Footer -->
+
+	<section class="our-products">
+		<div class="container pt-5 pb-5">
+			<h3 class="mainHeading3 text-center colorWhite mb-5">Check out our other products</h3>
+			<div class="row mt-5">
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="product row">
+							<div class="col p0">
+								<img src="assets/img/pack-payroll.svg">
+							</div>
+							<div class="col productDetails">
+								<div class="position-relative">
+									<h2 class="mainHeading2 colorWhite">Factura HRMS</h2>
+									<p>Learn how Factura HRMS helps businesses from different industries.</p>
+									<a href='payroll.php' class="request-btn payroll"><span class="fa-arrow-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="product row">
+							<div class="col p0">
+								<img src="assets/img/pack-contract.svg">
+							</div>
+							<div class="col productDetails">
+								<div class="position-relative">
+									<h2 class="mainHeading2 colorWhite">Factura Contract</h2>
+									<p>Learn how Factura Contract helps businesses from different industries.</p>
+									<a href='contract.php' class="request-btn contract"><span class="fa-arrow-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="product row">
+							<div class="col p0">
+								<img src="assets/img/pack-crm.svg">
+							</div>
+							<div class="col productDetails">
+								<div class="position-relative">
+									<h2 class="mainHeading2 colorWhite">Factura CRM</h2>
+									<p>Learn how Factura CRM helps businesses from different industries.</p>
+									<a href='crm.php' class="request-btn crm"><span class="fa-arrow-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+							</div>
+		</div>
+	</section>
+
+<footer class="home-footer">
+	<div class="container footer-bottom">
+		<div class="row subfooter">
+			<div class="col-md-6">
+				<p>&copy; Copyright 2019 - Factura</p>
+			</div>
+			<div class="col-md-6 text-right">
+				<ul class="social-links">
+					<li><a href="privacy.php">Privacy Policy</a></li>
+					<li><a href="terms.php">Terms of Service</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="assets/js/popper.min.js" type="a08dd3e2327154afc35ddb73-text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="a08dd3e2327154afc35ddb73-text/javascript"></script>
+<script src="assets/js/plugins.js" type="a08dd3e2327154afc35ddb73-text/javascript"></script>
+<script src="assets/js/script.js" type="a08dd3e2327154afc35ddb73-text/javascript"></script>
+	<script type="a08dd3e2327154afc35ddb73-text/javascript">
+		/*
+		var scrollPosition;
+$(window).on('scroll', function () {
+  scrollPosition = $(window).scrollTop();
+  $('#scrollPosition').html(scrollPosition);
+  var offset = $('.summary').position();
+  var offsetPosition = $(window).height();
+  if($('#features').isInViewport(offsetPosition)){
+    console.log(scrollPosition+" is In View",offset.top, offset.left );
+    $('.summary').addClass('active').css({"bottom":offset.top});
+  }else{
+   console.log(scrollPosition+" is not in  View",offset.top, offset.left );
+   $('.summary').removeClass('active');
+ }
+});
+
+$.fn.isInViewport = function(offsetPosition) {
+  var elementTop = $(this).offset().top + offsetPosition;
+  var elementBottom = elementTop + $(this).outerHeight() - $(window).height() * 2;
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+*/
+$('.feature-content').each(function() {
+  var current = $(this);
+  $(this).waypoint(function() {
+    var src = current.attr('data-src');
+    console.log(src);
+    $('#featureImg').attr('src',src);
+  });
+});
+
+
+
+var controller = new ScrollMagic.Controller();
+		$(function () { // wait for document ready
+			// build scene
+			var secHeight = $('#features').height() - $(window).height();
+			var scene = new ScrollMagic.Scene({triggerElement: "#features",duration:secHeight})
+				.setPin("#panImage")
+				.triggerHook(0)
+				.offset(100)
+				// .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+				.addTo(controller);
+		});
+	</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a08dd3e2327154afc35ddb73-|49" defer></script></body>
+</html>

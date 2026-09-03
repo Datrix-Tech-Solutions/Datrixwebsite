@@ -1,0 +1,9 @@
+/*
+  Tailwind v4 utility collision fixes.
+  Tailwind's `.collapse` utility sets `visibility: collapse`, which collides
+  with Bootstrap's `.collapse` display component used by the navbar and
+  mobile menu. This file is loaded after Tailwind and Bootstrap.
+*/
+.collapse {
+  visibility: visible;
+}

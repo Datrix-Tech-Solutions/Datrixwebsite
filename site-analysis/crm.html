@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow" />
+
+  <title>Factura CRM</title>
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <style type="text/css">@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/latin-ext/300/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic/300/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/hebrew/300/normal.woff2);unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic-ext/300/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/latin/300/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300;src:url(/cf-fonts/s/rubik/5.2.8/arabic/300/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/hebrew/500/normal.woff2);unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/latin-ext/500/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic-ext/500/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/arabic/500/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:500;src:url(/cf-fonts/s/rubik/5.2.8/cyrillic/500/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/jquery.min.js" type="f4b5295631ba613738dc5420-text/javascript"></script>
+</head>
+
+<body class="body-crm crm" id=""><header class="main-header">
+	<nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand CRM" href="index.php" data-title="CRM"><img src="assets/img/logo.svg"></a>
+    <button class="navbar-toggler collapsed" id="nav-icon3" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExample05" style="">
+      <div class="nav-item dropdown mega-menu navbar-nav">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+        <ul class="productMenu dropdown-menu row" aria-labelledby="dropdown03">
+          <li>
+            <ul class="row">
+              <li class="nav-item financial col-sm-12 col-md-6">
+               <a class="financial" href="financial.php">Financials</a>
+               <p class="financial">Factura is online accounting software for your business.</p></a>
+             </li>
+             <li class="nav-item payroll col-sm-12 col-md-6">
+              <a class="payroll" href="payroll.php">HRMS</a>
+              <p class="payroll">Factura HRMS is an innovative system for easy management of Payroll and HR for small to medium and large organization.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="row">
+           <li class="nav-item contract col-sm-12 col-md-6">
+            <a class="contract" href="contract.php">Contract</a>
+            <p class="contract">Factura standardizes contract drafting and approval, giving you greater control and efficiency at every stage.</p>
+          </li>
+          <li class="nav-item crm col-sm-12 col-md-6">
+            <a class="crm" href="crm.php">CRM</a>
+            <p class="crm">Factura CRM manages your sales pipeline, stay on top of employee activities, and close more deals.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown featuresMenu">
+      <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+      <div class="dropdown-menu" aria-labelledby="dropdown04">
+        <a class="dropdown-item" href="#">Account Management</a>
+        <a class="dropdown-item" href="#">Lead Management</a>
+        <a class="dropdown-item" href="#">Opportunities Management</a>
+        <a class="dropdown-item" href="#">Quotation Management</a>
+        <a class="dropdown-item" href="#">Reports & Analytics</a>
+        <a class="dropdown-item" href="#">Territory Management</a>
+        <a class="dropdown-item" href="">All Features</a>
+      </div>
+    </li>
+      <li class="nav-item"> <a class="nav-link" href="contact-us.php">Contact us</a> </li> 
+
+      <li> <a href="#" class="request-btn crm" data-toggle="modal" data-target="#request-demo-form">Request A Demo</a> </li>
+  </div>
+</nav>
+</header>
+
+
+<div class="modal fade" id="request-demo-form" tabindex="-1" role="dialog" aria-labelledby="request-demo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title color" id="exampleModalLabel">Request A Demo</h5>
+        <button type="button" class="close color" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" id='requestForm' name='requestForm'>
+          <input type='hidden' name='type' value="request">
+          <div class="form-group">
+            <input type="text" class="form-control form-default" id="sub_fn" name='sub_fn'placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-default" id="sub_company" name='sub_company' placeholder="Company / Organization" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-default" id="sub_email" name='sub_email' placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-default" id="sub_phone" name='sub_phone' placeholder="Phone Number">
+          </div>
+          
+          <input type="hidden" class="form-control" id="sub_product" name="sub_product" value="CRM">
+
+          <div class="form-group">
+            <input type="submit" name='req-demo' id='req-demo' value='Request Now' class="request-btn big crm">
+          </div>
+        </form>
+        <div class="sub_response"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+<div class='sidebar-navbar'>
+	<ul class="nav">
+		<li class=""> <a href="#clients">Clients</a> </li>
+		<li class=""> <a href="#testimonials">Testimonials</a> </li>		
+		<li class=""> <a href="#features">Features</a> </li>
+	</ul>
+</div>
+
+<section class="crm-banner topBannerSection">
+	<div class="container">
+		<div class="row align-items-center height100 pb-5">
+			<div class="col-xs-12 col-sm-12 col-md-5">
+				<div class="factura-intro">
+					<img src="assets/img/CRM.svg" class="mobile-img">
+					<h1 class="mb-3">CRM For Lifelong Customer Relationships</h1>
+					<p class="paragraph2 mb-4">Manage your sales pipeline, stay on top of employee activities, and close more deals. 
+					</p>
+					<a href='#' class="request-btn big crm" data-toggle="modal" data-target="#request-demo-form">Request A Demo</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 p0">
+				<div class="main-illustration desktop-img">
+					<video class='videos' autoplay loop muted>
+					  <source src="assets/vid/crm.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="overview sectionPadding bgGray">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-sm-12 col-md-12">
+				<h2 class="text-center">Why Factura CRM?</h2>
+				<p style="text-align:justify">Improve Customer satisfaction, increase retention and grow sales exponentially with Factura’s CRM software - the strategic customer relationship management tool empowering your Sales, Marketing and Customer Support teams. Keep everything on the same page using a transparent system that’s fully customisable and extremely user friendly reducing training time to a minimum.  A CRM system can do miracles for your business. It can make internal communication a breeze, it boosts productivity, makes way for increased deal conversion rates and keeps your customers happy. Factura offers 360-degree customer knowledge on a single platform, bringing phone, email, quotes, reports and all activity history available at one place giving your sales team to reduce its involvement in tedious processes while it focuses on what’s actually important – selling.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="payroll-checklist crm-checklist"  id="features">
+	<div class="container">
+		<h2 class="text-center">Features</h2>
+		<div class="row sectionPadding">
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Account & Contact Management</h3>
+					<p>Have a complete view of your customers, including activity history, key contacts, customer communications, and internal account discussions.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Lead Management</h3>
+					<p>Track your leads from click to close, while continually optimising your campaigns across every channel. Make smarter decisions about where to invest your marketing dollars.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Opportunities Management</h3>
+					<p>Get a complete view of your team’s deals with Opportunity Management. See stage, products, competition, quotes, and more. Stay connected to the people and information you need to close every sale.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Quotation Management</h3>
+					<p>Let sales reps select the right items for each customer, every time. Get consistent pricing and discounting — and approvals when you need them — even as reps send out more quotes.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Reports & Analytics</h3>
+					<p>Dashboards offer a real-time picture of your business at a glance. Dig deeper with detailed reports that anyone can create. And access your reports and dashboards from anywhere.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Territory Management</h3>
+					<p>Model your sales territories into a logical and flexible structure that maps the right sales reps to the right customers to maximise revenue.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Campaign Management</h3>
+					<p>Engage your contacts with beautiful email that's effortless to build, target and send.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Intelligent Workflows</h3>
+					<p>Automatically create leads and contacts from website form submissions</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="checklist">
+					<span></span>
+					<h3>Survey</h3>
+					<p>Get feedback from your customers and leads. Responses are tied to email addresses of your Customers.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contract-counter sectionPadding text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="crm-feature">
+					<img src="assets/img/page-crm/investing-CRM.svg">
+				</div>
+				<p>Of the top performing companies are investing in CRM.</p>
+			</div>
+			<div class="col-md-4">
+				<div class="crm-feature">
+					<img src="assets/img/page-crm/sales-increased.svg">
+				</div>
+				<p>Sales increased by 80%</p>
+			</div>
+			<div class="col-md-4">
+				<div class="crm-feature">
+					<img src="assets/img/page-crm/customer-retention.svg">
+				</div>
+				<p>Of the users stated that CRM impacted customer retention.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contract-lifecycle sectionPadding">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6 col-sm-12">
+				<!--<h3>Factura CRM Makes Staying Organised Effortless</h3>
+				<p>CRM software brings multiple functionalities—phone, email, report creation, activity tracking, automations—into one system.</p>
+				<ul>
+					<li>Manage your pipeline with total visibility</li>
+					<li>Log every activity automatically</li>
+					<li>See everything about a contact in one place</li>
+					<li>Chat with prospects and customers in real time</li>
+				</ul>-->
+				<h2>Why Do You Need CRM ?</h2>
+				<div>
+					<h3>Keeping teams in-sync is hard</h3>
+					<p>We know how hard it is to keep your marketing, sales and support teams organized, productive and in sync. </p>
+				</div>
+				<div>
+					<h3>Your data is all over the place</h3>
+					<p>Customer data and interactions scattered across many apps can hinder your team’s ability to collaborate, craft engaging customer experiences and grow revenue.</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 m-auto">
+				<div>
+					<img src="assets/img/page-crm/why-need-CRM.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contract-form-section height100" id="industries">
+	<div class="container">
+		<div class="row sectionPadding">
+			<div class="col-xs-12 col-sm-12 col-md-6 m-auto">
+				<div>
+					<img src="assets/img/page-crm/why-CRM.svg">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 ml-auto">
+				<h2>Why Factura CRM ?</h2>
+				<div>
+					<h3>Flexible</h3>
+					<p>Fast, simple configuration gives your business a custom CRM that provides everyone who faces the customer with the information and tools they need.</p>
+				</div>
+				<div>
+					<h3>Affordable</h3>
+					<p>With Factura CRM’s low, predictable pricing, you can build a CRM system that supports your big ideas, instead of limiting them. </p>
+				</div>
+				<div>
+					<h3>Tailored</h3>
+					<p>CRM solutions for your small business with our customization, configuration, integration and deployment features </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="testimonial2 sectionPadding" id="testimonials">
+	<div class="container-fluid">
+		<div class="row align-items-center justify-content-md-center">
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="clients-slider testimonial-slider">
+					<div>
+						<div class="single-client-testimonial">
+							<p class="text-center mb-5">“I am finding more and more use for Factura every day. I am amazed at how powerful the application can be and I have no hesitation in recommending it to others that are looking for the right software for their business”</p>
+							<div class="media">
+								<div class="media-img">
+									<img src='assets/img/testimonial-avatar.png'>
+								</div>
+								<div class="media-body text-left">
+									<h3 class="colorWhite mt-2">Prince Andrews L.Zutah</h3>
+									<p>Head of IT, Bisvel Group of Companies</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="single-client-testimonial">
+							<p class="text-center mb-5">“We’re consistently amazed by the flexibility and simplicity of Factura. Our initial experience was in provisioning the desktop version. We migrated to Factura Web for our clients and Project accounting, group consolidated reports etc. has been made simple. It is now an integral part of our solutions provided for our client businesses”</p>
+							<div class="media">
+								<div class="media-img">
+									<img src='assets/img/testimonial-avatar.png'>
+								</div>
+								<div class="media-body text-left">
+									<h3 class="colorWhite mt-2">Martin Owusu</h3>
+									<p>Head Application Development & Business Services – Qualtek Limited -Ghana</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="single-client-testimonial">
+							<p class="text-center mb-5">“In case I haven't said it enough already, I LOVE Factura”</p>
+							<div class="media">
+								<div class="media-img">
+									<img src='assets/img/testimonial-avatar.png'>
+								</div>
+								<div class="media-body text-left">
+									<h3 class="colorWhite mt-2">Inna Oleksiichuk</h3>
+									<p>Director, MilaVitsa</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="single-client-testimonial">
+							<p class="text-center mb-5">“Factura makes accounting needs so quick and easy”</p>
+							<div class="media">
+								<div class="media-img">
+									<img src='assets/img/testimonial-avatar.png'>
+								</div>
+								<div class="media-body text-left">
+									<h3 class="colorWhite mt-2">Isaac Barkah</h3>
+									<p>Emerald Properties</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="case-study">
+					<a href='#' class="request-btn color big">Read Case Study<span class="fa-angle-right"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="clients" id="clients">
+	<h2 class="text-center">Trusted By</h2>
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col">
+				<ul class="clients-list">
+					<li><a href=''><img src="assets/img/page-financials/clogo-baxoil-logo.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-pbsl-logo.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-eib-logo.jpg"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-dainikamadershomoy-logo.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-delta-airlines-logo.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-emerald-logo.jpg"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-GNLOGO.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-jewels-mart-logo.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-rrgobal-logo.png"></a></li>
+					<li><a href=''><img src="assets/img/page-financials/clogo-ustc-logo.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>
+<!--- Footer -->
+
+	<section class="our-products">
+		<div class="container pt-5 pb-5">
+			<h3 class="mainHeading3 text-center colorWhite mb-5">Check out our other products</h3>
+			<div class="row mt-5">
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="product row">
+							<div class="col p0">
+								<img src="assets/img/pack-payroll.svg">
+							</div>
+							<div class="col productDetails">
+								<div class="position-relative">
+									<h2 class="mainHeading2 colorWhite">Factura Financial</h2>
+									<p>Learn how Factura Financial helps businesses from different industries.</p>
+									<a href='financial.php' class="request-btn financial"><span class="fa-arrow-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="product row">
+							<div class="col p0">
+								<img src="assets/img/pack-payroll.svg">
+							</div>
+							<div class="col productDetails">
+								<div class="position-relative">
+									<h2 class="mainHeading2 colorWhite">Factura HRMS</h2>
+									<p>Learn how Factura HRMS helps businesses from different industries.</p>
+									<a href='payroll.php' class="request-btn payroll"><span class="fa-arrow-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="product row">
+							<div class="col p0">
+								<img src="assets/img/pack-contract.svg">
+							</div>
+							<div class="col productDetails">
+								<div class="position-relative">
+									<h2 class="mainHeading2 colorWhite">Factura Contract</h2>
+									<p>Learn how Factura Contract helps businesses from different industries.</p>
+									<a href='contract.php' class="request-btn contract"><span class="fa-arrow-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+							</div>
+		</div>
+	</section>
+
+<footer class="home-footer">
+	<div class="container footer-bottom">
+		<div class="row subfooter">
+			<div class="col-md-6">
+				<p>&copy; Copyright 2019 - Factura</p>
+			</div>
+			<div class="col-md-6 text-right">
+				<ul class="social-links">
+					<li><a href="privacy.php">Privacy Policy</a></li>
+					<li><a href="terms.php">Terms of Service</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="assets/js/popper.min.js" type="f4b5295631ba613738dc5420-text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="f4b5295631ba613738dc5420-text/javascript"></script>
+<script src="assets/js/plugins.js" type="f4b5295631ba613738dc5420-text/javascript"></script>
+<script src="assets/js/script.js" type="f4b5295631ba613738dc5420-text/javascript"></script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f4b5295631ba613738dc5420-|49" defer></script></body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1153px" height="802px" viewBox="0 0 1153 802" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="49.9992836%" x2="100%" y2="49.9992836%" id="linearGradient-1">
+            <stop stop-color="#0066B1" stop-opacity="0.100769928" offset="0%"></stop>
+            <stop stop-color="#00B6D4" stop-opacity="0.100345335" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Factura-Financial" transform="translate(-547.000000, -1652.000000)" fill="url(#linearGradient-1)">
+            <path d="M1658.04575,1658.67621 C1404.3712,1697.7105 1478.76614,1852.62787 1201.91939,1834.33054 C925.072648,1816.03321 547,1830.67108 547,1997.78666 C547,2164.90224 855.556065,2454 1092.15637,2454 C1328.75667,2454 1549.50231,2141.72563 1770.24796,2178.32028 C1990.9936,2214.91493 2198.32376,1888.0027 2028.80086,1773.33945 C1859.27797,1658.67621 1911.7203,1619.64191 1658.04575,1658.67621 Z" id="Path-11"></path>
+        </g>
+    </g>
+</svg>
