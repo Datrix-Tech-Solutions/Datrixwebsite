@@ -58,3 +58,22 @@ Work Log:
 Stage Summary:
 - Site now uses the Phelo product family: WorkPhelo suite = AccountingPhelo + HRPhelo + Customized Software + MarketingPhelo, under Datrix Tech Solutions brand
 - Routes/classes (/financial, /payroll, /crm, .contract) unchanged; only user-visible naming updated
+
+---
+Task ID: 4
+Agent: main (Super Z)
+Task: Make the entire site mobile responsive (phones + tablets), desktop unchanged
+
+Work Log:
+- Audited existing media queries in factura.css (1025/769/600) and found gaps: rebuilt sections + renamed menus uncovered; hamburger styled only <=769 while collapse active <=991; dropdowns rely on :hover (touch never opens them); fixed widths overflow (desktop-screen 360px, financial tables, world map 600px height)
+- Browser-audited at 375x812 / 768 / 900 / 1440: home, financial, payroll, contract, crm, contact, menus, modals; measured scrollWidth overflow offenders
+- Rebuilt src/styles/factura-fix.css responsive layer:
+  * <=991.98: hamburger icon styles (was invisible 770-991), absolute white dropdown sheet with shadow + own scroll, full-width left-aligned tap targets with per-row borders, caret right, pill CTA; .dropdown .dropdown-menu.show{display:block} so Products/Features/Industries open on touch; productMenu + financialMegaMenu render as static fluid stacked lists (inline width:1024 neutralized)
+  * <=1024: competitive comparison table becomes swipeable (overflow-x auto, position static)
+  * <=767.98: overflow-x guard, #chartdiv 600->300px (250 <=420), .desktop-screen fluid, footer brand stacked + centered (text-right overridden), payroll module media centered, hero spacing tightened (banner margin 68px, intro img padding 20px), modal/form padding, product banner offset 108px, momentum-scroll tab strip
+- Verified via agent-browser: mobile menu + Products submenu + financial Features mega menu open and stack at 375px (scrollW=375, no overflow); comparison table scrollable at 375 and 900; map fits; footer centered; demo modal fits; testimonial center-mode peeks OK; home hero tight; desktop 1440 unchanged (hamburger hidden, static nav); tablet 768/900 verified
+- bun run build: compiled successfully
+
+Stage Summary:
+- Site is fully responsive 320px -> desktop with touch-friendly navigation; production build passes
+- All responsive rules isolated in src/styles/factura-fix.css (loaded last); factura.css untouched
