@@ -6,10 +6,10 @@ import { ProductTestimonialSlider, ClientsSlider } from "./../TestimonialSliders
 import { HOME_CLIENTS } from "./../data";
 
 const CHECKLIST = [
-  "Comprehensive and flexible features to track the flow of money in and out of your company in a secure and accurate environment.",
-  "Instant access to all your financial data, from summary views to transaction-level drill-down details.",
-  "Track all accounting activity with general ledger and generate financial statements, reports & budgets.",
-  "Highly customizable fields, easy to navigate menus and grids integrated with advanced search capabilities make complicated finance process accessible to anyone.",
+  "Rich, flexible features that follow every fund moving in or out of your company within a secure, accurate environment.",
+  "Immediate reach into all your financial data, from broad summaries down to single-transaction detail.",
+  "Monitor every accounting entry through the general ledger and produce statements, reports and budgets with ease.",
+  "Deeply customizable fields, intuitive menus and grids, and built-in advanced search make even complex finance tasks simple for anyone.",
 ];
 
 const FEATURE_SLIDES = [
@@ -18,11 +18,11 @@ const FEATURE_SLIDES = [
     title: "Accounting",
     blocks: [
       {
-        p: "AccountingPhelo provides an integrated way to bank, invoice and manage your company finances.",
+        p: "AccountingPhelo brings banking, invoicing and company finances together in one integrated flow.",
       },
       {
-        h: "AccountingPhelo gives you full control!",
-        p: "Take full control over your accounting and payroll* information with real-time visibility on bank balances, sales, upcoming bills, profitability and KPI’s.",
+        h: "AccountingPhelo puts you firmly in charge!",
+        p: "Direct your accounting and payroll* information with live visibility of bank balances, sales, upcoming bills, profitability and KPIs.",
       },
     ],
   },
@@ -31,11 +31,11 @@ const FEATURE_SLIDES = [
     title: "Inventory",
     blocks: [
       {
-        p: "AccountingPhelo’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyse and report on your inventory, helping you manage your stock position and cost.",
+        p: "With AccountingPhelo’s advanced procurement, fulfillment and inventory management, you can record, analyse and report on stock — keeping your stock position and cost firmly under control.",
       },
       {
-        h: "Sophisticated & Real-Time!",
-        p: "AccountingPhelo’s sophisticated procurement, fulfillment and inventory management software allows you to record, analyze and report on your inventory, helping you manage your stock position and cost. Enjoy full stock visibility in real-time too.",
+        h: "Advanced & Always Live!",
+        p: "AccountingPhelo’s advanced procurement, fulfillment and inventory tooling lets you record, analyse and report on your stock, keeping positions and costs in check — with complete visibility of every item in real time.",
       },
     ],
   },
@@ -44,15 +44,15 @@ const FEATURE_SLIDES = [
     title: "Sales & Purchase",
     blocks: [
       {
-        p: "AccountingPhelo allows you to create sales automation workflows to proactively manage your sales.",
+        p: "Build sales automation workflows in AccountingPhelo and stay ahead of your sales instead of chasing them.",
       },
       {
-        h: "Effectively drive sales performance",
-        p: "Sales staff can create quotes (which convert to sales orders and invoices), based on standard items and pricing in the system.",
+        h: "Push sales performance further",
+        p: "Your sales team can raise quotes from the system’s standard items and pricing, converting them into sales orders and invoices in a click.",
       },
       {
-        h: "Track, Report & Visualise",
-        p: "It tracks operational and financial data—by the business driver—to give you superior reporting power and a complete view of your organization. Create any kind of report, dashboard, or visualization you want—with exactly the metrics that matter",
+        h: "Measure, Report & Visualise",
+        p: "Operational and financial data is tracked against each business driver, giving you stronger reporting power and a full picture of your organization. Build any report, dashboard or visualization you need — with precisely the metrics that matter.",
       },
     ],
   },
@@ -61,15 +61,15 @@ const FEATURE_SLIDES = [
     title: "Order & POS",
     blocks: [
       {
-        p: "Streamline and manage your order fulfillment and returns effectively by using AccountingPhelo’s embedded business processes.",
+        p: "AccountingPhelo’s built-in business processes keep order fulfillment and returns flowing smoothly.",
       },
       {
-        h: "The perfect POS software solution",
-        p: "Keep track of inventory across multiple stores, seamless syncing of stock. Use automated reordering based on specified stock levels, and adjust reorder points and restock levels to make sure you never have too much or too little stock on your shelves.",
+        h: "A POS solution that just fits",
+        p: "Follow inventory across every store with stock syncing seamlessly in the background. Automated reordering keyed to your set stock levels — with adjustable reorder and restock points — means shelves are never over- or under-stocked.",
       },
       {
-        h: "Quick Inventory Lookups",
-        p: "Move stock between stores or your warehouse with stock transfers, and quickly perform inventory lookups across all your sales channels.",
+        h: "Inventory Lookups in Seconds",
+        p: "Shift stock between stores or the warehouse using stock transfers, and run fast inventory lookups across every sales channel.",
       },
     ],
   },
@@ -78,15 +78,15 @@ const FEATURE_SLIDES = [
     title: "Business Intelligence & Productivity",
     blocks: [
       {
-        p: "AccountingPhelo includes numerous productivity tools to let you run your business more effectively and efficiently – increasing your profitability.",
+        p: "AccountingPhelo ships with a wealth of productivity tools that help you run the business sharper — and lift profitability.",
       },
       {
-        h: "Sophisticated and Customizable Dashboards",
-        p: "Get real-time visibility across the business including bank balances, sales, upcoming bills, profitability and KPIs with AccountingPhelo’s business intelligence software.",
+        h: "Powerful, Personalised Dashboards",
+        p: "AccountingPhelo’s business intelligence gives you live sight of the whole business — bank balances, sales, upcoming bills, profitability and KPIs.",
       },
       {
-        h: "Value-Added Insights",
-        p: "Understand true value-added insights and gain instant visibility to identify issues, trends, and opportunities and immediately drill down to the underlying transaction and take action.",
+        h: "Insights That Add Value",
+        p: "Gain genuine value-added insight with instant visibility that surfaces issues, trends and opportunities — then drill straight to the underlying transaction and act.",
       },
     ],
   },
@@ -96,54 +96,54 @@ const REPORTS = [
   {
     img: "features-accounting.svg",
     title: "Project Accounting",
-    text: "Start and finish projects on time, stay on top of project costs and revenue, and keep projects productive and profitable.",
+    text: "Deliver projects on schedule, watch project costs and revenue closely, and keep every project productive and profitable.",
   },
   {
     img: "features-multi-curr.svg",
     title: "Multi Currency",
-    text: "Easy multi-currency accounting. Create invoices, reconcile accounts and get paid in any currency.",
+    text: "Effortless multi-currency accounting — invoice, reconcile and get paid in whatever currency you choose.",
   },
   {
     img: "features-approval-work.svg",
     title: "Approval Workflow",
-    text: "Simple, multi-level approvals for any transaction. Approval process can be triggered based on the value of the transaction.",
+    text: "Straightforward multi-level approvals for any transaction, triggered automatically by transaction value.",
   },
   {
     img: "features-multi-comp.svg",
     title: "Multi Companies / Group Consolidation",
-    text: "AccountingPhelo makes it easy to manage the financials for multiple entities, whether your business structure is simple or complex, domestic or global.",
+    text: "Managing finances across several entities is simple with AccountingPhelo — whatever the shape of your structure, local or worldwide.",
   },
   {
     img: "features-profit-cntr.svg",
     title: "Cost / Profit Centre",
-    text: "Dimensions can do many things for any organization running AccountingPhelo. They allow a company to have a very simple chart of accounts, while maintaining the ability to report and analyze data on multiple different levels and criteria.",
+    text: "Dimensions give AccountingPhelo users remarkable flexibility: keep a very simple chart of accounts while still reporting and analysing data across many levels and criteria.",
   },
   {
     img: "features-bank-reconcile.svg",
     title: "Bank Reconciliation",
-    text: "Easily reconcile your bank statement against your bank account register to keep your AccountingPhelo account accurate.",
+    text: "Match your bank statement against your account register in a few clicks and keep your AccountingPhelo books spot on.",
   },
   {
     img: "features-budget-wth-variance.svg",
     title: "Budgets with Variance Analysis",
-    text: "Taking care of the budgeting process is no longer a challenging task with AccountingPhelo’s powerful and intuitive Budgeting feature.",
+    text: "Budgeting stops being a chore thanks to AccountingPhelo’s powerful, intuitive budgeting feature.",
   },
   {
     img: "features-depreciation.svg",
     title: "Fixed Assets",
-    text: "Fixed assets in AccountingPhelo help you keep track of business assets that are depreciated over time. That depreciation expense can be claimed as a tax benefit.",
+    text: "Track every depreciating business asset in AccountingPhelo — and claim the depreciation expense as a tax benefit.",
   },
 ];
 
 const TABLE_ROWS = [
   "Accounts & Inventory",
   "Budgets",
-  "Comprehensive Fixed Assets",
+  "Full Fixed Assets Coverage",
   "Project Accounting",
-  "Multilevel Approval Workflow & Via Email",
+  "Multi-Level Approvals, Including by Email",
   "Analytics / BI Reports",
-  "100% Feature Parity in Desktop & Web Versions",
-  "Ability to Handle Large Data & Hundreds of Users with Blazing Speed",
+  "Identical Features on Desktop & Web",
+  "Handles Huge Data Volumes & Hundreds of Users at Speed",
 ];
 
 const COMPARE: { name: string; ticks: boolean[] }[] = [
@@ -273,12 +273,12 @@ export default function FinancialPage({
               <div className="factura-intro">
                 <img src="/assets/img/Financials.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
-                  AccountingPhelo is online accounting
+                  AccountingPhelo — online accounting
                   <br />
-                  software for your business.
+                  built for your business.
                 </h1>
                 <p className="paragraph2 mb-4">
-                  See why more than 6,000 users choose AccountingPhelo.
+                  Discover why over 6,000 users run on AccountingPhelo.
                 </p>
                 <a
                   href="#"
@@ -288,7 +288,7 @@ export default function FinancialPage({
                     onRequestDemo();
                   }}
                 >
-                  Request A Demo
+                  Book a Demo
                 </a>
               </div>
             </div>
@@ -310,21 +310,21 @@ export default function FinancialPage({
             <div className="col-sm-12 col-md-12">
               <h2 className="text-center">Why AccountingPhelo?</h2>
               <p>
-                Automate all finance processes with AccountingPhelo. Its
-                comprehensive and flexible financial management features allow
-                you to track the flow of money in and out of your company in a
-                secure and accurate environment. Sophisticated functionality
-                streamlines transactions and provides instant access to all
-                your financial data, from summary views to transaction-level
-                drill-down details. Track all accounting activity with
-                AccountingPhelo's general ledger and easily generate financial
-                statements, budgets and other advanced financial reports. With
-                highly customizable fields, easy to navigate menus and grids
-                integrated with advanced search capabilities AccountingPhelo
-                makes complicated finance process accessible to anyone who can
-                operate a computer. Here’s delivering the power of meaningful
-                data at the click of a button, the foolproof way of lending
-                your business a huge strategic advantage over others.
+                Run every finance process automatically with AccountingPhelo.
+                Its broad, flexible financial management toolkit lets you
+                follow the money moving in and out of your company inside a
+                secure, accurate environment. Sophisticated functionality
+                smooths each transaction and puts all your financial data
+                within instant reach, from high-level summaries down to
+                individual transactions. Monitor every accounting entry
+                through AccountingPhelo’s general ledger and produce
+                statements, budgets and advanced financial reports without
+                effort. Thanks to deeply customizable fields, intuitive menus
+                and grids with advanced search built in, AccountingPhelo
+                makes complex finance work manageable for anyone who can use
+                a computer. Meaningful data delivered at the click of a
+                button — a sure-fire way to hand your business a major
+                strategic edge over the competition.
               </p>
             </div>
           </div>
@@ -335,7 +335,7 @@ export default function FinancialPage({
               <img src="/assets/img/page-financials/automate-finance.svg" alt="Automate Finance" />
             </div>
             <div className="col-md-7 ml-auto">
-              <h2>Automate Finance with AccountingPhelo</h2>
+              <h2>Let AccountingPhelo Automate Your Finance</h2>
               <ul className="checklist">
                 {CHECKLIST.map((c, i) => (
                   <li key={i}>
@@ -346,9 +346,9 @@ export default function FinancialPage({
                 <li>
                   <span className="color fa-check-circle"></span>
                   <p style={{ display: "inline" }}>
-                    Here’s delivering the power of meaningful data at the click
-                    of a button, the foolproof way of lending your business a
-                    huge strategic advantage over others.
+                    Meaningful data delivered at the click of a button — a
+                    sure-fire way to hand your business a major strategic
+                    edge over the competition.
                   </p>
                 </li>
               </ul>
@@ -362,7 +362,7 @@ export default function FinancialPage({
       <section className="financial-features-points mb80 features-points">
         <div className="container">
           <h2 className="text-center">
-            Over 150+ reports with many customization options
+            More than 150+ reports, extensively customisable
           </h2>
           <div className="row mb-5 mt5">
             {REPORTS.map((r) => (

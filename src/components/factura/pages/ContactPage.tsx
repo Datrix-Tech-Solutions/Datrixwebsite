@@ -16,15 +16,15 @@ export default function ContactPage() {
     e.preventDefault();
     const errs: Record<string, string> = {};
     if (name.trim().length < 2 || name.trim().length > 25)
-      errs.first_name = "Please enter your name";
+      errs.first_name = "Kindly tell us your name";
     if (!mobile.trim() || !/^\d{10}$/.test(mobile))
-      errs.mobile = "Please enter valid mobile no.";
+      errs.mobile = "Please provide a valid 10-digit mobile number";
     if (!email.trim() || !EMAIL_RE.test(email))
-      errs.email = "Please enter your valid email address";
+      errs.email = "Please supply a valid email address";
     setErrors(errs);
     if (Object.keys(errs).length === 0) {
       setSuccess(
-        "Thank you for reaching out to us. We will get back to you with lightening speed."
+        "Thanks for getting in touch — we’ll come back to you in a flash."
       );
       setName("");
       setEmail("");
@@ -48,10 +48,10 @@ export default function ContactPage() {
                 <img src="/assets/img/contact.svg" alt="Contact Datrix Tech Solutions" />
               </div>
               <div className="contanctInfo">
-                <h3>Contact Us</h3>
+                <h3>Get in Touch</h3>
                 <p>
-                  Please fill out the quick form and we will be in touch with
-                  lightening speed.
+                  Fill in the short form below and we’ll get back to you at
+                  lightning speed.
                 </p>
               </div>
             </div>

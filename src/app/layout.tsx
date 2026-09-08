@@ -9,7 +9,7 @@ import "../styles/factura-motion.css";
 export const metadata: Metadata = {
   title: "Datrix Tech Solutions | WorkPhelo Business Management Software",
   description:
-    "WorkPhelo by Datrix Tech Solutions is a complete suite of functionality tools for managing your business smartly. AccountingPhelo online accounting software, HRPhelo HRMS, Customized Software and MarketingPhelo CRM.",
+    "WorkPhelo by Datrix Tech Solutions unites every tool your business needs in one smart suite — AccountingPhelo online accounting, HRPhelo HRMS, Customized Software and MarketingPhelo CRM.",
   robots: "index, follow",
   icons: {
     icon: "/assets/img/datrix-mark.png",

@@ -7,23 +7,23 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "“I am finding more and more use for WorkPhelo every day. I am amazed at how powerful the application can be and I have no hesitation in recommending it to others that are looking for the right software for their business”",
+      "“Every day I discover yet another way to put WorkPhelo to work. The sheer power of the application keeps impressing me, and I recommend it without a second thought to anyone searching for the right software for their business”",
     name: "Prince Andrews L.Zutah",
     role: "Head of IT, Bisvel Group of Companies",
   },
   {
     quote:
-      "“We’re consistently amazed by the flexibility and simplicity of WorkPhelo. Our initial experience was in provisioning the desktop version. We migrated to WorkPhelo Web for our clients and Project accounting, group consolidated reports etc. has been made simple. It is now an integral part of our solutions provided for our client businesses”",
+      "“WorkPhelo’s blend of flexibility and simplicity continues to impress us. We started out with the desktop edition, then moved our clients onto WorkPhelo Web — project accounting and group consolidated reports suddenly became effortless. It has become a core piece of the solutions we deliver to our client businesses”",
     name: "Martin Owusu",
     role: "Head Application Development & Business Services – Qualtek Limited -Ghana",
   },
   {
-    quote: "“In case I haven't said it enough already, I LOVE WorkPhelo”",
+    quote: "“In case I don’t say it enough — I absolutely LOVE WorkPhelo”",
     name: "Inna Oleksiichuk",
     role: "Director, MilaVitsa",
   },
   {
-    quote: "“AccountingPhelo makes accounting needs so quick and easy”",
+    quote: "“AccountingPhelo makes handling our accounting remarkably quick and painless”",
     name: "Isaac Barkah",
     role: "Emerald Properties",
   },
@@ -69,7 +69,7 @@ export const PRODUCTS: Record<string, Product> = {
     label: "Financials",
     className: "financial",
     title: "AccountingPhelo",
-    desc: "AccountingPhelo is online accounting software for your business.",
+    desc: "AccountingPhelo brings your business accounting online, simply and securely.",
     packImg: "/assets/img/pack-payroll.svg",
   },
   payroll: {
@@ -77,7 +77,7 @@ export const PRODUCTS: Record<string, Product> = {
     label: "HRMS",
     className: "payroll",
     title: "HRPhelo",
-    desc: "HRPhelo is an innovative system for easy management of Payroll and HR for small to medium and large organization.",
+    desc: "HRPhelo takes the hassle out of Payroll and HR management for organizations of every size.",
     packImg: "/assets/img/pack-payroll.svg",
   },
   contract: {
@@ -85,7 +85,7 @@ export const PRODUCTS: Record<string, Product> = {
     label: "Customized Software",
     className: "contract",
     title: "Customized Software",
-    desc: "Datrix designs bespoke software around your exact workflows — web, mobile and integrations you fully own.",
+    desc: "Datrix builds bespoke software shaped around the way you work — web, mobile and integrations that belong entirely to you.",
     packImg: "/assets/img/pack-contract.svg",
   },
   crm: {
@@ -93,32 +93,32 @@ export const PRODUCTS: Record<string, Product> = {
     label: "CRM",
     className: "crm",
     title: "MarketingPhelo",
-    desc: "MarketingPhelo manages your sales pipeline, stay on top of employee activities, and close more deals.",
+    desc: "MarketingPhelo keeps your sales pipeline organised, your team’s activities visible and your win rate climbing.",
     packImg: "/assets/img/pack-crm.svg",
   },
 };
 
-/** "Check out our other products" card sets, exactly as on each page */
+/** Cross-sell card sets shown on each product page */
 export const OTHER_PRODUCTS: Record<string, Product[]> = {
   financial: [
-    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how HRPhelo helps businesses from different industries." },
-    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
-    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "Learn how MarketingPhelo helps businesses from different industries." },
+    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how HRPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "See how Datrix Customized Software supports organisations across a wide range of industries." },
+    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "See how MarketingPhelo supports organisations across a wide range of industries." },
   ],
   payroll: [
-    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how AccountingPhelo helps businesses from different industries." },
-    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
-    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "Learn how MarketingPhelo helps businesses from different industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "See how Datrix Customized Software supports organisations across a wide range of industries." },
+    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "See how MarketingPhelo supports organisations across a wide range of industries." },
   ],
   contract: [
-    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how AccountingPhelo helps businesses from different industries." },
-    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how HRPhelo helps businesses from different industries." },
-    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "Learn how MarketingPhelo helps businesses from different industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how HRPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "See how MarketingPhelo supports organisations across a wide range of industries." },
   ],
   crm: [
-    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how AccountingPhelo helps businesses from different industries." },
-    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "Learn how HRPhelo helps businesses from different industries." },
-    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "Learn how Datrix Customized Software helps businesses from different industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how HRPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "See how Datrix Customized Software supports organisations across a wide range of industries." },
   ],
 };
 

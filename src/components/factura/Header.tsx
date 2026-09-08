@@ -203,8 +203,8 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       AccountingPhelo
                     </a>
                     <p className="financial">
-                      Financials — AccountingPhelo is online accounting software
-                      for your business.
+                      Financials — AccountingPhelo puts your entire business
+                      accounting online.
                     </p>
                   </li>
                   <li className="nav-item payroll col-sm-12 col-md-6">
@@ -212,9 +212,8 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       HRPhelo
                     </a>
                     <p className="payroll">
-                      HRMS — HRPhelo is an innovative system for easy management
-                      of Payroll and HR for small to medium and large
-                      organizations.
+                      HRMS — HRPhelo streamlines Payroll and HR management for
+                      organizations of any size.
                     </p>
                   </li>
                 </ul>
@@ -226,8 +225,9 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       Customized Software
                     </a>
                     <p className="contract">
-                      Datrix designs bespoke software around your exact
-                      workflows — web, mobile and integrations you fully own.
+                      Datrix builds bespoke software shaped around the way you
+                      work — web, mobile and integrations that belong entirely
+                      to you.
                     </p>
                   </li>
                   <li className="nav-item crm col-sm-12 col-md-6">
@@ -235,8 +235,8 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                       MarketingPhelo
                     </a>
                     <p className="crm">
-                      CRM — MarketingPhelo manages your sales pipeline, stay on
-                      top of employee activities, and close more deals.
+                      CRM — MarketingPhelo keeps your pipeline organised,
+                      activities visible and deals moving to a close.
                     </p>
                   </li>
                 </ul>
@@ -355,7 +355,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
 
             <li className="nav-item">
               <a className="nav-link" href="#/contact-us" onClick={go("/contact-us")}>
-                Contact us
+                Get in Touch
               </a>
             </li>
             {product ? (
@@ -368,7 +368,7 @@ export default function Header({ route, onRequestDemo, navigate }: HeaderProps) 
                     onRequestDemo();
                   }}
                 >
-                  Request A Demo
+                  Book a Demo
                 </a>
               </li>
             ) : null}

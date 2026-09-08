@@ -1,0 +1,536 @@
+     1→"use client";
+     2→
+     3→import React from "react";
+     4→
+     5→export default function TermsPage() {
+     6→  const mail = "pankaj@datrixtechsolutions.com";
+     7→  return (
+     8→    <div className="wrapper">
+     9→      <section className="normal-page">
+    10→        <div className="container">
+    11→          <div className="row">
+    12→            <div className="col-md-12">
+    13→              <h2 className="text-center">Terms of Service</h2>
+    14→              <h4>Last Updated: June 9, 2023</h4>
+    15→              <div className="terms">
+    16→                <p>
+    17→                  Welcome to the Datrix Tech Solutions (&ldquo;Datrix&rdquo;,{" "}
+    18→                  &ldquo;us&rdquo; &ldquo;we&rdquo; or &ldquo;our&rdquo;)
+    19→                  website. Please read these Terms of Service (the
+    20→                  &ldquo;Terms&rdquo;) carefully. They govern your use of our
+    21→                  website; our mobile and desktop applications
+    22→                  (&ldquo;Apps&rdquo;), and our collaboration tools and other
+    23→                  products and services we may later own or operate
+    24→                  (collectively, with the Sites, and Apps, the
+    25→                  &ldquo;Services&rdquo;).
+    26→                </p>
+    27→                <p>
+    28→                  We may, in our sole discretion, modify the Terms via email or
+    29→                  by posting notice on any part of the Website or Services. The
+    30→                  &ldquo;Last Updated&rdquo; date at the top the Terms
+    31→                  indicates when the latest modifications were made to the
+    32→                  Terms. The then-current version of the Terms will supersede
+    33→                  all earlier versions. By continuing to access and use the
+    34→                  Website or Services, you agree to any such modifications.
+    35→                </p>
+    36→                <ol type="1">
+    37→                  <li>
+    38→                    <h5>Agreement to these Terms</h5>
+    39→                    By using the Services, you agree to be bound by these
+    40→                    Terms. If you don&rsquo;t agree to these Terms, do not use
+    41→                    the Services. If you are accessing and using the Services
+    42→                    on behalf of a company (such as your employer) or other
+    43→                    legal entity, you represent and warrant that you have the
+    44→                    authority to bind that company or other legal entity to
+    45→                    these Terms. In that case, &ldquo;you&rdquo; and
+    46→                    &ldquo;your&rdquo; will refer to that company or other
+    47→                    legal entity.
+    48→                  </li>
+    49→                  <li>
+    50→                    <h5>Service Terms</h5>
+    51→                    <ul>
+    52→                      <li>
+    53→                        <u>Who may use the Services</u>. You may only use the
+    54→                        Services if you are old enough to consent (by yourself
+    55→                        and not by a parent or guardian) to share your data
+    56→                        under applicable law.
+    57→                      </li>
+    58→                      <li>
+    59→                        <u>Use Restrictions</u>. Except as otherwise expressly
+    60→                        authorized in these Terms, you will not, and will
+    61→                        ensure your employees, contractors, and other persons
+    62→                        associated with your Datrix account
+    63→                        (&ldquo;Authorized Users&rdquo;) do not, and will not
+    64→                        encourage or assist third parties to: (i) reverse
+    65→                        engineer, decompile, disassemble, or otherwise attempt
+    66→                        to discover the source code, object code, or
+    67→                        underlying structure, ideas, know-how, or algorithms
+    68→                        relevant to the Services (except to the extent that
+    69→                        such a restriction is impermissible under applicable
+    70→                        law); (ii) provide, sell, resell, transfer,
+    71→                        sublicense, lend, distribute, rent, or otherwise allow
+    72→                        others to access or use the Services; and (iii) copy,
+    73→                        modify, create derivative works of, or remove
+    74→                        proprietary notices from the Services.
+    75→                      </li>
+    76→                      <li>
+    77→                        <u>Trial Access</u>. If you receive free access or a
+    78→                        trial for evaluation (&ldquo;Trial Access&rdquo;), then
+    79→                        you may use Services in accordance with the Terms for
+    80→                        a period granted by us (the &ldquo;Trial
+    81→                        Period&rdquo;). Trial Access is permitted solely for
+    82→                        your use to determine whether to purchase a paid
+    83→                        subscription of the Services. Certain Trial Access may
+    84→                        include pre-release and beta services or components
+    85→                        (&ldquo;Beta Releases&rdquo;). Trial Access may not
+    86→                        include all functionality and features accessible as
+    87→                        part of a full paid subscription. If you do not
+    88→                        purchase a paid subscription, the Terms, and your
+    89→                        right to access and use the paid Services will
+    90→                        terminate at the end of the Trial Period and your
+    91→                        account access may be terminated. AT THE END OF THE
+    92→                        TRIAL ACCESS, ALL USER CONTENT MAY BE PERMANENTLY LOST
+    93→                        UNLESS YOU: (a) PURCHASE A PAID SUBSCRIPTION TO
+    94→                        SERVICES; OR (b) EXPORT SUCH DATA BEFORE THE END OF
+    95→                        THE TRIAL PERIOD. NOTWITHSTANDING ANYTHING TO THE
+    96→                        CONTRARY IN THE TERMS, WE WILL HAVE NO WARRANTY,
+    97→                        INDEMNITY, SERVICE LEVEL, OR SUPPORT OBLIGATIONS WITH
+    98→                        RESPECT TO TRIAL ACCESS, AND IF YOU HAVE A TRIAL
+    99→                        ACCESS, YOU WAIVE ALL CLAIMS AGAINST US ARISING OUT OF
+   100→                        THE TRIAL ACCESS, THE USE OF THE SERVICES, AND THE
+   101→                        TERMS
+   102→                      </li>
+   103→                      <li>
+   104→                        <u>Authorized Users; Accounts</u>. As part of the
+   105→                        registration process, you will identify an
+   106→                        administrative username and password for your Datrix
+   107→                        account. You represent and warrant that all
+   108→                        registration information, including with respect to the
+   109→                        list of domains owned or controlled by you for
+   110→                        purposes of domain capture, you provide is truthful,
+   111→                        accurate, and complete, and that you will maintain the
+   112→                        accuracy of such information. You are responsible and
+   113→                        liable for maintaining control over your account,
+   114→                        including the confidentiality of your username and
+   115→                        password, and are solely responsible and liable for
+   116→                        all activities that occur on or through your account
+   117→                        and all Authorized Users&rsquo; accounts, whether
+   118→                        authorized by you or not.
+   119→                      </li>
+   120→                      <li>
+   121→                        <u>Feedback; Use Rights</u>. Your Feedback to improve
+   122→                        the Services. We welcome your Feedback and you hereby
+   123→                        irrevocably transfer and assign all right, title, and
+   124→                        interest (including all intellectual property rights,
+   125→                        such as copyrights or trade secrets) in and to the
+   126→                        Feedback, including any and all &ldquo;moral
+   127→                        rights&rdquo; that you might have in such Feedback,
+   128→                        and you hereby forever waive and agree never to assert
+   129→                        any and all &ldquo;moral rights&rdquo; you may have in
+   130→                        the Feedback.
+   131→                      </li>
+   132→                      <li>
+   133→                        <u>Reservation of Rights</u>. As between the parties,
+   134→                        Datrix owns all right, title, and interest in the
+   135→                        Services, and you own all right, title, and interest
+   136→                        in any application(s) and/or material(s) that are
+   137→                        developed by you on the Services or uploaded to the
+   138→                        Services by you (&ldquo;User Content&rdquo;). Except
+   139→                        as expressly set forth in these Terms, each party
+   140→                        retains all right, title, and interest in and to its
+   141→                        intellectual property rights. All rights not expressly
+   142→                        granted are reserved, and no license, covenant,
+   143→                        immunity, transfer, authorization, or other right
+   144→                        will be implied, by reason of statute, estoppel, or
+   145→                        otherwise, under these Terms.
+   146→                      </li>
+   147→                    </ul>
+   148→                  </li>
+   149→                  <li>
+   150→                    <h5>License</h5>
+   151→                    Subject to the terms and conditions of these Terms, we
+   152→                    hereby grant you a limited, non-exclusive,
+   153→                    non-transferable, non-sublicensable license worldwide
+   154→                    (with the exception of jurisdictions whose laws do not
+   155→                    permit engaging in business with Datrix or use of the
+   156→                    Services) for you to access and use the Services for your
+   157→                    internal business purposes.
+   158→                  </li>
+   159→                  <li>
+   160→                    <h5>Subscription and Payment terms</h5>
+   161→                    <ul>
+   162→                      <li>
+   163→                        <u>Subscription</u>. The prices, features, and options
+   164→                        of the Services depend on the Subscription Plan
+   165→                        selected as well as any changes instigated by you
+   166→                        (&ldquo;Subscription Plan&rdquo;). We do not represent
+   167→                        or warrant that a particular Subscription Plan will be
+   168→                        offered indefinitely and reserves the right to change
+   169→                        the prices for or alter the features, usage limits and
+   170→                        options in a particular Subscription Plan with a prior
+   171→                        notice. You shall not, and shall not permit others, to
+   172→                        use the Services or allow access to them in a manner
+   173→                        that circumvents contractual usage restrictions or
+   174→                        matrices set forth in these Terms, applicable
+   175→                        Subscription Plan incorporated herein by reference.
+   176→                      </li>
+   177→                      <li>
+   178→                        <u>Payment terms</u>. When you purchase a Subscription
+   179→                        Plan, you must provide accurate and complete
+   180→                        information for a valid payment method that you are
+   181→                        authorized to use. You must promptly notify us of any
+   182→                        change in its invoicing address and must update its
+   183→                        Account with any changes related to its payment
+   184→                        method. The Authorization continues through the
+   185→                        applicable Subscription Term and any Renewal Term
+   186→                        until you cancel the same.
+   187→                      </li>
+   188→                      <li>
+   189→                        <u>Billing</u>. We will provide billing and usage
+   190→                        information to you at the time of your selection of
+   191→                        the respective Subscription Plan. We reserve the right
+   192→                        to correct any errors or mistakes that it identifies
+   193→                        even if it has already issued an invoice or received
+   194→                        payment. You agree to notify us about any billing
+   195→                        problems or discrepancies within thirty (30) days
+   196→                        after they first appear on your invoice. If You do not
+   197→                        bring such problems/discrepancies to our attention
+   198→                        within thirty (30) days, you agree to waive your right
+   199→                        to dispute such discrepancies.
+   200→                      </li>
+   201→                      <li>
+   202→                        <u>Refund, taxes and withholding</u>. Except as
+   203→                        expressly set forth anywhere in these Terms, all fees
+   204→                        are non-refundable. You are required to pay any sales,
+   205→                        use, GST, value-added, withholding, or similar taxes
+   206→                        or levies, whether domestic or foreign, other than
+   207→                        taxes based on our income. You hereby confirm that we
+   208→                        can rely on the name and address set forth in its
+   209→                        registration for a Subscription Plan as being the
+   210→                        place of supply for Tax purposes. You must make all
+   211→                        payments without any setoffs, withholdings, or
+   212→                        deduction of any kind. Any late payments will be
+   213→                        subject to a service charge equal to 1% per month of
+   214→                        the amount due or the maximum amount allowed by law,
+   215→                        whichever is less. You will reimburse any costs or
+   216→                        expenses (including, but not limited to, reasonable
+   217→                        attorneys&rsquo; fees) incurred by us to collect any
+   218→                        amount that is not paid when due. Amounts due to us
+   219→                        may not be withheld or offset by you for any reason
+   220→                        against amounts due from us.
+   221→                      </li>
+   222→                      <li>
+   223→                        <u>Non-payment</u>. We may, without liability to
+   224→                        anyone, disable the password, account and access to
+   225→                        all or part of the Services if any payment is not
+   226→                        received within thirty (30) days after such payment
+   227→                        first becoming due and payable under the Terms. In the
+   228→                        event of the foregoing, we shall not be obligated to
+   229→                        provide any and/or all of the Services until such fees
+   230→                        are paid in full. Accounts that have been terminated
+   231→                        may be reactivated if valid payment information is
+   232→                        provided.
+   233→                      </li>
+   234→                    </ul>
+   235→                  </li>
+   236→                  <li>
+   237→                    <h5>Confidentiality</h5>
+   238→                    <ul>
+   239→                      <li>
+   240→                        <u>Confidential Information</u>. We (the
+   241→                        &ldquo;Discloser&rdquo;) have disclosed or may
+   242→                        disclose proprietary or non-public business,
+   243→                        technical, financial, or other information
+   244→                        (&ldquo;Confidential Information&rdquo;) to you (the
+   245→                        &ldquo;Recipient&rdquo;). Our Confidential Information
+   246→                        expressly includes non-public information regarding
+   247→                        features, functionality, and performance of the
+   248→                        Services, including security related information.
+   249→                      </li>
+   250→                      <li>
+   251→                        <u>Obligations</u>. The Recipient will use the
+   252→                        Discloser&rsquo;s Confidential Information only for
+   253→                        the purpose of evaluating whether or not to use (or
+   254→                        continue to use) the Services. The Recipient will not
+   255→                        disclose the Discloser&rsquo;s Confidential
+   256→                        Information to parties other than the
+   257→                        Recipient&rsquo;s employees, contractors, affiliates,
+   258→                        agents, or professional advisors
+   259→                        (&ldquo;Representatives&rdquo;) who need to know it
+   260→                        and who have a legal obligation to keep it
+   261→                        confidential. The Recipient will ensure that its
+   262→                        Representatives are subject to no less restrictive
+   263→                        confidentiality obligations than those herein.
+   264→                        Notwithstanding the foregoing, the Recipient may
+   265→                        disclose the Discloser&rsquo;s Confidential
+   266→                        Information: (a) if directed by Discloser; or (b) to
+   267→                        the extent required by applicable legal process,
+   268→                        provided that the Recipient uses commercially
+   269→                        reasonable efforts to (i) promptly notify the
+   270→                        Discloser in advance, to the extent permitted by law,
+   271→                        and (ii) comply with the Discloser&rsquo;s reasonable
+   272→                        requests regarding its efforts to oppose the
+   273→                        disclosure. The obligations set forth herein will
+   274→                        survive for so long as these Terms are in effect
+   275→                        between the parties and for five years thereafter.
+   276→                      </li>
+   277→                    </ul>
+   278→                  </li>
+   279→                  <li>
+   280→                    <h5>Term and Termination</h5>
+   281→                    <ul>
+   282→                      <li>
+   283→                        <u>Term</u>. With reference to Services, these Term
+   284→                        shall begin on the date you are granted access to the
+   285→                        Services and continues until your Subscription Plan
+   286→                        expires or your use of the Services ceases (including
+   287→                        as a result of termination in accordance with the
+   288→                        Terms), whichever is later. The Subscription Plan will
+   289→                        automatically renew on an annual basis, depending upon
+   290→                        the Subscription Term (&ldquo;Renewal Term&rdquo;)
+   291→                        unless, prior to the end of the current period of
+   292→                        effectiveness of the Subscription Plan
+   293→                        (&ldquo;Subscription Term&rdquo;): (a) you terminate
+   294→                        your Account; (b) we decline to renew your
+   295→                        Subscription Plan; or (c) these Terms are otherwise
+   296→                        terminated as expressly permitted herein. Upon
+   297→                        renewal, you agree to pay the then-current applicable
+   298→                        fee associated with the Subscription Plan.
+   299→                      </li>
+   300→                      <li>
+   301→                        <u>Termination for convenience</u>. You may terminate
+   302→                        your Account at any time upon at least thirty (30)
+   303→                        days&rsquo; advance written notice to us. We will not
+   304→                        terminate your Account for convenience.
+   305→                      </li>
+   306→                      <li>
+   307→                        <u>Termination for cause</u>. Either party may
+   308→                        terminate these Terms if the other party (a) fails to
+   309→                        cure any material breach of the Terms (including a
+   310→                        failure to pay fees) within thirty (30) days after
+   311→                        written notice; (b) ceases operation without a
+   312→                        successor; or (c) seeks protection under any
+   313→                        bankruptcy, receivership, trust deed, creditors&rsquo;
+   314→                        arrangement, composition, or comparable proceeding, or
+   315→                        if any such proceeding is instituted against that
+   316→                        party (and not dismissed within sixty (60) days).
+   317→                      </li>
+   318→                      <li>
+   319→                        <u>Effect of termination</u>. Upon any expiration or
+   320→                        termination, you will immediately cease any and all
+   321→                        use of and access to all Services and delete (or, at
+   322→                        our request, return) any and all copies of the
+   323→                        Documentation, any passwords or access codes and our
+   324→                        Confidential Information in your possession. You
+   325→                        acknowledge that following termination you will have
+   326→                        no further access to any User Content and that we may
+   327→                        delete any such data at any time as per our policies.
+   328→                        Unless termination is under Section 6.3, any Fees
+   329→                        accrued but not paid for the Subscription Term
+   330→                        (including for unexpired period of the Subscription
+   331→                        Term) shall become immediately due and payable upon
+   332→                        termination.
+   333→                      </li>
+   334→                    </ul>
+   335→                  </li>
+   336→                  <li>
+   337→                    <h5>Warranties</h5>
+   338→                    <ul>
+   339→                      <li>
+   340→                        In the event of any loss or corruption of any data
+   341→                        associated with the Services, Datrix will use
+   342→                        commercially reasonable efforts to restore the lost or
+   343→                        corrupted data from the latest relevant backup
+   344→                        maintained by Datrix. EXCEPT FOR THE FOREGOING,
+   345→                        Datrix WILL NOT BE RESPONSIBLE FOR ANY LOSS,
+   346→                        DESTRUCTION, ALTERATION, UNAUTHORIZED DISCLOSURE OR
+   347→                        CORRUPTION OF ANY DATA.
+   348→                      </li>
+   349→                      <li>
+   350→                        We make no warranty that the Services will meet your
+   351→                        requirements or be available on an uninterrupted,
+   352→                        secure, or error-free basis. We make no warranty
+   353→                        regarding the quality, accuracy, timeliness,
+   354→                        truthfulness, completeness or reliability of any
+   355→                        Services, and we make no guarantees around data
+   356→                        retention or preservation. EXCEPT AS SET FORTH IN
+   357→                        SECTION 7.1, THE SERVICES ARE PROVIDED &ldquo;AS
+   358→                        IS,&rdquo; WITHOUT WARRANTY OF ANY KIND. WITHOUT
+   359→                        LIMITING THE FOREGOING, WE EXPLICITLY DISCLAIM ANY
+   360→                        IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+   361→                        PARTICULAR PURPOSE, QUIET ENJOYMENT, AND
+   362→                        NON-INFRINGEMENT AND ANY WARRANTIES ARISING OUT OF
+   363→                        COURSE OF DEALING OR USAGE OF TRADE.
+   364→                      </li>
+   365→                      <li>
+   366→                        FACTURA DOES NOT WARRANT OR SUPPORT, AND WILL NOT
+   367→                        HAVE ANY RESPONSIBILITY OR LIABILITY OF ANY KIND FOR,
+   368→                        ANY APPLICATION(S) AND/OR MATERIAL(S) THAT ARE
+   369→                        DEVELOPED BY A PARTY OUTSIDE OF FACTURA&rsquo;SORGANIZATION,
+   370→                        INCLUDING DESIGN FILES, PLUGINS, COMPONENT LIBRARIES,
+   371→                        AND CODE COMPONENTS (&ldquo;NON-FACTURA
+   372→                        RESOURCES&rdquo;). NON-FACTURA RESOURCES ARE PROVIDED
+   373→                        BY THIRD PARTIES, NOT FACTURA, AND ANY USE OF
+   374→                        NON-FACTURA RESOURCES IS SOLELY BETWEEN YOU AND THE
+   375→                        APPLICABLE THIRD-PARTY PROVIDER.
+   376→                      </li>
+   377→                    </ul>
+   378→                  </li>
+   379→                  <li>
+   380→                    <h5>Indemnity</h5>
+   381→                    You will indemnify and hold harmless Datrix and its
+   382→                    officers, directors, employees, and agents, from and
+   383→                    against any claims, disputes, demands, liabilities,
+   384→                    damages, losses, and costs and expenses, including,
+   385→                    without limitation, reasonable legal and accounting fees,
+   386→                    arising out of or in any way connected with (i) your
+   387→                    access to or use of the Services; (ii) your User Content;
+   388→                    or (iii) your violation of these Terms.
+   389→                  </li>
+   390→                  <li>
+   391→                    <h5>Limitations of Liability</h5>
+   392→                    <ul>
+   393→                      <li>
+   394→                        NEITHER FACTURA NOR ANY OTHER PARTY INVOLVED IN
+   395→                        CREATING, PRODUCING, OR DELIVERING THE SERVICES
+   396→                        (&ldquo;SUPPLIERS&rdquo;) WILL BE LIABLE FOR ANY
+   397→                        INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL
+   398→                        DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR
+   399→                        GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE,
+   400→                        SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES
+   401→                        ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR
+   402→                        FROM THE USE OF OR INABILITY TO USE THE SERVICES,
+   403→                        WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING
+   404→                        NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL
+   405→                        THEORY, AND WHETHER OR NOTFACTURAHAS BEEN INFORMED OF
+   406→                        THE POSSIBILITY OF SUCH DAMAGE.
+   407→                      </li>
+   408→                      <li>
+   409→                        IN NO EVENT WILL FACTURA OR SUPPLIERS&rsquo; TOTAL
+   410→                        LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE
+   411→                        TERMS OR FROM THE USE OF OR INABILITY TO USE THE
+   412→                        SERVICES EXCEED THE AMOUNTS YOU HAVE PAID TO FACTURA
+   413→                        IN THE PRECEDING TWELVE MONTHS FOR THE SERVICES, OR IF
+   414→                        YOU HAVE NOT HAD ANY SUCH PAYMENT OBLIGATIONS, ONE
+   415→                        HUNDRED UNITED STATES DOLLARS ($100).
+   416→                      </li>
+   417→                      <li>
+   418→                        EACH PROVISION OF THESE TERMS THAT PROVIDES FOR A
+   419→                        LIMITATION OF LIABILITY, DISCLAIMER OF WARRANTIES, OR
+   420→                        EXCLUSION OF DAMAGES IS TO ALLOCATE THE RISKS OF
+   421→                        THESE TERMS BETWEEN THE PARTIES. THIS ALLOCATION IS
+   422→                        REFLECTED IN THE PRICING OFFERED BY FACTURA TO YOU AND
+   423→                        IS AN ESSENTIAL ELEMENT OF THE BASIS OF THE BARGAIN
+   424→                        BETWEEN THE PARTIES. EACH OF THESE PROVISIONS IS
+   425→                        SEVERABLE AND INDEPENDENT OF ALL OTHER PROVISIONS OF
+   426→                        THESE TERMS. THE LIMITATIONS IN THIS SECTION 9 WILL
+   427→                        APPLY TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW AND
+   428→                        NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF
+   429→                        ANY LIMITED REMEDY IN THESE TERMS.
+   430→                      </li>
+   431→                    </ul>
+   432→                  </li>
+   433→                  <li>
+   434→                    <h5>General terms</h5>
+   435→                    <ul>
+   436→                      <li>
+   437→                        These Terms are the complete and exclusive statement
+   438→                        of the mutual understanding of the parties and
+   439→                        supersedes and cancels all previous written and oral
+   440→                        agreements and communications relating to the subject
+   441→                        matter of these Terms. No supplement, modification, or
+   442→                        amendment of these Terms will be binding, unless
+   443→                        executed in writing by a duly authorized
+   444→                        representative of each party to these Terms. No waiver
+   445→                        will be implied from conduct or failure to enforce or
+   446→                        exercise rights under these Terms, nor will any waiver
+   447→                        be effective unless in a writing signed by a duly
+   448→                        authorized representative on behalf of the party
+   449→                        claimed to have waived. No provision of any purchase
+   450→                        order or other business form employed by you will
+   451→                        supersede the terms and conditions of these Terms. The
+   452→                        unenforceability of any provision or provisions of
+   453→                        these Terms shall not render unenforceable or impair
+   454→                        its remainder. If any provision of these Terms is
+   455→                        deemed invalid or unenforceable in whole or in part,
+   456→                        these Terms shall be deemed amended to delete or
+   457→                        modify, as necessary, the offending provision to
+   458→                        render it valid, enforceable, and, insofar as
+   459→                        possible, consistent with the original intent of the
+   460→                        parties.
+   461→                      </li>
+   462→                      <li>
+   463→                        These Terms will bind and inure to the benefit of each
+   464→                        party&rsquo;s permitted successors and assigns.
+   465→                        Neither party may assign these Terms without the
+   466→                        advance written consent of the other party, except
+   467→                        that either party may assign these Terms in connection
+   468→                        with a merger, reorganization, acquisition, or other
+   469→                        transfer of all or substantially all of such
+   470→                        party&rsquo;s assets or voting securities. Any attempt
+   471→                        to transfer or assign these Terms except as expressly
+   472→                        authorized will be null and void.
+   473→                      </li>
+   474→                      <li>
+   475→                        These Terms will be governed by the laws of the
+   476→                        Republic of India with courts of Mumbai, India having
+   477→                        exclusive jurisdiction over any disputes arising out
+   478→                        of these Terms. The prevailing party in any action to
+   479→                        enforce these Terms will be entitled to recover its
+   480→                        attorneys&rsquo; fees and costs incurred.
+   481→                      </li>
+   482→                      <li>
+   483→                        While the parties may communicate by any means in the
+   484→                        performance of these Terms, any notice of termination
+   485→                        or other legal notice to a party shall be effective
+   486→                        only if it is in writing and sent using (a)
+   487→                        nationally-known courier service that confirms
+   488→                        delivery in writing or email, in which case notice
+   489→                        will be deemed given upon receipt or (d) registered
+   490→                        or certified mail, postage prepaid and return receipt
+   491→                        requested, in which case notice is deemed given the
+   492→                        third business day after such notice is deposited in
+   493→                        the mail. Such notices can be sent at the address set
+   494→                        forth in the Account or to{" "}
+   495→                        <a href={`mailto:${mail}`}>{mail}</a>. Email notices
+   496→                        are effective only if the sender receives confirmation
+   497→                        of receipt from the recipient.
+   498→                      </li>
+   499→                      <li>
+   500→                        Neither party will be liable to the other for any
+   501→                        delay or failure to perform any obligation under these
+   502→                        Terms (except for a failure to pay money) if the delay
+   503→                        or failure is directly attributable to unforeseen
+   504→                        events that occur after these Terms becoming effective
+   505→                        and that are beyond the reasonable control of such
+   506→                        party (each, a &ldquo;Force Majeure Event&rdquo;),
+   507→                        such as a strike, blockade, war, pandemic, act of
+   508→                        terrorism, riot, natural disaster, failure or
+   509→                        diminishment of power or data or telecommunications
+   510→                        networks or services.
+   511→                      </li>
+   512→                      <li>
+   513→                        The parties to these Terms are independent
+   514→                        contractors. There is no relationship of partnership,
+   515→                        joint venture, employment, franchise, or agency
+   516→                        between the parties. Neither party will have the
+   517→                        power to bind the other or incur obligations on the
+   518→                        other party&rsquo;s behalf.
+   519→                      </li>
+   520→                      <li>
+   521→                        We may use your name and logo on our website and other
+   522→                        marketing materials solely to identify you as a
+   523→                        customer.
+   524→                      </li>
+   525→                    </ul>
+   526→                  </li>
+   527→                </ol>
+   528→              </div>
+   529→            </div>
+   530→          </div>
+   531→        </div>
+   532→      </section>
+   533→    </div>
+   534→  );
+   535→}
+   536→

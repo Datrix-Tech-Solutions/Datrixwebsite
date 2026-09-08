@@ -50,7 +50,7 @@ function SlideInner({ t, dark }: { t: Testimonial; dark?: boolean }) {
   );
 }
 
-/** Home page "Words from our clients" slider (white cards) */
+/** Home page client-quotes slider (white cards) */
 export function HomeTestimonialSlider() {
   return (
     <SlickSlider
@@ -67,7 +67,7 @@ export function HomeTestimonialSlider() {
   );
 }
 
-/** Product page dark testimonial slider + Read Case Study button */
+/** Product page dark testimonial slider + case-study button */
 export function ProductTestimonialSlider() {
   return (
     <>
@@ -84,7 +84,7 @@ export function ProductTestimonialSlider() {
       </SlickSlider>
       <div className="case-study">
         <a href="#" className="request-btn color big" onClick={(e) => e.preventDefault()}>
-          Read Case Study
+          View Case Study
           <span className="fa-angle-right"></span>
         </a>
       </div>

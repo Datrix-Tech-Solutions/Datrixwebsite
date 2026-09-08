@@ -10,7 +10,7 @@ export function OurProducts({ routeKey, navigate }: { routeKey: string; navigate
     <section className="our-products">
       <div className="container pt-5 pb-5">
         <h3 className="mainHeading3 text-center colorWhite mb-5">
-          Check out our other products
+          Explore the Rest of Our Products
         </h3>
         <div className="row mt-5">
           {products.map((p: Product) => (
@@ -59,7 +59,8 @@ export default function Footer({ navigate }: { navigate: (to: string) => void })
                 <img src="/assets/img/datrix-logo-white.png" alt="Datrix Tech Solutions" />
               </a>
               <span className="footer-tagline">
-                Smart software <span className="dot">for</span> smart businesses
+                Intelligent software <span className="dot">for</span> ambitious
+                businesses
               </span>
             </div>
           </div>

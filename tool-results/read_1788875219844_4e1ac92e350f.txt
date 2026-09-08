@@ -1,0 +1,519 @@
+     1→     1→"use client";
+     2→     2→
+     3→     3→import React from "react";
+     4→     4→
+     5→     5→export default function PrivacyPage() {
+     6→     6→  const mail = "pankaj@datrixtechsolutions.com";
+     7→     7→  return (
+     8→     8→    <div className="wrapper">
+     9→     9→      <section className="normal-page">
+    10→    10→        <div className="container">
+    11→    11→          <div className="row">
+    12→    12→            <div className="col-md-12">
+    13→    13→              <h2 className="text-center">Privacy Policy</h2>
+    14→    14→              <h4>Last Updated: June 9, 2023</h4>
+    15→    15→              <div className="terms">
+    16→    16→                <p>
+    17→    17→                  Legal entity name (doing business as Datrix Tech Solutions)
+    18→    18→                  (&ldquo;Company,&rdquo; &ldquo;Datrix&rdquo; &ldquo;we,&rdquo;{" "}
+    19→    19→                  &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respect your privacy
+    20→    20→                  and is committed to protecting it through our compliance with
+    21→    21→                  this policy. By using our Services, you understand that we
+    22→    22→                  will collect and use your personal information as described
+    23→    23→                  in this Privacy Policy.
+    24→    24→                </p>
+    25→    25→                <p>
+    26→    26→                  Please read this policy carefully to understand our policies
+    27→    27→                  and practices regarding your personal information and how we
+    28→    28→                  will manage it. If you do not agree with our policies and
+    29→    29→                  practices, you should not continue access our Services. By
+    30→    30→                  accessing or using our Services, you agree to this Privacy
+    31→    31→                  Policy. This policy may change from time to time. Your
+    32→    32→                  continued use of the Services after we make changes is deemed
+    33→    33→                  to be acceptance of those changes, so please check the policy
+    34→    34→                  periodically for updates.
+    35→    35→                </p>
+    36→    36→                <p>
+    37→    37→                  If you or your organization has an agreement with us, that
+    38→    38→                  agreement may have privacy terms that also apply to the
+    39→    39→                  personal information you provide to us under that agreement.
+    40→    40→                  Please review the terms of that agreement as they may be
+    41→    41→                  different or more restrictive than the terms in this Privacy
+    42→    42→                  Policy.
+    43→    43→                </p>
+    44→    44→                <p>This policy describes:</p>
+    45→    45→                <ol className="alpha">
+    46→    46→                  <li>
+    47→    47→                    The types of personal information we may collect from you
+    48→    48→                    or that you may provide when you visit our website{" "}
+    49→    49→                    <a href="https://www.datrixtechsolutions.com">
+    50→    50→                      https://www.datrixtechsolutions.com
+    51→    51→                    </a>{" "}
+    52→    52→                    (&ldquo;Website&rdquo;) and/or access Services (as defined
+    53→    53→                    in the <a href="#/terms">Terms of Service</a>); and
+    54→    54→                  </li>
+    55→    55→                  <li>
+    56→    56→                    Our practices for collecting, using, maintaining,
+    57→    57→                    protecting, and disclosing that personal information.
+    58→    58→                  </li>
+    59→    59→                </ol>
+    60→    60→                <p>
+    61→    61→                  This policy applies to personal information and content we
+    62→    62→                  collect:
+    63→    63→                </p>
+    64→    64→                <ol className="alpha">
+    65→    65→                  <li>Based on the use of the Services.</li>
+    66→    66→                  <li>
+    67→    67→                    In communications email, text, and other electronic
+    68→    68→                    messages between you and Services via web forms or chat.
+    69→    69→                  </li>
+    70→    70→                  <li>
+    71→    71→                    In communications submitted to the Services using web forms
+    72→    72→                    and the social media/comment features on the Services.
+    73→    73→                  </li>
+    74→    74→                  <li>
+    75→    75→                    When you interact with our advertising and applications on
+    76→    76→                    third-party websites and services if those applications or
+    77→    77→                    advertising include links to this policy.&nbsp;
+    78→    78→                  </li>
+    79→    79→                </ol>
+    80→    80→                <p>It does not apply to information collected by:</p>
+    81→    81→                <ol className="alpha">
+    82→    82→                  <li>
+    83→    83→                    us offline or through any other means, including on any
+    84→    84→                    other website or apps operated by us or any third party.
+    85→    85→                    You should review the terms and policies of those websites
+    86→    86→                    or apps before clicking on any links; and
+    87→    87→                  </li>
+    88→    88→                  <li>
+    89→    89→                    any third party, including through any application or
+    90→    90→                    content (including advertising) that may link to or be
+    91→    91→                    accessible from or on the Services.
+    92→    92→                  </li>
+    93→    93→                </ol>
+    94→    94→                <p>&nbsp;</p>
+    95→    95→                <ol>
+    96→    96→                  <li>
+    97→    97→                    <h5>PERSONAL INFORMATION WE COLLECT ABOUT YOU AND HOW WE COLLECT IT</h5>
+    98→    98→                    We collect several types of information from and about
+    99→    99→                    users of our Services. If you do not provide us with
+   100→   100→                    certain personal information, you may not be able to use
+   101→   101→                    some parts of our Services. For choices you may have,
+   102→   102→                    please see Section 4 of this Privacy Policy.
+   103→   103→                    <ol className="alpha">
+   104→   104→                      <li>
+   105→   105→                        You provide us with personal information about yourself
+   106→   106→                        while accessing or using our Services when you:
+   107→   107→                        <ul>
+   108→   108→                          <li>Register for Account or log into your Account.</li>
+   109→   109→                          <li>Create or edit your profile.</li>
+   110→   110→                          <li>
+   111→   111→                            Contact us via email, webform or any other mode in
+   112→   112→                            relation to Services.
+   113→   113→                          </li>
+   114→   114→                          <li>
+   115→   115→                            Comment on our blogs, forums etc. Although you may
+   116→   116→                            set certain privacy settings for such information
+   117→   117→                            by logging into your account profile, please be
+   118→   118→                            aware that no security measures are perfect or
+   119→   119→                            impenetrable. Additionally, we cannot control the
+   120→   120→                            actions of other users of the Services with whom
+   121→   121→                            you may choose to share your personal information.
+   122→   122→                            Therefore, we cannot and do not guarantee that your
+   123→   123→                            personal information will not be viewed by
+   124→   124→                            unauthorized persons.
+   125→   125→                          </li>
+   126→   126→                          <li>Apply for job on our Website.</li>
+   127→   127→                        </ul>
+   128→   128→                      </li>
+   129→   129→                      <li>
+   130→   130→                        You provide some or all of the following categories of
+   131→   131→                        personal information to us:
+   132→   132→                        <ul>
+   133→   133→                          <li>
+   134→   134→                            Identifiers : name, email address, mailing address,
+   135→   135→                            phone number, profile picture or any other
+   136→   136→                            identifier by which you may be contracted online or
+   137→   137→                            offline
+   138→   138→                          </li>
+   139→   139→                          <li>
+   140→   140→                            From job candidates: professional or employment
+   141→   141→                            related information, including education,
+   142→   142→                            employment history
+   143→   143→                          </li>
+   144→   144→                          <li>
+   145→   145→                            Commercial information like billing information,
+   146→   146→                            products or services purchased
+   147→   147→                          </li>
+   148→   148→                          <li>
+   149→   149→                            Your browsing sessions using the Services (internet
+   150→   150→                            activity information), including, but not limited
+   151→   151→                            to browsing history, search history, and
+   152→   152→                            information regarding user&rsquo;s interaction with
+   153→   153→                            our Services
+   154→   154→                          </li>
+   155→   155→                          <li>
+   156→   156→                            Any other information that you may provide to us
+   157→   157→                            during our communication with you via Services
+   158→   158→                          </li>
+   159→   159→                        </ul>
+   160→   160→                      </li>
+   161→   161→                      <li>
+   162→   162→                        We collect following information automatically:
+   163→   163→                        <ol>
+   164→   164→                          <li>
+   165→   165→                            Your equipment, browsing actions, and usage
+   166→   166→                            patterns, including all details of your visits to
+   167→   167→                            our Services
+   168→   168→                          </li>
+   169→   169→                          <li>IP address</li>
+   170→   170→                          <li>
+   171→   171→                            Search terms that you may have used in a search
+   172→   172→                            engine to access our Services
+   173→   173→                          </li>
+   174→   174→                          <li>
+   175→   175→                            History of your transactions on the Services
+   176→   176→                            including names and addresses of the parties to a
+   177→   177→                            transaction, personal information about those
+   178→   178→                            individuals or their devises data, IP address,
+   179→   179→                            email address and authentication methods
+   180→   180→                          </li>
+   181→   181→                        </ol>
+   182→   182→                        The information we collect automatically may include
+   183→   183→                        personal information or we may maintain it or associate
+   184→   184→                        it with personal information we collect in other ways
+   185→   185→                        or receive from third parties. This kind of personal
+   186→   186→                        information helps us to improve our Services and to
+   187→   187→                        deliver a better and more personalized service,
+   188→   188→                        including by enabling us to:
+   189→   189→                        <br />
+   190→   190→                        <ul>
+   191→   191→                          <li>Estimate our audience size and usage patterns.</li>
+   192→   192→                          <li>
+   193→   193→                            Store information about your preferences, allowing
+   194→   194→                            us to customize Services according to your
+   195→   195→                            individual interests.
+   196→   196→                          </li>
+   197→   197→                          <li>Speed up your searches.</li>
+   198→   198→                          <li>Recognize you when you return to our Services.</li>
+   199→   199→                        </ul>
+   200→   200→                        The technologies we use for this automatic data
+   201→   201→                        collection may include:
+   202→   202→                        <br />
+   203→   203→                        <ul>
+   204→   204→                          <li>
+   205→   205→                            <u>Cookies (or browser cookies)</u>: A cookie is a
+   206→   206→                            small file placed on the hard drive of your
+   207→   207→                            computer. You may refuse to accept browser cookies
+   208→   208→                            by activating the appropriate setting on your
+   209→   209→                            browser. However, if you select this setting, you
+   210→   210→                            may be unable to access certain parts of our
+   211→   211→                            Services or may be unable to enjoy some
+   212→   212→                            functionality of the Services. Unless you have
+   213→   213→                            adjusted your browser setting so that it will
+   214→   214→                            refuse cookies, our system will issue cookies when
+   215→   215→                            you direct your browser to our Services.
+   216→   216→                          </li>
+   217→   217→                          <li>
+   218→   218→                            <u>Web Beacons</u>: Pages of the Services and our
+   219→   219→                            e-mails may contain small electronic files known as
+   220→   220→                            web beacons (also referred to as clear gifs, pixel
+   221→   221→                            tags, and single-pixel gifs) that permit us, for
+   222→   222→                            example, to count users who have visited those
+   223→   223→                            pages or opened an email and for other related
+   224→   224→                            website statistics (for example, recording the
+   225→   225→                            popularity of certain website content and
+   226→   226→                            verifying system and server integrity).
+   227→   227→                          </li>
+   228→   228→                        </ul>
+   229→   229→                      </li>
+   230→   230→                      <li>
+   231→   231→                        We may collect personal information about you from
+   232→   232→                        third-party sources such as marketers, partners,
+   233→   233→                        researchers, affiliates, service providers, vendors,
+   234→   234→                        and others where they are legally allowed to share your
+   235→   235→                        personal information with us. For example, if you
+   236→   236→                        register for our Services on another website, the
+   237→   237→                        website may provide your personal information to us.
+   238→   238→                      </li>
+   239→   239→                    </ol>
+   240→   240→                  </li>
+   241→   241→                  <li>
+   242→   242→                    <h5>HOW WE USE YOUR PERSONAL INFORMATION</h5>
+   243→   243→                    <ol className="alpha">
+   244→   244→                      <li>
+   245→   245→                        In general, we collect, use, store and process your
+   246→   246→                        personal information to provide Services, to improve
+   247→   247→                        them, to fix issues in them, to develop new Services,
+   248→   248→                        to offer our product and services to you. Specifically,
+   249→   249→                        <ul>
+   250→   250→                          <li>
+   251→   251→                            Provide you with our Services as per your request
+   252→   252→                            and preference.
+   253→   253→                          </li>
+   254→   254→                          <li>
+   255→   255→                            Provide you necessary records of our relationship
+   256→   256→                            and transactions like payment collection.
+   257→   257→                          </li>
+   258→   258→                          <li>
+   259→   259→                            Offer existing or new features, product, events,
+   260→   260→                            campaigns, promotions using email or phone or send
+   261→   261→                            you communication about third party products and
+   262→   262→                            services that may be of interest to you including
+   263→   263→                            integrations we offer.
+   264→   264→                          </li>
+   265→   265→                          <li>
+   266→   266→                            If you have submitted a job application, to
+   267→   267→                            consider you for applicable job openings.
+   268→   268→                          </li>
+   269→   269→                          <li>
+   270→   270→                            Provide you support for Services including
+   271→   271→                            answering support questions and resolving
+   272→   272→                            disputes.
+   273→   273→                          </li>
+   274→   274→                          <li>
+   275→   275→                            Prevent, investigate and respond to fraud,
+   276→   276→                            unauthorized access to or use of our Services,
+   277→   277→                            breaches of terms and policies, or other wrongful
+   278→   278→                            behavior.
+   279→   279→                          </li>
+   280→   280→                          <li>
+   281→   281→                            Comply with our legal obligations including
+   282→   282→                            documents and information retention.
+   283→   283→                          </li>
+   284→   284→                          <li>
+   285→   285→                            In any other way we may describe when you provide
+   286→   286→                            the information.
+   287→   287→                          </li>
+   288→   288→                        </ul>
+   289→   289→                      </li>
+   290→   290→                      <li>
+   291→   291→                        We may combine the personal information we collect or
+   292→   292→                        remove pieces of personal information to limit or
+   293→   293→                        prevent identification of a particular user or device
+   294→   294→                        to help with the purpose of research and marketing.
+   295→   295→                        This Privacy Policy does not apply to our use of such
+   296→   296→                        aggregated or de-identified information.
+   297→   297→                      </li>
+   298→   298→                      <li>
+   299→   299→                        We normally collect or use personal information from
+   300→   300→                        you or others only where we have your consent to do so,
+   301→   301→                        where we need the personal information to perform a
+   302→   302→                        contract with you, or where the processing is in our
+   303→   303→                        legitimate interests and not overridden by your data
+   304→   304→                        protection interest or fundamental rights and freedom.
+   305→   305→                        In some cases, we may have legal obligation to collect
+   306→   306→                        or retain personal information or may need the personal
+   307→   307→                        information to protect your vital interests or those of
+   308→   308→                        another person. If European data protection law
+   309→   309→                        applies and we act as a controller, our lawful basis
+   310→   310→                        for collecting and using the personal information
+   311→   311→                        described in this Privacy Policy will depend on the
+   312→   312→                        personal information concerned and the specific context
+   313→   313→                        in which we collect or use it.
+   314→   314→                      </li>
+   315→   315→                      <li>
+   316→   316→                        We keep your personal information for no longer than
+   317→   317→                        necessary for the purpose for which it is processed.
+   318→   318→                        The length of time for which we retain personal
+   319→   319→                        information depends upon the purpose for which we
+   320→   320→                        collect and use it and/or as required to comply with
+   321→   321→                        the applicable laws.
+   322→   322→                      </li>
+   323→   323→                    </ol>
+   324→   324→                  </li>
+   325→   325→                  <li>
+   326→   326→                    <h5>DISCLOSURE OF YOUR PERSONAL INFORMATION</h5>
+   327→   327→                    <ol className="alpha">
+   328→   328→                      <li>
+   329→   329→                        We do not disclose your personal information to any
+   330→   330→                        third party in a manner that would be considered a sale
+   331→   331→                        under applicable laws.
+   332→   332→                      </li>
+   333→   333→                      <li>
+   334→   334→                        We disclose or share your personal information only as
+   335→   335→                        follows:
+   336→   336→                        <ul>
+   337→   337→                          <li>
+   338→   338→                            We share your personal information with our
+   339→   339→                            affiliates. These companies use your personal
+   340→   340→                            information as described in this Privacy Policy.
+   341→   341→                          </li>
+   342→   342→                          <li>
+   343→   343→                            We share your personal information with other
+   344→   344→                            companies we use to support our Services. This
+   345→   345→                            includes services like search technology, customer
+   346→   346→                            support, analytics, authentication systems, and
+   347→   347→                            Services hosting. We have contracts with our
+   348→   348→                            service providers that ensures the safeguarding and
+   349→   349→                            proper use of your personal information.
+   350→   350→                          </li>
+   351→   351→                          <li>
+   352→   352→                            We may share your personal information with our
+   353→   353→                            marketing partners who are sponsors of events,
+   354→   354→                            webinars etc. for which you register, or other
+   355→   355→                            parties with whom we may engage in joint marketing
+   356→   356→                            activities.
+   357→   357→                          </li>
+   358→   358→                          <li>
+   359→   359→                            We may share your personal information with public
+   360→   360→                            or government authorities to follow applicable law
+   361→   361→                            or to respond to legal process. We may also share
+   362→   362→                            your personal information when there are threats to
+   363→   363→                            the physical safety of any person, violations of
+   364→   364→                            this Privacy Policy or other agreements, or to
+   365→   365→                            protect the legal rights of third parties,
+   366→   366→                            including our employees, users, or the public.
+   367→   367→                          </li>
+   368→   368→                          <li>
+   369→   369→                            We may share your personal information during
+   370→   370→                            corporate transaction like merger, or sale of our
+   371→   371→                            assets, investment or as part of the due diligence
+   372→   372→                            for such contemplated transactions.
+   373→   373→                          </li>
+   374→   374→                          <li>
+   375→   375→                            We may share your personal information in other
+   376→   376→                            ways if you have asked us to do so or have given
+   377→   377→                            consent.
+   378→   378→                          </li>
+   379→   379→                        </ul>
+   380→   380→                      </li>
+   381→   381→                    </ol>
+   382→   382→                  </li>
+   383→   383→                  <li>
+   384→   384→                    <h5>YOUR CHOICES</h5>
+   385→   385→                    You can take following actions to change or limit the
+   386→   386→                    collection or use of your personal information.
+   387→   387→                    <ul>
+   388→   388→                      <li>
+   389→   389→                        You may not fill out all details in your profile or
+   390→   390→                        account except a few necessary ones. If you do, you can
+   391→   391→                        access, review, and make changes to such details and
+   392→   392→                        personal information in your account settings.
+   393→   393→                      </li>
+   394→   394→                      <li>
+   395→   395→                        You can opt out of marketing messages by writing to us
+   396→   396→                        at <a href={`mailto:${mail}`}>{mail}</a>. Please note
+   397→   397→                        that we may send you one message to confirm you want to
+   398→   398→                        opt out. If you are registered user of our Services, we
+   399→   399→                        may continue to send transactional or relationship
+   400→   400→                        messages after you opt out of marketing messages.
+   401→   401→                      </li>
+   402→   402→                      <li>
+   403→   403→                        You can set your browser to refuse all or some browser
+   404→   404→                        cookies, or to alert you when cookies are being sent.
+   405→   405→                        If you disable or refuse cookies, please note that some
+   406→   406→                        parts of the Services may then be inaccessible or not
+   407→   407→                        function properly.
+   408→   408→                      </li>
+   409→   409→                      <li>
+   410→   410→                        You can close your account and request for deletion of
+   411→   411→                        the data.
+   412→   412→                      </li>
+   413→   413→                      <li>
+   414→   414→                        You can send in your questions or complain by writing
+   415→   415→                        to us at <a href={`mailto:${mail}`}>{mail}</a>{" "}
+   416→   416→                        regarding our data use practices or Privacy Policy. We
+   417→   417→                        are committed to resolving all valid complaints about
+   418→   418→                        your privacy and our collection and use of your
+   419→   419→                        personal information.
+   420→   420→                      </li>
+   421→   421→                    </ul>
+   422→   422→                  </li>
+   423→   423→                  <li>
+   424→   424→                    <h5>YOUR PRIVACY RIGHTS</h5>
+   425→   425→                    <ol className="alpha">
+   426→   426→                      <li>
+   427→   427→                        You may have certain rights related to your personal
+   428→   428→                        information, subject to local data protection laws. If
+   429→   429→                        you wish to exercise these rights, please write to us
+   430→   430→                        at <a href={`mailto:${mail}`}>{mail}</a>.
+   431→   431→                        <ul>
+   432→   432→                          <li>
+   433→   433→                            You can access, review, modify, correct your
+   434→   434→                            personal information by logging into your account.
+   435→   435→                          </li>
+   436→   436→                          <li>
+   437→   437→                            You can request the following information from us:
+   438→   438→                            how we collect or received and use your personal
+   439→   439→                            information and why, the category of personal
+   440→   440→                            information, recipients of your personal
+   441→   441→                            information, our business purpose for using your
+   442→   442→                            personal information and how long we use or store
+   443→   443→                            your personal information or manner in which we
+   444→   444→                            determine the retention period.
+   445→   445→                          </li>
+   446→   446→                          <li>
+   447→   447→                            In certain situations, you can ask that we delete /
+   448→   448→                            erase or stop using your personal information or
+   449→   449→                            export your personal information.
+   450→   450→                          </li>
+   451→   451→                          <li>
+   452→   452→                            Where we rely on your consent to process your
+   453→   453→                            personal information, you have the right to decline
+   454→   454→                            the consent and if provided, to withdraw consent at
+   455→   455→                            any time. However, this will not affect the
+   456→   456→                            lawfulness of the processing prior to the
+   457→   457→                            withdrawal of your consent.
+   458→   458→                          </li>
+   459→   459→                          <li>
+   460→   460→                            You have a right to provide us with guidance on the
+   461→   461→                            use, storage, and deletion of your personal
+   462→   462→                            information after your death.
+   463→   463→                          </li>
+   464→   464→                          <li>
+   465→   465→                            You have a right to raise questions or complaints
+   466→   466→                            with your local data protection authority at any
+   467→   467→                            time.
+   468→   468→                          </li>
+   469→   469→                          <li>
+   470→   470→                            You have a right to not be discriminated against
+   471→   471→                            (as provided for in the applicable law) for
+   472→   472→                            exercising certain of your rights.
+   473→   473→                          </li>
+   474→   474→                        </ul>
+   475→   475→                      </li>
+   476→   476→                    </ol>
+   477→   477→                  </li>
+   478→   478→                  <li>
+   479→   479→                    <h5>PROTECTING YOUR PERSONAL INFORMATION</h5>
+   480→   480→                    We have implemented reasonable administrative
+   481→   481→                    (organizational), physical, and technical safeguards
+   482→   482→                    intended to secure your personal information from
+   483→   483→                    accidental loss and from unauthorized access, use,
+   484→   484→                    alteration, disclosure, and other processing.
+   485→   485→                    Unfortunately, the transmission of information via the
+   486→   486→                    Internet is not completely secure. Although our security
+   487→   487→                    architecture is intended to protect the security of your
+   488→   488→                    personal information, we cannot guarantee the security of
+   489→   489→                    your personal information. Any transmission of personal
+   490→   490→                    information is at your own risk. We are not responsible
+   491→   491→                    for circumvention of any privacy settings or security
+   492→   492→                    measures contained on the Services.
+   493→   493→                  </li>
+   494→   494→                  <li>
+   495→   495→                    <h5>CHANGES TO PRIVACY POLICY</h5>
+   496→   496→                    We may amend this Privacy Policy to reflect changes in the
+   497→   497→                    law, our companies, our Services, our data collection, use
+   498→   498→                    and practices. Our use of the personal information we
+   499→   499→                    collect is subject to the Privacy Policy in effect at the
+   500→   500→                    time such personal information is used. Depending upon the
+   501→   501→                    type of change, we may notify you of the change by posting
+   502→   502→                    on this page or my email.
+   503→   503→                  </li>
+   504→   504→                  <li>
+   505→   505→                    <h5>CONTACT US</h5>
+   506→   506→                    For questions or comments about this policy and our
+   507→   507→                    privacy practices, or to register a complaint or concern
+   508→   508→                    please contact us at <a href={`mailto:${mail}`}>{mail}</a>.
+   509→   509→                  </li>
+   510→   510→                </ol>
+   511→   511→              </div>
+   512→   512→            </div>
+   513→   513→          </div>
+   514→   514→        </div>
+   515→   515→      </section>
+   516→   516→    </div>
+   517→   517→  );
+   518→   518→}
+   519→   519→

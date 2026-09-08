@@ -63,12 +63,12 @@ export default function DemoModal({
     e.preventDefault();
     const errs: Record<string, string> = {};
     if (name.trim().length < 2 || name.trim().length > 25)
-      errs.sub_fn = "Please enter your name";
-    if (!company.trim()) errs.sub_company = "Please enter your Company";
+      errs.sub_fn = "Kindly tell us your name";
+    if (!company.trim()) errs.sub_company = "Please add your company name";
     if (!email.trim() || !EMAIL_RE.test(email))
-      errs.sub_email = "Please enter your valid email address";
+      errs.sub_email = "Please supply a valid email address";
     if (!phone.trim() || !/^\d{10}$/.test(phone))
-      errs.sub_phone = "Please enter valid mobile no.";
+      errs.sub_phone = "Please provide a valid 10-digit mobile number";
     setErrors(errs);
     if (Object.keys(errs).length === 0) {
       setSubmitted(true);
@@ -100,7 +100,7 @@ export default function DemoModal({
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title color" id="exampleModalLabel">
-              Request A Demo
+              Book Your Demo
             </h5>
             <button
               type="button"
@@ -185,7 +185,7 @@ export default function DemoModal({
                   type="submit"
                   name="req-demo"
                   id="req-demo"
-                  value="Request Now"
+                  value="Send Request"
                   className={`request-btn big ${productClass}`}
                 />
               </div>
@@ -195,7 +195,8 @@ export default function DemoModal({
               style={{ display: submitted ? "block" : "none" }}
             >
               <p style={{ margin: 0, fontWeight: 500 }}>
-                Thank you! Your request has been submitted successfully.
+                Thank you! Your request is on its way — we’ll be in touch
+                shortly.
               </p>
             </div>
           </div>

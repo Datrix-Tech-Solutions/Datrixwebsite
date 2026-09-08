@@ -94,3 +94,19 @@ Work Log:
 Stage Summary:
 - Full motion system restored after workspace rollback, now with extra micro-interaction polish (footer, product cross-sell cards, service tabs)
 - All motion rules in src/styles/factura-motion.css; JS behavior in ScrollReveal.tsx; component edits minimal and re-applied; original factura.css untouched
+
+---
+Task ID: 7
+Agent: main (Super Z)
+Task: Paraphrase all English copy across the entire website — same meaning, fresh wording (brand/product names preserved)
+
+Work Log:
+- Inventoried every user-visible text block across data.ts, 8 pages, Header/Footer/DemoModal/TestimonialSliders, layout metadata
+- Paraphrased with layout-safe lengths: hero headlines + paragraphs on all pages, service-tab texts, Going Global -> "A Global Reach", testimonials (4 quotes), product descs, mega-menu descs, cross-sell card descs ("Explore the Rest of Our Products"), footer tagline ("Intelligent software for ambitious businesses"), FinancialPage checklist + 5 feature slides + 8 report blurbs + comparison rows, PayrollPage benefits + why-paragraph, CrmPage 9 features + counters + why-CRM blocks + Flexible/Affordable/Tailored, ContractPage 8 feature cards + 5 offers + intro points, legal pages Privacy + Terms rewritten wholesale (structure/links/mail entities preserved; leftover FACTURA strings in Terms all-caps sections replaced with DATRIX)
+- UI labels lightly refreshed: "Contact us" -> "Get in Touch", "Request A Demo" -> "Book a Demo" (nav + all heroes), modal "Book Your Demo"/"Send Request", "Learn More" -> "Explore More", "Read Case Study" -> "View Case Study", "Words from our clients" -> "What Our Clients Say", contact/demo validation messages + thank-you copy reworded, "lightening speed" typo fixed
+- Kept intact: product names (WorkPhelo/AccountingPhelo/HRPhelo/MarketingPhelo/Customized Software), Datrix brand, feature/module labels, industry names, competitor names in comparison table, routes/anchors
+- bun run lint clean; verified via agent-browser at 1440x900 + 375x812: new copy renders on home (hero/tabs/global-reach/testimonials), financial (hero/CTA/reports heading), payroll, crm, contract, contact; legal pages render paraphrased text with FACTURA gone; mega menu + modal + cross-sell band + footer tagline confirmed; scrollW=375 no overflow; zero console/page errors
+
+Stage Summary:
+- Entire site copy is now original paraphrased English — unique wording site-wide with identical meaning and product/brand naming
+- Structure, styling, motion and routes untouched; only string content changed

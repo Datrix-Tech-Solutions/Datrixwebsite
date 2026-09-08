@@ -14,366 +14,349 @@ export default function PrivacyPage() {
               <h4>Last Updated: June 9, 2023</h4>
               <div className="terms">
                 <p>
-                  Legal entity name (doing business as Datrix Tech Solutions)
+                  The legal entity trading as Datrix Tech Solutions
                   (&ldquo;Company,&rdquo; &ldquo;Datrix&rdquo; &ldquo;we,&rdquo;{" "}
-                  &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respect your privacy
-                  and is committed to protecting it through our compliance with
-                  this policy. By using our Services, you understand that we
-                  will collect and use your personal information as described
-                  in this Privacy Policy.
+                  &ldquo;us,&rdquo; or &ldquo;our&rdquo;) honours your privacy
+                  and is dedicated to safeguarding it through adherence to this
+                  policy. When you use our Services, you acknowledge that we
+                  gather and handle your personal information in the manner
+                  set out in this Privacy Policy.
                 </p>
                 <p>
-                  Please read this policy carefully to understand our policies
-                  and practices regarding your personal information and how we
-                  will manage it. If you do not agree with our policies and
-                  practices, you should not continue access our Services. By
-                  accessing or using our Services, you agree to this Privacy
-                  Policy. This policy may change from time to time. Your
-                  continued use of the Services after we make changes is deemed
-                  to be acceptance of those changes, so please check the policy
-                  periodically for updates.
+                  We encourage you to go through this policy closely so you
+                  understand our approach to handling your personal
+                  information. Should our policies and practices not meet with
+                  your approval, we ask that you stop using our Services.
+                  Accessing or continuing to use the Services signals your
+                  acceptance of this Privacy Policy. The policy may be revised
+                  periodically, and your ongoing use of the Services once
+                  changes are posted will count as acceptance of the revised
+                  version — so we recommend revisiting this page from time to
+                  time.
                 </p>
                 <p>
-                  If you or your organization has an agreement with us, that
-                  agreement may have privacy terms that also apply to the
-                  personal information you provide to us under that agreement.
-                  Please review the terms of that agreement as they may be
-                  different or more restrictive than the terms in this Privacy
-                  Policy.
+                  Where an agreement exists between you (or your organization)
+                  and us, that agreement may carry its own privacy provisions
+                  covering the personal information shared under it. We advise
+                  reviewing those terms, since they may differ from — or be
+                  stricter than — the terms of this Privacy Policy.
                 </p>
-                <p>This policy describes:</p>
+                <p>This policy sets out:</p>
                 <ol className="alpha">
                   <li>
-                    The types of personal information we may collect from you
-                    or that you may provide when you visit our website{" "}
+                    The categories of personal information we may gather from
+                    you — or that you may share with us — when you visit our
+                    website{" "}
                     <a href="https://www.datrixtechsolutions.com">
                       https://www.datrixtechsolutions.com
                     </a>{" "}
-                    (&ldquo;Website&rdquo;) and/or access Services (as defined
-                    in the <a href="#/terms">Terms of Service</a>); and
+                    (the &ldquo;Website&rdquo;) and/or make use of Services
+                    (as described in the <a href="#/terms">Terms of Service</a>); and
                   </li>
                   <li>
-                    Our practices for collecting, using, maintaining,
-                    protecting, and disclosing that personal information.
+                    How we go about gathering, using, maintaining, protecting
+                    and sharing that personal information.
                   </li>
                 </ol>
                 <p>
-                  This policy applies to personal information and content we
+                  The policy covers personal information and content we
                   collect:
                 </p>
                 <ol className="alpha">
-                  <li>Based on the use of the Services.</li>
+                  <li>Through your use of the Services.</li>
                   <li>
-                    In communications email, text, and other electronic
-                    messages between you and Services via web forms or chat.
+                    From email, text and other electronic exchanges between
+                    you and the Services via web forms or chat.
                   </li>
                   <li>
-                    In communications submitted to the Services using web forms
-                    and the social media/comment features on the Services.
+                    From submissions made through the Services&rsquo; web
+                    forms and its social media or comment features.
                   </li>
                   <li>
-                    When you interact with our advertising and applications on
-                    third-party websites and services if those applications or
-                    advertising include links to this policy.&nbsp;
+                    When you engage with our advertisements and applications
+                    on third-party websites and services, provided those
+                    applications or ads link back to this policy.&nbsp;
                   </li>
                 </ol>
-                <p>It does not apply to information collected by:</p>
+                <p>It does not cover information gathered by:</p>
                 <ol className="alpha">
                   <li>
-                    us offline or through any other means, including on any
-                    other website or apps operated by us or any third party.
-                    You should review the terms and policies of those websites
-                    or apps before clicking on any links; and
+                    us offline or via other channels — including any other
+                    website or app we run, or those run by third parties. We
+                    recommend reading the terms and policies of such sites or
+                    apps before following any links; and
                   </li>
                   <li>
-                    any third party, including through any application or
-                    content (including advertising) that may link to or be
-                    accessible from or on the Services.
+                    any third party, including via any application or content
+                    (advertising included) that may link to, or be reachable
+                    from, the Services.
                   </li>
                 </ol>
                 <p>&nbsp;</p>
                 <ol>
                   <li>
-                    <h5>PERSONAL INFORMATION WE COLLECT ABOUT YOU AND HOW WE COLLECT IT</h5>
-                    We collect several types of information from and about
-                    users of our Services. If you do not provide us with
-                    certain personal information, you may not be able to use
-                    some parts of our Services. For choices you may have,
-                    please see Section 4 of this Privacy Policy.
+                    <h5>THE PERSONAL INFORMATION WE GATHER AND OUR METHODS</h5>
+                    We obtain several kinds of information from and about
+                    people who use our Services. Withholding certain personal
+                    information may limit your access to portions of the
+                    Services. For the options available to you, please refer
+                    to Section 4 of this Privacy Policy.
                     <ol className="alpha">
                       <li>
-                        You provide us with personal information about yourself
-                        while accessing or using our Services when you:
+                        You share personal information with us while using or
+                        accessing the Services whenever you:
                         <ul>
-                          <li>Register for Account or log into your Account.</li>
-                          <li>Create or edit your profile.</li>
+                          <li>Register an Account or sign in to it.</li>
+                          <li>Build or update your profile.</li>
                           <li>
-                            Contact us via email, webform or any other mode in
-                            relation to Services.
+                            Reach out to us by email, webform or any other
+                            channel about the Services.
                           </li>
                           <li>
-                            Comment on our blogs, forums etc. Although you may
-                            set certain privacy settings for such information
-                            by logging into your account profile, please be
-                            aware that no security measures are perfect or
-                            impenetrable. Additionally, we cannot control the
-                            actions of other users of the Services with whom
-                            you may choose to share your personal information.
-                            Therefore, we cannot and do not guarantee that your
-                            personal information will not be viewed by
-                            unauthorized persons.
+                            Post comments on our blogs or forums. Privacy
+                            settings for such information can be adjusted from
+                            your account profile, yet bear in mind that no
+                            security measure is flawless or impenetrable. We
+                            likewise cannot govern how other Services users —
+                            people you may choose to share your information
+                            with — handle it. For these reasons we cannot, and
+                            do not, promise that unauthorized individuals will
+                            never see your personal information.
                           </li>
-                          <li>Apply for job on our Website.</li>
+                          <li>Apply for a position through our Website.</li>
                         </ul>
                       </li>
                       <li>
-                        You provide some or all of the following categories of
-                        personal information to us:
+                        You supply us with some or all of the following types
+                        of personal information:
                         <ul>
                           <li>
-                            Identifiers : name, email address, mailing address,
-                            phone number, profile picture or any other
-                            identifier by which you may be contracted online or
+                            Identifiers: your name, email address, mailing
+                            address, phone number, profile photo or any other
+                            marker by which you may be reached online or
                             offline
                           </li>
                           <li>
-                            From job candidates: professional or employment
-                            related information, including education,
-                            employment history
+                            From job applicants: professional or
+                            employment-related details, covering education and
+                            work history
                           </li>
                           <li>
-                            Commercial information like billing information,
-                            products or services purchased
+                            Commercial details such as billing information and
+                            the products or services bought
                           </li>
                           <li>
-                            Your browsing sessions using the Services (internet
-                            activity information), including, but not limited
-                            to browsing history, search history, and
-                            information regarding user&rsquo;s interaction with
-                            our Services
+                            Your browsing sessions on the Services (internet
+                            activity information) — including, without
+                            limitation, browsing and search history plus
+                            records of how you interact with our Services
                           </li>
                           <li>
-                            Any other information that you may provide to us
-                            during our communication with you via Services
+                            Anything else you choose to share with us while we
+                            communicate through the Services
                           </li>
                         </ul>
                       </li>
                       <li>
-                        We collect following information automatically:
+                        The following information is gathered automatically:
                         <ol>
                           <li>
-                            Your equipment, browsing actions, and usage
-                            patterns, including all details of your visits to
-                            our Services
+                            Details of your equipment, browsing actions and
+                            usage patterns, covering every aspect of your
+                            visits to our Services
                           </li>
                           <li>IP address</li>
                           <li>
-                            Search terms that you may have used in a search
-                            engine to access our Services
+                            The search phrases you may have entered into a
+                            search engine that led you to our Services
                           </li>
                           <li>
-                            History of your transactions on the Services
-                            including names and addresses of the parties to a
+                            Your transaction history on the Services, spanning
+                            the names and addresses of everyone party to a
                             transaction, personal information about those
-                            individuals or their devises data, IP address,
-                            email address and authentication methods
+                            individuals or their devices, IP address, email
+                            address and authentication methods
                           </li>
                         </ol>
-                        The information we collect automatically may include
-                        personal information or we may maintain it or associate
-                        it with personal information we collect in other ways
-                        or receive from third parties. This kind of personal
-                        information helps us to improve our Services and to
-                        deliver a better and more personalized service,
-                        including by enabling us to:
+                        Information collected automatically may itself be
+                        personal information, or we may keep it alongside — or
+                        connect it to — personal information obtained in other
+                        ways or received from third parties. Such information
+                        helps us refine the Services and provide a better,
+                        more tailored experience, including by letting us:
                         <br />
                         <ul>
-                          <li>Estimate our audience size and usage patterns.</li>
+                          <li>Estimate audience size and usage patterns.</li>
                           <li>
-                            Store information about your preferences, allowing
-                            us to customize Services according to your
-                            individual interests.
+                            Remember your preferences so we can shape the
+                            Services around your individual interests.
                           </li>
-                          <li>Speed up your searches.</li>
-                          <li>Recognize you when you return to our Services.</li>
+                          <li>Make your searches faster.</li>
+                          <li>Recognise you each time you come back.</li>
                         </ul>
-                        The technologies we use for this automatic data
-                        collection may include:
+                        Technologies used for this automatic collection
+                        include:
                         <br />
                         <ul>
                           <li>
                             <u>Cookies (or browser cookies)</u>: A cookie is a
-                            small file placed on the hard drive of your
-                            computer. You may refuse to accept browser cookies
-                            by activating the appropriate setting on your
-                            browser. However, if you select this setting, you
-                            may be unable to access certain parts of our
-                            Services or may be unable to enjoy some
-                            functionality of the Services. Unless you have
-                            adjusted your browser setting so that it will
-                            refuse cookies, our system will issue cookies when
-                            you direct your browser to our Services.
+                            small file stored on your computer&rsquo;s hard
+                            drive. Your browser settings let you decline
+                            cookies; doing so, however, may block access to
+                            parts of the Services or limit certain
+                            functionality. Unless your browser is set to turn
+                            cookies away, our system will issue them whenever
+                            you visit the Services.
                           </li>
                           <li>
-                            <u>Web Beacons</u>: Pages of the Services and our
-                            e-mails may contain small electronic files known as
-                            web beacons (also referred to as clear gifs, pixel
-                            tags, and single-pixel gifs) that permit us, for
-                            example, to count users who have visited those
-                            pages or opened an email and for other related
-                            website statistics (for example, recording the
-                            popularity of certain website content and
-                            verifying system and server integrity).
+                            <u>Web Beacons</u>: Pages within the Services and
+                            our emails may carry tiny electronic files known
+                            as web beacons (sometimes called clear gifs, pixel
+                            tags or single-pixel gifs). These let us, among
+                            other things, count how many people viewed a page
+                            or opened an email, and support related website
+                            statistics — for instance tracking how popular
+                            certain content is and confirming that systems and
+                            servers remain sound.
                           </li>
                         </ul>
                       </li>
                       <li>
-                        We may collect personal information about you from
-                        third-party sources such as marketers, partners,
-                        researchers, affiliates, service providers, vendors,
-                        and others where they are legally allowed to share your
-                        personal information with us. For example, if you
-                        register for our Services on another website, the
-                        website may provide your personal information to us.
+                        We may also obtain personal information about you from
+                        third-party sources — marketers, partners,
+                        researchers, affiliates, service providers, vendors
+                        and others — where the law permits them to pass your
+                        details to us. If you sign up for our Services through
+                        another website, for example, that website may share
+                        your personal information with us.
                       </li>
                     </ol>
                   </li>
                   <li>
-                    <h5>HOW WE USE YOUR PERSONAL INFORMATION</h5>
+                    <h5>HOW YOUR PERSONAL INFORMATION IS USED</h5>
                     <ol className="alpha">
                       <li>
-                        In general, we collect, use, store and process your
-                        personal information to provide Services, to improve
-                        them, to fix issues in them, to develop new Services,
-                        to offer our product and services to you. Specifically,
+                        Broadly speaking, we gather, use, store and process
+                        your personal information in order to deliver the
+                        Services, enhance them, resolve problems, create new
+                        Services and present our products and services to you.
+                        More specifically, we:
                         <ul>
                           <li>
-                            Provide you with our Services as per your request
-                            and preference.
+                            Supply the Services you ask for, in line with your
+                            preferences.
                           </li>
                           <li>
-                            Provide you necessary records of our relationship
-                            and transactions like payment collection.
+                            Keep the records our relationship requires —
+                            payment collection, for example.
                           </li>
                           <li>
-                            Offer existing or new features, product, events,
-                            campaigns, promotions using email or phone or send
-                            you communication about third party products and
-                            services that may be of interest to you including
-                            integrations we offer.
+                            Alert you to existing or upcoming features,
+                            products, events, campaigns and promotions by
+                            email or phone, and share news of third-party
+                            offerings — integrations included — that may
+                            appeal to you.
                           </li>
                           <li>
-                            If you have submitted a job application, to
-                            consider you for applicable job openings.
+                            Weigh your application against suitable openings
+                            if you have applied for a job.
                           </li>
                           <li>
-                            Provide you support for Services including
-                            answering support questions and resolving
-                            disputes.
+                            Support your use of the Services, from answering
+                            questions to settling disputes.
                           </li>
                           <li>
-                            Prevent, investigate and respond to fraud,
-                            unauthorized access to or use of our Services,
-                            breaches of terms and policies, or other wrongful
-                            behavior.
+                            Prevent, look into and respond to fraud,
+                            unauthorized access to or use of the Services,
+                            breaches of our terms and policies, and other
+                            misconduct.
                           </li>
                           <li>
-                            Comply with our legal obligations including
-                            documents and information retention.
+                            Meet our legal duties, including retaining
+                            documents and information where required.
                           </li>
                           <li>
-                            In any other way we may describe when you provide
-                            the information.
+                            Act in any further manner we describe at the time
+                            you hand over the information.
                           </li>
                         </ul>
                       </li>
                       <li>
-                        We may combine the personal information we collect or
-                        remove pieces of personal information to limit or
-                        prevent identification of a particular user or device
-                        to help with the purpose of research and marketing.
-                        This Privacy Policy does not apply to our use of such
-                        aggregated or de-identified information.
+                        We may merge personal information we hold or strip out
+                        identifying pieces so a particular user or device
+                        cannot be singled out, in support of research and
+                        marketing. Our handling of such aggregated or
+                        de-identified information falls outside this Privacy
+                        Policy.
                       </li>
                       <li>
-                        We normally collect or use personal information from
-                        you or others only where we have your consent to do so,
-                        where we need the personal information to perform a
-                        contract with you, or where the processing is in our
-                        legitimate interests and not overridden by your data
-                        protection interest or fundamental rights and freedom.
-                        In some cases, we may have legal obligation to collect
-                        or retain personal information or may need the personal
-                        information to protect your vital interests or those of
-                        another person. If European data protection law
-                        applies and we act as a controller, our lawful basis
-                        for collecting and using the personal information
-                        described in this Privacy Policy will depend on the
-                        personal information concerned and the specific context
-                        in which we collect or use it.
+                        As a rule, we collect or use personal information from
+                        you or others only with your consent, where the
+                        information is needed to perform a contract with you,
+                        or where our legitimate interests — weighed against
+                        your data protection rights and fundamental freedoms —
+                        justify it. Occasionally a legal obligation may require
+                        us to collect or retain personal information, or we may
+                        need it to protect your vital interests or another
+                        person&rsquo;s. Where European data protection law
+                        applies and we act as controller, the lawful basis for
+                        gathering and using your personal information depends
+                        on the information involved and the context in which we
+                        handle it.
                       </li>
                       <li>
-                        We keep your personal information for no longer than
-                        necessary for the purpose for which it is processed.
-                        The length of time for which we retain personal
-                        information depends upon the purpose for which we
-                        collect and use it and/or as required to comply with
-                        the applicable laws.
+                        Your personal information is kept only as long as the
+                        processing purpose demands. Retention periods reflect
+                        why the information was gathered and used, and any
+                        applicable legal requirements.
                       </li>
                     </ol>
                   </li>
                   <li>
-                    <h5>DISCLOSURE OF YOUR PERSONAL INFORMATION</h5>
+                    <h5>SHARING YOUR PERSONAL INFORMATION</h5>
                     <ol className="alpha">
                       <li>
-                        We do not disclose your personal information to any
-                        third party in a manner that would be considered a sale
-                        under applicable laws.
+                        We never pass your personal information to third
+                        parties in a way that would amount to a sale under the
+                        laws that apply.
                       </li>
                       <li>
-                        We disclose or share your personal information only as
-                        follows:
+                        Disclosure or sharing of your personal information
+                        happens only in these circumstances:
                         <ul>
                           <li>
-                            We share your personal information with our
-                            affiliates. These companies use your personal
-                            information as described in this Privacy Policy.
+                            With our affiliates, who handle it exactly as this
+                            Privacy Policy describes.
                           </li>
                           <li>
-                            We share your personal information with other
-                            companies we use to support our Services. This
-                            includes services like search technology, customer
-                            support, analytics, authentication systems, and
-                            Services hosting. We have contracts with our
-                            service providers that ensures the safeguarding and
-                            proper use of your personal information.
+                            With other companies that help us run the Services
+                            — search technology, customer support, analytics,
+                            authentication and hosting, for example.
+                            Contracts with these providers bind them to
+                            safeguard and properly use your personal
+                            information.
                           </li>
                           <li>
-                            We may share your personal information with our
-                            marketing partners who are sponsors of events,
-                            webinars etc. for which you register, or other
-                            parties with whom we may engage in joint marketing
-                            activities.
+                            With marketing partners who sponsor events or
+                            webinars you sign up for, or with other parties in
+                            joint marketing efforts.
                           </li>
                           <li>
-                            We may share your personal information with public
-                            or government authorities to follow applicable law
-                            or to respond to legal process. We may also share
-                            your personal information when there are threats to
-                            the physical safety of any person, violations of
-                            this Privacy Policy or other agreements, or to
-                            protect the legal rights of third parties,
-                            including our employees, users, or the public.
+                            With public or government authorities where the law
+                            requires it or in response to legal process — and
+                            also where physical safety is threatened, where
+                            this Privacy Policy or other agreements are
+                            breached, or where the legal rights of third
+                            parties (our staff, users or the public included)
+                            need protecting.
                           </li>
                           <li>
-                            We may share your personal information during
-                            corporate transaction like merger, or sale of our
-                            assets, investment or as part of the due diligence
-                            for such contemplated transactions.
+                            In the course of corporate events — a merger, sale
+                            of assets, investment, or the due diligence behind
+                            such transactions.
                           </li>
                           <li>
-                            We may share your personal information in other
-                            ways if you have asked us to do so or have given
+                            In other ways, at your request or with your
                             consent.
                           </li>
                         </ul>
@@ -382,41 +365,38 @@ export default function PrivacyPage() {
                   </li>
                   <li>
                     <h5>YOUR CHOICES</h5>
-                    You can take following actions to change or limit the
-                    collection or use of your personal information.
+                    The actions below let you change or restrict how your
+                    personal information is collected or used.
                     <ul>
                       <li>
-                        You may not fill out all details in your profile or
-                        account except a few necessary ones. If you do, you can
-                        access, review, and make changes to such details and
-                        personal information in your account settings.
+                        Aside from a few essential fields, completing your
+                        profile or account details is optional. Whatever you do
+                        provide can be viewed, reviewed and edited from your
+                        account settings.
                       </li>
                       <li>
-                        You can opt out of marketing messages by writing to us
-                        at <a href={`mailto:${mail}`}>{mail}</a>. Please note
-                        that we may send you one message to confirm you want to
-                        opt out. If you are registered user of our Services, we
-                        may continue to send transactional or relationship
-                        messages after you opt out of marketing messages.
+                        To step out of marketing messages, write to us at{" "}
+                        <a href={`mailto:${mail}`}>{mail}</a>. One confirmation
+                        message may be sent to action your request. Registered
+                        users should note that transactional or relationship
+                        messages may continue after marketing messages stop.
                       </li>
                       <li>
-                        You can set your browser to refuse all or some browser
-                        cookies, or to alert you when cookies are being sent.
-                        If you disable or refuse cookies, please note that some
-                        parts of the Services may then be inaccessible or not
-                        function properly.
+                        Your browser can be set to reject all or some cookies,
+                        or to warn you before they are sent. Blocking cookies
+                        may leave portions of the Services inaccessible or
+                        working incorrectly.
                       </li>
                       <li>
-                        You can close your account and request for deletion of
-                        the data.
+                        You may shut your account and ask us to delete the data
+                        held within it.
                       </li>
                       <li>
-                        You can send in your questions or complain by writing
-                        to us at <a href={`mailto:${mail}`}>{mail}</a>{" "}
-                        regarding our data use practices or Privacy Policy. We
-                        are committed to resolving all valid complaints about
-                        your privacy and our collection and use of your
-                        personal information.
+                        Questions or complaints about our data practices or this
+                        Privacy Policy can be sent to{" "}
+                        <a href={`mailto:${mail}`}>{mail}</a>. We are committed
+                        to settling every valid complaint about privacy and the
+                        way we collect and use personal information.
                       </li>
                     </ul>
                   </li>
@@ -424,88 +404,80 @@ export default function PrivacyPage() {
                     <h5>YOUR PRIVACY RIGHTS</h5>
                     <ol className="alpha">
                       <li>
-                        You may have certain rights related to your personal
-                        information, subject to local data protection laws. If
-                        you wish to exercise these rights, please write to us
-                        at <a href={`mailto:${mail}`}>{mail}</a>.
+                        Depending on local data protection laws, you may hold
+                        specific rights over your personal information. To use
+                        them, write to us at{" "}
+                        <a href={`mailto:${mail}`}>{mail}</a>.
                         <ul>
                           <li>
-                            You can access, review, modify, correct your
-                            personal information by logging into your account.
+                            Sign into your account to access, review, amend or
+                            correct your personal information.
                           </li>
                           <li>
-                            You can request the following information from us:
-                            how we collect or received and use your personal
-                            information and why, the category of personal
-                            information, recipients of your personal
-                            information, our business purpose for using your
-                            personal information and how long we use or store
-                            your personal information or manner in which we
-                            determine the retention period.
+                            You may ask us to explain: how we collect, receive
+                            and use your personal information and why, the
+                            category of information held, who receives it, our
+                            business purpose for using it, and how long we
+                            keep it — or how such periods are decided.
                           </li>
                           <li>
-                            In certain situations, you can ask that we delete /
-                            erase or stop using your personal information or
-                            export your personal information.
+                            In certain situations you may have your personal
+                            information deleted or its use halted, or ask for
+                            an export of it.
                           </li>
                           <li>
-                            Where we rely on your consent to process your
-                            personal information, you have the right to decline
-                            the consent and if provided, to withdraw consent at
-                            any time. However, this will not affect the
-                            lawfulness of the processing prior to the
-                            withdrawal of your consent.
+                            Where we process based on your consent, you may
+                            refuse it — or, once given, take it back at any
+                            time. Doing so does not undo the lawfulness of
+                            processing carried out before withdrawal.
                           </li>
                           <li>
-                            You have a right to provide us with guidance on the
-                            use, storage, and deletion of your personal
-                            information after your death.
+                            You may leave guidance on how your personal
+                            information should be used, stored and deleted
+                            after your death.
                           </li>
                           <li>
-                            You have a right to raise questions or complaints
-                            with your local data protection authority at any
-                            time.
+                            You may raise questions or complaints with your
+                            local data protection authority whenever you wish.
                           </li>
                           <li>
-                            You have a right to not be discriminated against
-                            (as provided for in the applicable law) for
-                            exercising certain of your rights.
+                            Provided the applicable law offers it, exercising
+                            your rights cannot be used as grounds to
+                            discriminate against you.
                           </li>
                         </ul>
                       </li>
                     </ol>
                   </li>
                   <li>
-                    <h5>PROTECTING YOUR PERSONAL INFORMATION</h5>
-                    We have implemented reasonable administrative
-                    (organizational), physical, and technical safeguards
-                    intended to secure your personal information from
-                    accidental loss and from unauthorized access, use,
-                    alteration, disclosure, and other processing.
-                    Unfortunately, the transmission of information via the
-                    Internet is not completely secure. Although our security
-                    architecture is intended to protect the security of your
-                    personal information, we cannot guarantee the security of
-                    your personal information. Any transmission of personal
-                    information is at your own risk. We are not responsible
-                    for circumvention of any privacy settings or security
-                    measures contained on the Services.
+                    <h5>KEEPING YOUR PERSONAL INFORMATION SAFE</h5>
+                    Reasonable administrative, physical and technical
+                    safeguards are in place to guard your personal information
+                    against accidental loss and against unauthorized access,
+                    use, alteration, disclosure or other processing. That
+                    said, no transmission over the Internet is entirely
+                    secure. While our security architecture is designed to
+                    defend your personal information, complete safety cannot be
+                    promised, and any transmission you make is at your own
+                    risk. We accept no responsibility for anyone circumventing
+                    the privacy settings or security measures present on the
+                    Services.
                   </li>
                   <li>
-                    <h5>CHANGES TO PRIVACY POLICY</h5>
-                    We may amend this Privacy Policy to reflect changes in the
-                    law, our companies, our Services, our data collection, use
-                    and practices. Our use of the personal information we
-                    collect is subject to the Privacy Policy in effect at the
-                    time such personal information is used. Depending upon the
-                    type of change, we may notify you of the change by posting
-                    on this page or my email.
+                    <h5>UPDATES TO THIS PRIVACY POLICY</h5>
+                    This Privacy Policy may be revised to mirror changes in the
+                    law, in our companies, in our Services, or in how we
+                    collect, use and handle data. Our use of the personal
+                    information we gather follows the Privacy Policy in force
+                    at the moment of use. Depending on the nature of a change,
+                    we may flag it by posting here or by email.
                   </li>
                   <li>
-                    <h5>CONTACT US</h5>
-                    For questions or comments about this policy and our
-                    privacy practices, or to register a complaint or concern
-                    please contact us at <a href={`mailto:${mail}`}>{mail}</a>.
+                    <h5>REACHING US</h5>
+                    For any question or comment about this policy and our
+                    privacy practices — or to raise a complaint or concern —
+                    please write to us at{" "}
+                    <a href={`mailto:${mail}`}>{mail}</a>.
                   </li>
                 </ol>
               </div>

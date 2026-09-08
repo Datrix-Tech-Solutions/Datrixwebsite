@@ -12,7 +12,7 @@ const SERVICE_TABS = [
     label: "Financials",
     img: "/assets/img/Financials.svg",
     title: "AccountingPhelo",
-    text: "Automate all finance processes with AccountingPhelo. Its comprehensive and flexible financial management features allow you to track the flow of money in and out of your company in a secure and accurate environment. Sophisticated functionality streamlines transactions and provides instant access to all your financial data, from summary views to transaction-level drill-down details.",
+    text: "AccountingPhelo automates every finance process end to end. Rich yet flexible financial management features let you follow the money moving in and out of your company within a secure, accurate environment. Powerful functionality smooths each transaction and puts all your financial data within instant reach, from high-level summaries right down to individual transactions.",
     btn: "financial",
     href: "/financial",
   },
@@ -21,7 +21,7 @@ const SERVICE_TABS = [
     label: "HRMS",
     img: "/assets/img/payroll.svg",
     title: "HRPhelo",
-    text: "Automate HR and Payroll processes and save 70% of your time with HRPhelo. This Software as a Service (SaaS) hosted platform requires no additional infrastructure or database. Simply install and manage payrolls, notifications, and keep all sensitive employee information safe on the same platform.",
+    text: "HRPhelo automates your HR and Payroll routines and hands you back up to 70% of your time. Hosted as Software as a Service (SaaS), it needs no extra infrastructure or database — just set it up and manage payrolls and notifications while every sensitive employee record stays protected on one platform.",
     btn: "payroll",
     href: "/payroll",
   },
@@ -30,7 +30,7 @@ const SERVICE_TABS = [
     label: "Customized Software",
     img: "/assets/img/customized.svg",
     title: "Customized Software",
-    text: "Every business is unique — your software should be too. Datrix designs and builds customized software around your exact workflows, from bespoke web and mobile applications to integrations that connect the systems you already use. Work with one expert team from idea to launch and own a secure, scalable solution that grows with your business.",
+    text: "No two businesses work alike — your software shouldn’t either. Datrix designs and builds customized software around the way you actually operate, from bespoke web and mobile apps to integrations linking the systems you already depend on. One expert team walks with you from idea to launch, and you finish owning a secure, scalable solution that evolves with your business.",
     btn: "contract",
     href: "/contract",
   },
@@ -39,7 +39,7 @@ const SERVICE_TABS = [
     label: "CRM",
     img: "/assets/img/CRM.svg",
     title: "MarketingPhelo",
-    text: "Improve Customer satisfaction, increase retention and grow sales exponentially with MarketingPhelo - the strategic customer relationship management tool empowering your Sales, Marketing and Customer Support teams. Keep everything on the same page using a transparent system that’s fully customisable and extremely user friendly reducing training time to a minimum.",
+    text: "Lift customer satisfaction, deepen retention and expand sales rapidly with MarketingPhelo — the strategic CRM that empowers your Sales, Marketing and Customer Support teams. A transparent, fully customisable and remarkably easy-to-use system keeps everyone on the same page while cutting training time to a minimum.",
     btn: "crm",
     href: "/crm",
   },
@@ -68,17 +68,17 @@ export default function HomePage({
             <div className="col-xs-12 col-sm-6 col-md-5">
               <div className="factura-intro">
                 <img src="/assets/img/payroll.svg" className="mobile-img" alt="" />
-                <h1>Making Business Smarter</h1>
+                <h1>Smarter Ways to Run Your Business</h1>
                 <p className="paragraph2">
-                  WorkPhelo is a complete suite of functionality tools for
-                  managing your business smartly.
+                  WorkPhelo bundles every tool you need to run, track and
+                  grow your business in one smart suite.
                 </p>
                 <a
                   href="#services"
                   className="smoothScroll request-btn big financial"
                   onClick={scrollToServices}
                 >
-                  Learn More
+                  Explore More
                 </a>
               </div>
             </div>
@@ -166,22 +166,22 @@ export default function HomePage({
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4">
-              <h3>Going Global</h3>
+              <h3>A Global Reach</h3>
               <p>
-                We operate in the global business landscape and understand the
-                need to go local. This is why Datrix is always near you. No
-                matter which part of the world you are based in or who your
-                customers are, Datrix will have a hyper-local software
-                solution to simplify your business processes, leaving you with
-                more time to focus on humane aspects and initiate innovative
-                thinking.
+                We work across the global business landscape and understand
+                how much local context matters — it’s why Datrix is always
+                close by. Wherever in the world you operate and whoever your
+                customers are, Datrix delivers a hyper-local software
+                solution that simplifies your processes, freeing you to
+                focus on your people and pursue fresh ideas.
               </p>
               <p>
-                We often play an advisory role for our clients helping them
-                make the right decisions and hence accelerate growth. With a
-                faster, smaller and lighter mechanism, WorkPhelo applications
-                are easier to deploy, install, maintain and upgrade. This is
-                affordable technological assistance that your business needs.
+                We frequently act as advisors to our clients, guiding sound
+                decisions that accelerate growth. Because WorkPhelo
+                applications are faster, smaller and lighter, they’re
+                simpler to deploy, install, maintain and upgrade —
+                affordable technology assistance your business genuinely
+                needs.
               </p>
             </div>
             <div className="col-md-8">
@@ -195,7 +195,7 @@ export default function HomePage({
         <div className="container-fluid">
           <div className="row align-items-center justify-content-md-center">
             <div className="col-md-8">
-              <h3>Words from our clients</h3>
+              <h3>What Our Clients Say</h3>
               <HomeTestimonialSlider />
             </div>
           </div>

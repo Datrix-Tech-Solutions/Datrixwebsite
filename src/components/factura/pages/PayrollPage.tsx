@@ -8,32 +8,32 @@ const BENEFITS = [
   {
     img: "feature-human-resource-management.svg",
     title: "Human Resource Management",
-    text: "Effective HR System which Manages employees from hiring through, performance & appraisal, training & skill administration, etc to exit scheduling.",
+    text: "A capable HR system that follows each employee from hiring through performance and appraisal, training and skills administration, right up to exit scheduling.",
   },
   {
     img: "feature-payroll-management.svg",
     title: "Payroll Management",
-    text: "Accurately compute staff benefit, timesheets, and overtime and       Manage union dues, cooperative contribution, surcharges.",
+    text: "Compute staff benefits, timesheets and overtime accurately while handling union dues, cooperative contributions and surcharges.",
   },
   {
     img: "feature-employee-self-service.svg",
     title: "Employee Self Service",
-    text: "Employees can access their full personal bio data & transactions history.",
+    text: "Employees can view their complete personal bio data and transaction history whenever they need.",
   },
   {
     img: "feature-automated-notification.svg",
     title: "Automated Notifications",
-    text: "Automatically sends notification of pending transactions. Sends payslips to each staff at the end of every payroll run.",
+    text: "Pending-transaction alerts go out automatically, and every staff member receives their payslip at the close of each payroll run.",
   },
   {
     img: "feature-payroll-reporting.svg",
     title: "Exceptional Payroll Reporting",
-    text: "Real time access to both summary and detailed transactions and audit.",
+    text: "Live access to summary and detailed transactions alike, plus full audit trails.",
   },
   {
     img: "feature-available-online.svg",
     title: "Available Online 24/7",
-    text: "Offered on a Software as a Service (SaaS) hosted platform.Requires no investment in infrastructure, server, databases.",
+    text: "Delivered on a Software as a Service (SaaS) hosted platform — no spend required on infrastructure, servers or databases.",
   },
 ];
 
@@ -103,11 +103,11 @@ export default function PayrollPage({
               <div className="factura-intro">
                 <img src="/assets/img/payroll.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
-                  Efficient, Flexible &amp; Complete HRMS Solution
+                  An HRMS That’s Efficient, Flexible &amp; Complete
                 </h1>
                 <p className="paragraph2 mb-4">
-                  HRPhelo is an innovative system for easy management of
-                  Payroll and HR for small to medium and large organization.
+                  HRPhelo takes the hassle out of Payroll and HR management
+                  for organizations of every size.
                 </p>
                 <a
                   href="#"
@@ -117,7 +117,7 @@ export default function PayrollPage({
                     onRequestDemo();
                   }}
                 >
-                  Request A Demo
+                  Book a Demo
                 </a>
               </div>
             </div>
@@ -139,19 +139,18 @@ export default function PayrollPage({
             <div className="col-sm-12 col-md-12">
               <h2 className="text-center">Why HRPhelo?</h2>
               <p style={{ textAlign: "justify" }}>
-                Seize the opportunity to take your organization a step closer
-                to success by optimizing cost, and making strategic
-                people-oriented business decisions with HRPhelo; an efficient,
-                flexible and innovative system for small, medium and large
-                organizations. HRPhelo is easy to install, integrates
-                seamlessly with third-party systems, takes minimal training
-                time and reduces workload significantly. Manage recruitment,
-                integration, transaction, and history with this pan-geographic,
-                multi-lingual solution and keep all data stored efficiently in
-                one place. Get timely notifications, enjoy features like
-                assessment and appraisal, create memos, payslips and enable
-                employees to participate in HR processes transparently with
-                HRPhelo's highly user-friendly software.
+                Give your organization a fresh step toward success — trim
+                costs and make strategic, people-centred decisions with
+                HRPhelo, an efficient, flexible and innovative system built
+                for small, medium and large organizations alike. Installation
+                is simple, third-party integration is seamless, training
+                takes hardly any time and workloads shrink noticeably.
+                Recruitment, onboarding, transactions and history all live
+                efficiently in one place within this pan-geographic,
+                multi-lingual solution. Timely notifications, assessment and
+                appraisal features, memos and payslips are all at hand — and
+                employees join HR processes transparently through HRPhelo’s
+                highly approachable software.
               </p>
             </div>
           </div>
@@ -161,7 +160,7 @@ export default function PayrollPage({
       <section className="payroll-features-points sectionPadding" id="features">
         <div className="container">
           <h2 className="text-center">
-            HRPhelo Offers Your Organization a host of Benefits
+            A Whole Host of Benefits for Your Organization
           </h2>
           <div className="row mt5">
             {BENEFITS.map((b) => (

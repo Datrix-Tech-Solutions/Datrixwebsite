@@ -7,46 +7,46 @@ import { HOME_CLIENTS } from "./../data";
 const CRM_FEATURES = [
   {
     title: "Account & Contact Management",
-    text: "Have a complete view of your customers, including activity history, key contacts, customer communications, and internal account discussions.",
+    text: "See every customer in full — activity history, key contacts, communications and internal account discussions in one view.",
   },
   {
     title: "Lead Management",
-    text: "Track your leads from click to close, while continually optimising your campaigns across every channel. Make smarter decisions about where to invest your marketing dollars.",
+    text: "Follow each lead from first click to close while fine-tuning campaigns across every channel — and put your marketing dollars where they work hardest.",
   },
   {
     title: "Opportunities Management",
-    text: "Get a complete view of your team’s deals with Opportunity Management. See stage, products, competition, quotes, and more. Stay connected to the people and information you need to close every sale.",
+    text: "Opportunity Management lays out your team’s entire deal flow — stage, products, competition, quotes and beyond — keeping you close to the people and information that seal every sale.",
   },
   {
     title: "Quotation Management",
-    text: "Let sales reps select the right items for each customer, every time. Get consistent pricing and discounting — and approvals when you need them — even as reps send out more quotes.",
+    text: "Reps pick the right items for every customer, every time, with consistent pricing and discounting — plus approvals exactly when they’re needed — even as quote volumes climb.",
   },
   {
     title: "Reports & Analytics",
-    text: "Dashboards offer a real-time picture of your business at a glance. Dig deeper with detailed reports that anyone can create. And access your reports and dashboards from anywhere.",
+    text: "Dashboards show the business at a glance in real time; anyone can build the detailed reports beneath them, reachable from anywhere.",
   },
   {
     title: "Territory Management",
-    text: "Model your sales territories into a logical and flexible structure that maps the right sales reps to the right customers to maximise revenue.",
+    text: "Shape sales territories into a logical, flexible structure that pairs the right reps with the right customers for maximum revenue.",
   },
   {
     title: "Campaign Management",
-    text: "Engage your contacts with beautiful email that's effortless to build, target and send.",
+    text: "Reach your contacts with polished email campaigns that take almost no effort to create, target and send.",
   },
   {
     title: "Intelligent Workflows",
-    text: "Automatically create leads and contacts from website form submissions",
+    text: "Turn website form submissions into leads and contacts automatically",
   },
   {
     title: "Survey",
-    text: "Get feedback from your customers and leads. Responses are tied to email addresses of your Customers.",
+    text: "Collect feedback from customers and leads — every response is tied to the customer’s email address.",
   },
 ];
 
 const CRM_COUNTERS = [
-  { img: "investing-CRM.svg", text: "Of the top performing companies are investing in CRM." },
-  { img: "sales-increased.svg", text: "Sales increased by 80%" },
-  { img: "customer-retention.svg", text: "Of the users stated that CRM impacted customer retention." },
+  { img: "investing-CRM.svg", text: "Of top-performing companies are putting money into CRM." },
+  { img: "sales-increased.svg", text: "Sales grew by as much as 80%" },
+  { img: "customer-retention.svg", text: "Of users say CRM made a real difference to customer retention." },
 ];
 
 export default function CrmPage({
@@ -83,11 +83,11 @@ export default function CrmPage({
               <div className="factura-intro">
                 <img src="/assets/img/CRM.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
-                  CRM For Lifelong Customer Relationships
+                  CRM Built for Lifelong Customer Bonds
                 </h1>
                 <p className="paragraph2 mb-4">
-                  Manage your sales pipeline, stay on top of employee
-                  activities, and close more deals.
+                  Keep your sales pipeline moving, track team activity and
+                  win more deals.
                 </p>
                 <a
                   href="#"
@@ -97,7 +97,7 @@ export default function CrmPage({
                     onRequestDemo();
                   }}
                 >
-                  Request A Demo
+                  Book a Demo
                 </a>
               </div>
             </div>
@@ -119,21 +119,19 @@ export default function CrmPage({
             <div className="col-sm-12 col-md-12">
               <h2 className="text-center">Why MarketingPhelo?</h2>
               <p style={{ textAlign: "justify" }}>
-                Improve Customer satisfaction, increase retention and grow
-                sales exponentially with MarketingPhelo - the strategic
-                customer relationship management tool empowering your Sales,
-                Marketing and Customer Support teams. Keep everything on the
-                same page using a transparent system that’s fully customisable
-                and extremely user friendly reducing training time to a
-                minimum. A CRM system can do miracles for your business. It
-                can make internal communication a breeze, it boosts
-                productivity, makes way for increased deal conversion rates and
-                keeps your customers happy. MarketingPhelo offers 360-degree
-                customer knowledge on a single platform, bringing phone, email,
-                quotes, reports and all activity history available at one place
-                giving your sales team to reduce its involvement in tedious
-                processes while it focuses on what’s actually important –
-                selling.
+                Raise customer satisfaction, deepen retention and expand
+                sales rapidly with MarketingPhelo — the strategic CRM that
+                equips your Sales, Marketing and Customer Support teams. A
+                transparent system that’s fully customisable and
+                exceptionally easy to use keeps everyone aligned while
+                training time drops to a minimum. The right CRM can
+                transform a business: internal communication flows,
+                productivity climbs, deal conversion improves and customers
+                stay happy. MarketingPhelo gathers 360-degree customer
+                knowledge onto one platform — phone, email, quotes, reports
+                and complete activity history in a single place — so your
+                sales team spends less time on tedious processes and more on
+                what truly matters: selling.
               </p>
             </div>
           </div>
@@ -176,20 +174,20 @@ export default function CrmPage({
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 col-sm-12">
-              <h2>Why Do You Need CRM ?</h2>
+              <h2>Why Does Your Business Need CRM?</h2>
               <div>
-                <h3>Keeping teams in-sync is hard</h3>
+                <h3>Keeping every team in sync is hard</h3>
                 <p>
-                  We know how hard it is to keep your marketing, sales and
-                  support teams organized, productive and in sync.
+                  We understand the struggle of keeping marketing, sales and
+                  support teams organised, productive and truly in sync.
                 </p>
               </div>
               <div>
-                <h3>Your data is all over the place</h3>
+                <h3>Your data lives everywhere but one place</h3>
                 <p>
-                  Customer data and interactions scattered across many apps can
-                  hinder your team’s ability to collaborate, craft engaging
-                  customer experiences and grow revenue.
+                  When customer data and interactions are strewn across
+                  countless apps, collaboration suffers, customer experiences
+                  lose their spark and revenue growth stalls.
                 </p>
               </div>
             </div>
@@ -211,29 +209,28 @@ export default function CrmPage({
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 ml-auto">
-              <h2>Why MarketingPhelo ?</h2>
+              <h2>Why MarketingPhelo?</h2>
               <div>
                 <h3>Flexible</h3>
                 <p>
-                  Fast, simple configuration gives your business a custom CRM
-                  that provides everyone who faces the customer with the
-                  information and tools they need.
+                  Quick, painless configuration shapes a custom CRM that hands
+                  every customer-facing teammate the information and tools
+                  they need.
                 </p>
               </div>
               <div>
                 <h3>Affordable</h3>
                 <p>
-                  With MarketingPhelo’s low, predictable pricing, you can build
-                  a CRM system that supports your big ideas, instead of
-                  limiting them.
+                  MarketingPhelo’s low, predictable pricing lets you grow a
+                  CRM that backs your big ideas rather than capping them.
                 </p>
               </div>
               <div>
                 <h3>Tailored</h3>
                 <p>
-                  CRM solutions for your small business with our
+                  A CRM solution fitted to your small business through our
                   customization, configuration, integration and deployment
-                  features
+                  options.
                 </p>
               </div>
             </div>
