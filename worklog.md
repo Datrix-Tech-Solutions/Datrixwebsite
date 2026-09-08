@@ -110,3 +110,27 @@ Work Log:
 Stage Summary:
 - Entire site copy is now original paraphrased English — unique wording site-wide with identical meaning and product/brand naming
 - Structure, styling, motion and routes untouched; only string content changed
+
+---
+Task ID: 8
+Agent: main (Super Z)
+Task: Redesign the hero art on all pages in the flat-character illustration style of the user's attached example (organic blue blob, flat people, browser windows, charts) — replacing the generic stock hero videos and legacy SVGs
+
+Work Log:
+- Studied the attached example: flat vector scene, big blue organic blob, browser dashboard with line/donut/bar charts, tilted report card, 4 flat characters (orange hair/caps), plants + tone-on-tone clouds + floating chips
+- Built a reusable scene kit in Datrix brand colors (blob gradient #3FB3EA->#1173B4, navy #21346B/#1B75BB/#2D9CDB, orange #F7941D/#E8720C, greens #55B685/#2E9E6B, varied skin tones) and hand-authored 6 unique SVG scenes in public/assets/img/hero/:
+  * home.svg — WorkPhelo suite assembly: dashboard browser (line chart + donut + bars), tilted report card, 4 characters (female holding report, male seated on browser with tablet, male pushing report, male carrying green module card), calculator/HR/funnel app chips
+  * financial.svg — AccountingPhelo: KPI-tile dashboard with rising bars + trend line, tilted invoice with green tick, calculator card, coin stack, seated male, female pointing at chart
+  * payroll.svg — HRPhelo: org-chart card (manager + 2 reports), payslip card, ID badge, calendar + clock chips, high-five pair with burst, female carrying badge
+  * crm.svg — MarketingPhelo: 3-stage funnel with deal dots + $ win circle, growth dashboard (bars + orange arrow + hearts), megaphone, envelope chip, male carrying deal card, female presenting
+  * contract.svg — Customized Software: code editor window with syntax-line blocks + side rail, </> chip, meshing gears, orange puzzle piece, modular icon block stack, seated female with laptop, male with wrench
+  * contact.svg — open envelope with letter + orange @ wax seal, chat bubbles, location pin, phone chip, paper plane, headset support agent waving, female handing letter
+- Wired all 6 pages: HomePage/FinancialPage/PayrollPage/CrmPage hero <video> replaced with hero-art <img>; ContractPage mockup SVG replaced; ContactPage contact.svg replaced; mobile-img slots now point at the same per-page scene (desktop/mobile parity)
+- CSS: .hero-art sizing rules in factura.css (100% width in .main-illustration, max-560px in .contactIllustrator); dm-hero-float 7s transform-only idle float in factura-motion.css (covered by existing prefers-reduced-motion kill switch)
+- Iterated on renders via temp gallery page + per-file screenshots; fixes: removed antennae-like lanyard lines on payroll badge, moved contract puzzle piece off the seated character's head, slimmed/recolored wrench, nudged contact phone chip clear of the agent; removed temp gallery
+- bun run lint clean; verified via agent-browser at 1440x900 + 375x812 on all 6 routes: heroes render crisp, scrollW=375 (no overflow), 0 unloaded images, zero page errors, dm-hero-float running, scroll reveal still binding/revealing below the fold
+
+Stage Summary:
+- Every page hero is now a bespoke branded flat illustration matching the example's style — videos retired from all heroes
+- Assets: public/assets/img/hero/{home,financial,payroll,crm,contract,contact}.svg; old videos/legacy hero SVGs left in place but unreferenced by heroes
+- Known stylistic follow-up (optional): home service-tab content illustrations still use the older green/teal art family — out of hero scope, flag for a future pass

@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" fill="none">
+  <defs>
+    <linearGradient id="gHome" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3FB3EA"/>
+      <stop offset="1" stop-color="#1173B4"/>
+    </linearGradient>
+    <filter id="shH" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0A3D66" flood-opacity="0.20"/>
+    </filter>
+    <filter id="shH2" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0A3D66" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- halo backdrop shapes -->
+  <ellipse cx="278" cy="312" rx="206" ry="198" fill="#D9EDFB"/>
+  <circle cx="648" cy="92" r="26" fill="#D9EDFB"/>
+  <circle cx="120" cy="470" r="18" fill="#D9EDFB"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="405" cy="592" rx="240" ry="18" fill="#0A3D66" opacity="0.10"/>
+
+  <!-- main blob -->
+  <path d="M 402 74 C 512 66 618 116 664 206 C 706 288 700 388 642 458 C 588 526 500 566 396 562 C 292 558 196 526 146 448 C 98 374 100 272 146 194 C 194 112 292 82 402 74 Z" fill="url(#gHome)"/>
+
+  <!-- tone-on-tone clouds -->
+  <g fill="#0F6BA8" opacity="0.5">
+    <g transform="translate(474,142)">
+      <rect x="0" y="0" width="64" height="16" rx="8"/>
+      <circle cx="16" cy="-4" r="10"/>
+      <circle cx="36" cy="-2" r="8"/>
+    </g>
+    <g transform="translate(178,286)">
+      <rect x="0" y="0" width="54" height="14" rx="7"/>
+      <circle cx="14" cy="-3" r="8"/>
+      <circle cx="30" cy="-2" r="7"/>
+    </g>
+  </g>
+
+  <!-- floating dots + sparkle -->
+  <circle cx="640" cy="112" r="4" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="152" cy="182" r="3" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="662" cy="262" r="3" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="215" cy="238" r="4" fill="#FFB55A"/>
+  <circle cx="585" cy="96" r="4" fill="#FFB55A"/>
+  <path d="M 620 214 L 622.5 220.5 L 629 223 L 622.5 225.5 L 620 232 L 617.5 225.5 L 611 223 L 617.5 220.5 Z" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- leaves poking from blob edge -->
+  <g transform="translate(694,462)">
+    <ellipse cx="0" cy="0" rx="27" ry="10" transform="rotate(-35)" fill="#1E7A52"/>
+    <ellipse cx="12" cy="12" rx="21" ry="8" transform="rotate(-12)" fill="#57B98A"/>
+  </g>
+
+  <!-- plant centre-left -->
+  <g transform="translate(348,468)">
+    <path d="M 0 34 C -2 8 -4 -12 -14 -30 M 4 34 C 6 6 8 -14 18 -30 M 2 34 C 2 4 2 -14 2 -34" stroke="#2E7D52" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="-16" cy="-32" rx="15" ry="6" transform="rotate(-32 -16 -32)" fill="#2E9E6B"/>
+    <ellipse cx="20" cy="-32" rx="15" ry="6" transform="rotate(30 20 -32)" fill="#57B98A"/>
+    <ellipse cx="2" cy="-38" rx="14" ry="6" transform="rotate(-88 2 -38)" fill="#1E7A52"/>
+    <path d="M -16 34 L 20 34 L 15 64 Q 2 70 -11 64 Z" fill="#16324F"/>
+    <rect x="-19" y="30" width="42" height="9" rx="4.5" fill="#1E3A5F"/>
+  </g>
+
+  <!-- ======== main browser dashboard ======== -->
+  <g transform="translate(230,200)">
+    <rect x="0" y="0" width="380" height="240" rx="14" fill="#FFFFFF" filter="url(#shH)"/>
+    <path d="M 0 32 L 0 14 Q 0 0 14 0 L 366 0 Q 380 0 380 14 L 380 32 Z" fill="#EFF6FC"/>
+    <circle cx="17" cy="16" r="3.5" fill="#F7941D"/>
+    <circle cx="30" cy="16" r="3.5" fill="#55B685"/>
+    <circle cx="43" cy="16" r="3.5" fill="#2D9CDB"/>
+    <rect x="62" y="9" width="170" height="14" rx="7" fill="#DDEBF6"/>
+    <rect x="0" y="32" width="44" height="208" fill="#F7FBFE"/>
+    <circle cx="22" cy="62" r="6" fill="#F7941D"/>
+    <circle cx="22" cy="88" r="6" fill="#CFE4F4"/>
+    <circle cx="22" cy="114" r="6" fill="#CFE4F4"/>
+    <circle cx="22" cy="140" r="6" fill="#CFE4F4"/>
+    <!-- line chart -->
+    <rect x="64" y="62" width="160" height="2" fill="#EAF3FB"/>
+    <rect x="64" y="82" width="160" height="2" fill="#EAF3FB"/>
+    <rect x="64" y="102" width="160" height="2" fill="#EAF3FB"/>
+    <path d="M 64 118 C 84 100 96 92 112 96 C 130 100 138 78 156 72 C 174 66 182 82 200 74 C 212 69 220 62 226 58" stroke="#55B685" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="226" cy="58" r="8" fill="#55B685" opacity="0.25"/>
+    <circle cx="226" cy="58" r="4" fill="#55B685"/>
+    <!-- donut -->
+    <g transform="translate(306,90)">
+      <circle cx="0" cy="0" r="27" fill="none" stroke="#D6EBF9" stroke-width="15"/>
+      <circle cx="0" cy="0" r="27" fill="none" stroke="#55B685" stroke-width="15" stroke-dasharray="102 170" transform="rotate(-90)"/>
+      <circle cx="0" cy="0" r="27" fill="none" stroke="#21346B" stroke-width="15" stroke-dasharray="42 170" transform="rotate(126)"/>
+      <rect x="-24" y="38" width="48" height="5" rx="2.5" fill="#E3EEF7"/>
+    </g>
+    <!-- bars -->
+    <rect x="66" y="186" width="14" height="24" rx="3" fill="#55B685"/>
+    <rect x="92" y="172" width="14" height="38" rx="3" fill="#2D9CDB"/>
+    <rect x="118" y="178" width="14" height="32" rx="3" fill="#55B685"/>
+    <rect x="144" y="160" width="14" height="50" rx="3" fill="#2D9CDB"/>
+    <rect x="170" y="166" width="14" height="44" rx="3" fill="#F7941D"/>
+    <rect x="196" y="152" width="14" height="58" rx="3" fill="#55B685"/>
+    <rect x="60" y="210" width="308" height="2" rx="1" fill="#E3EEF7"/>
+  </g>
+
+  <!-- ======== big report card (left, tilted) ======== -->
+  <g transform="translate(88,318) rotate(-7)">
+    <rect x="0" y="0" width="250" height="150" rx="10" fill="#FFFFFF" filter="url(#shH)"/>
+    <rect x="38" y="16" width="92" height="9" rx="4.5" fill="#21346B"/>
+    <rect x="38" y="31" width="56" height="6" rx="3" fill="#CFE4F4"/>
+    <circle cx="21" cy="23" r="8" fill="#F7941D"/>
+    <rect x="16" y="47" width="218" height="2" fill="#EDF4FA"/>
+    <g>
+      <circle cx="23" cy="63" r="5.5" fill="#55B685"/>
+      <path d="M 20.5 63 L 22.5 65 L 26 61" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="36" y="60" width="118" height="6" rx="3" fill="#E8F1F8"/>
+      <rect x="192" y="58" width="11" height="11" rx="2.5" fill="#2D9CDB" opacity="0.85"/>
+    </g>
+    <g>
+      <circle cx="23" cy="84" r="5.5" fill="#55B685"/>
+      <path d="M 20.5 84 L 22.5 86 L 26 82" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="36" y="81" width="104" height="6" rx="3" fill="#E8F1F8"/>
+      <rect x="192" y="79" width="11" height="11" rx="2.5" fill="#CFE4F4"/>
+    </g>
+    <g>
+      <circle cx="23" cy="105" r="5.5" fill="#55B685"/>
+      <path d="M 20.5 105 L 22.5 107 L 26 103" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="36" y="102" width="126" height="6" rx="3" fill="#E8F1F8"/>
+      <rect x="192" y="100" width="11" height="11" rx="2.5" fill="#CFE4F4"/>
+    </g>
+    <!-- mini bars -->
+    <rect x="16" y="122" width="10" height="16" rx="2" fill="#55B685"/>
+    <rect x="32" y="112" width="10" height="26" rx="2" fill="#55B685"/>
+    <rect x="48" y="117" width="10" height="21" rx="2" fill="#55B685"/>
+    <rect x="64" y="106" width="10" height="32" rx="2" fill="#55B685"/>
+    <!-- dot grid -->
+    <g fill="#2D9CDB">
+      <circle cx="176" cy="118" r="2.4"/><circle cx="192" cy="118" r="2.4"/><circle cx="208" cy="118" r="2.4"/><circle cx="224" cy="118" r="2.4"/>
+      <circle cx="176" cy="130" r="2.4" opacity="0.55"/><circle cx="192" cy="130" r="2.4"/><circle cx="208" cy="130" r="2.4" opacity="0.55"/><circle cx="224" cy="130" r="2.4"/>
+      <circle cx="176" cy="142" r="2.4"/><circle cx="192" cy="142" r="2.4" opacity="0.55"/><circle cx="208" cy="142" r="2.4"/><circle cx="224" cy="142" r="2.4" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- ======== female holding report (left) ======== -->
+  <g>
+    <ellipse cx="108" cy="542" rx="34" ry="6" fill="#0A3D66" opacity="0.12"/>
+    <ellipse cx="94" cy="537" rx="9" ry="4.5" transform="rotate(-12 94 537)" fill="#10253F"/>
+    <ellipse cx="119" cy="539" rx="9" ry="4.5" fill="#10253F"/>
+    <path d="M 97 536 C 95 512 95 492 99 470" stroke="#16324F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 116 538 C 118 514 115 492 110 470" stroke="#1E3A5F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 95 468 C 92 436 94 414 98 405 C 104 399 121 399 126 405 C 130 414 131 436 127 468 Z" fill="#1B75BB"/>
+    <path d="M 106 401 L 112 419 L 119 401 Z" fill="#FFFFFF"/>
+    <path d="M 99 410 C 92 417 93 426 98 431" stroke="#1B75BB" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 124 408 C 141 404 155 401 166 400" stroke="#1B75BB" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="99" cy="433" r="5" fill="#F4A988"/>
+    <circle cx="169" cy="399" r="5" fill="#F4A988"/>
+    <circle cx="112" cy="384" r="14.5" fill="#F7941D"/>
+    <circle cx="114" cy="388" r="12" fill="#F4A988"/>
+    <ellipse cx="100" cy="369" rx="7" ry="11" transform="rotate(24 100 369)" fill="#F7941D"/>
+    <path d="M 97 376 C 85 384 80 398 83 412 C 87 401 93 391 99 385 Z" fill="#F7941D"/>
+    <circle cx="107" cy="387" r="2.4" fill="#E88B65"/>
+  </g>
+
+  <!-- ======== male sitting on browser (top right) ======== -->
+  <g>
+    <path d="M 536 164 L 566 167 L 570 196" stroke="#16324F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="571" cy="199" rx="8" ry="4" fill="#10253F"/>
+    <path d="M 540 166 L 574 171 L 578 200" stroke="#1E3A5F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="579" cy="203" rx="8" ry="4" fill="#10253F"/>
+    <path d="M 532 164 C 528 138 530 119 536 111 C 542 106 552 106 556 112 C 560 121 558 143 552 164 Z" fill="#21346B"/>
+    <path d="M 538 117 C 533 129 533 141 539 151" stroke="#21346B" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 555 117 C 561 125 563 135 561 145" stroke="#2A417C" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="540" cy="154" r="4.5" fill="#C98850"/>
+    <circle cx="561" cy="148" r="4.5" fill="#C98850"/>
+    <rect x="537" y="146" width="23" height="15" rx="3" transform="rotate(-12 548 154)" fill="#16324F"/>
+    <circle cx="546" cy="95" r="13.5" fill="#C98850"/>
+    <path d="M 532.5 92 C 533 81 539 75.5 546.5 75.5 C 555 75.5 560 82 560 90.5 Z" fill="#F7941D"/>
+    <ellipse cx="561" cy="89" rx="7" ry="2.6" fill="#E8720C"/>
+    <circle cx="540" cy="97" r="2.2" fill="#A9724B"/>
+  </g>
+
+  <!-- ======== male pushing report (centre) ======== -->
+  <g>
+    <ellipse cx="352" cy="554" rx="32" ry="6" fill="#0A3D66" opacity="0.12"/>
+    <ellipse cx="340" cy="548" rx="9" ry="4.5" transform="rotate(-10 340 548)" fill="#10253F"/>
+    <ellipse cx="364" cy="550" rx="9" ry="4.5" fill="#10253F"/>
+    <path d="M 342 548 C 340 524 341 504 345 484" stroke="#1E3A5F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 362 550 C 364 526 361 506 356 484" stroke="#16324F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 341 484 C 338 454 340 430 345 420 C 351 414 366 414 371 420 C 376 430 376 456 372 484 Z" fill="#FFFFFF"/>
+    <path d="M 348 484 L 348 446 Q 358 441 368 446 L 368 484 Z" fill="#21346B"/>
+    <path d="M 348 446 L 342 422 M 368 446 L 374 422" stroke="#21346B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 345 424 C 337 427 334 433 335 438" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 370 424 C 377 431 378 441 373 449" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="336" cy="440" r="4.8" fill="#9C6644"/>
+    <circle cx="372" cy="451" r="4.8" fill="#9C6644"/>
+    <circle cx="357" cy="399" r="13.5" fill="#9C6644"/>
+    <path d="M 343.5 396 C 344 385 350 379.5 357.5 379.5 C 366 379.5 371 386 371 394.5 Z" fill="#21346B"/>
+    <ellipse cx="372" cy="393" rx="7" ry="2.6" fill="#16324F"/>
+    <circle cx="351" cy="401" r="2.2" fill="#7A4E33"/>
+  </g>
+
+  <!-- ======== male with module card (right) ======== -->
+  <g>
+    <ellipse cx="662" cy="542" rx="32" ry="6" fill="#0A3D66" opacity="0.12"/>
+    <ellipse cx="650" cy="537" rx="9" ry="4.5" transform="rotate(-10 650 537)" fill="#10253F"/>
+    <ellipse cx="674" cy="539" rx="9" ry="4.5" fill="#10253F"/>
+    <path d="M 652 537 C 650 513 650 493 654 471" stroke="#1E3A5F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 672 539 C 674 515 671 495 666 471" stroke="#16324F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 650 471 C 647 441 649 419 654 409 C 660 403 674 403 679 409 C 684 419 684 443 680 471 Z" fill="#2D9CDB"/>
+    <g transform="translate(616,410) rotate(-4)">
+      <rect x="0" y="0" width="84" height="60" rx="8" fill="#FFFFFF" filter="url(#shH2)"/>
+      <path d="M 0 16 L 0 8 Q 0 0 8 0 L 76 0 Q 84 0 84 8 L 84 16 Z" fill="#55B685"/>
+      <rect x="10" y="27" width="48" height="6" rx="3" fill="#E8F1F8"/>
+      <rect x="10" y="40" width="60" height="6" rx="3" fill="#E8F1F8"/>
+      <rect x="10" y="6" width="26" height="4" rx="2" fill="#FFFFFF" opacity="0.85"/>
+    </g>
+    <path d="M 654 414 C 642 419 634 427 628 434" stroke="#2D9CDB" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 678 414 C 690 421 697 430 700 439" stroke="#2D9CDB" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="626" cy="437" r="4.6" fill="#F4A988"/>
+    <circle cx="701" cy="441" r="4.6" fill="#F4A988"/>
+    <circle cx="666" cy="392" r="13.5" fill="#F4A988"/>
+    <path d="M 652.5 389 C 653 378 659 372.5 666.5 372.5 C 675 372.5 680 379 680 387.5 Z" fill="#F7941D"/>
+    <rect x="652.5" y="386" width="27.5" height="5.5" rx="2.75" fill="#E8720C"/>
+    <circle cx="660" cy="394" r="2.2" fill="#E88B65"/>
+  </g>
+
+  <!-- ======== floating app chips (the suite) ======== -->
+  <g transform="translate(238,148)">
+    <rect x="0" y="0" width="58" height="26" rx="13" fill="#FFFFFF" filter="url(#shH2)"/>
+    <rect x="8" y="6" width="14" height="14" rx="2.5" fill="#F7941D"/>
+    <circle cx="12.5" cy="10.5" r="1.3" fill="#FFFFFF"/><circle cx="17.5" cy="10.5" r="1.3" fill="#FFFFFF"/>
+    <circle cx="12.5" cy="15.5" r="1.3" fill="#FFFFFF"/><circle cx="17.5" cy="15.5" r="1.3" fill="#FFFFFF"/>
+    <rect x="28" y="9" width="22" height="3.5" rx="1.75" fill="#CFE4F4"/>
+    <rect x="28" y="16" width="15" height="3.5" rx="1.75" fill="#E3EEF7"/>
+  </g>
+  <g transform="translate(592,148)">
+    <rect x="0" y="0" width="64" height="26" rx="13" fill="#FFFFFF" filter="url(#shH2)"/>
+    <circle cx="14" cy="13" r="7.5" fill="#2D9CDB"/>
+    <circle cx="14" cy="10.5" r="2.6" fill="#FFFFFF"/>
+    <path d="M 9 17.5 C 9.8 14.6 11.7 13.2 14 13.2 C 16.3 13.2 18.2 14.6 19 17.5 C 17.5 18.9 15.8 19.5 14 19.5 C 12.2 19.5 10.5 18.9 9 17.5 Z" fill="#FFFFFF"/>
+    <rect x="26" y="9" width="28" height="3.5" rx="1.75" fill="#CFE4F4"/>
+    <rect x="26" y="16" width="19" height="3.5" rx="1.75" fill="#E3EEF7"/>
+  </g>
+  <g transform="translate(628,318)">
+    <rect x="0" y="0" width="58" height="26" rx="13" fill="#FFFFFF" filter="url(#shH2)"/>
+    <path d="M 9 7 L 25 7 L 19.5 13.5 L 19.5 19.5 L 14.5 17 L 14.5 13.5 Z" fill="#55B685"/>
+    <rect x="30" y="9" width="19" height="3.5" rx="1.75" fill="#CFE4F4"/>
+    <rect x="30" y="16" width="13" height="3.5" rx="1.75" fill="#E3EEF7"/>
+  </g>
+</svg>

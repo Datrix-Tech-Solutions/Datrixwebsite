@@ -90,7 +90,7 @@ export default function ContractPage({
           <div className="row align-items-center height100 pb-5">
             <div className="col-xs-12 col-sm-12 col-md-5">
               <div className="factura-intro">
-                <img src="/assets/img/customized.svg" className="mobile-img" alt="" />
+                <img src="/assets/img/hero/contract.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
                   Customized Software,
                   <br />
@@ -124,9 +124,9 @@ export default function ContractPage({
             <div className="col-xs-12 col-sm-12 col-md-6 p0">
               <div className="main-illustration desktop-img">
                 <img
-                  src="/assets/img/page-contract/customized-mockup.svg"
-                  className="videos"
-                  alt="Datrix customized software dashboard mockup"
+                  src="/assets/img/hero/contract.svg"
+                  className="hero-art"
+                  alt="Datrix Customized Software — built around your workflows, illustrated"
                 />
               </div>
             </div>

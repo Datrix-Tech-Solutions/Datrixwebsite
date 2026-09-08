@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" fill="none">
+  <defs>
+    <linearGradient id="gCnt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3FB3EA"/>
+      <stop offset="1" stop-color="#1173B4"/>
+    </linearGradient>
+    <filter id="shN" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0A3D66" flood-opacity="0.20"/>
+    </filter>
+    <filter id="shN2" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0A3D66" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- halo backdrop shapes -->
+  <ellipse cx="288" cy="308" rx="205" ry="198" fill="#D9EDFB"/>
+  <circle cx="648" cy="96" r="25" fill="#D9EDFB"/>
+  <circle cx="116" cy="458" r="17" fill="#D9EDFB"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="405" cy="592" rx="240" ry="18" fill="#0A3D66" opacity="0.10"/>
+
+  <!-- main blob -->
+  <path d="M 402 74 C 512 66 618 116 664 206 C 706 288 700 388 642 458 C 588 526 500 566 396 562 C 292 558 196 526 146 448 C 98 374 100 272 146 194 C 194 112 292 82 402 74 Z" fill="url(#gCnt)"/>
+
+  <!-- tone-on-tone clouds -->
+  <g fill="#0F6BA8" opacity="0.5">
+    <g transform="translate(428,140)">
+      <rect x="0" y="0" width="56" height="14" rx="7"/>
+      <circle cx="13" cy="-4" r="8"/>
+      <circle cx="30" cy="-2" r="7"/>
+    </g>
+    <g transform="translate(654,304)">
+      <rect x="0" y="0" width="48" height="13" rx="6.5"/>
+      <circle cx="12" cy="-3" r="7"/>
+      <circle cx="25" cy="-2" r="6"/>
+    </g>
+  </g>
+
+  <!-- floating dots + sparkle -->
+  <circle cx="152" cy="132" r="3" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="602" cy="122" r="3" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="700" cy="242" r="3" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="240" cy="122" r="4" fill="#FFB55A"/>
+  <circle cx="682" cy="382" r="4" fill="#FFB55A"/>
+  <path d="M 330 118 L 332.5 124.5 L 339 127 L 332.5 129.5 L 330 136 L 327.5 129.5 L 321 127 L 327.5 124.5 Z" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M 700 330 L 702 335 L 707 337 L 702 339 L 700 344 L 698 339 L 693 337 L 698 335 Z" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- ======== paper plane (top right) ======== -->
+  <path d="M 556 152 C 588 150 620 142 654 126" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round" opacity="0.8"/>
+  <g transform="translate(656,108) rotate(-8)">
+    <path d="M 0 18 L 54 0 L 26 24 Z" fill="#FFFFFF"/>
+    <path d="M 26 24 L 54 0 L 32 36 Z" fill="#EAF4FB"/>
+  </g>
+
+  <!-- ======== location pin ======== -->
+  <g transform="translate(614,180)">
+    <path d="M 0 -36 C 19 -36 32 -22 32 -6 C 32 13 0 36 0 36 C 0 36 -32 13 -32 -6 C -32 -22 -19 -36 0 -36 Z" fill="#F7941D" filter="url(#shN2)"/>
+    <circle cx="0" cy="-7" r="12" fill="#FFFFFF"/>
+    <circle cx="0" cy="-7" r="5" fill="#21346B"/>
+  </g>
+
+  <!-- ======== phone chip ======== -->
+  <g transform="translate(634,430)">
+    <circle cx="0" cy="0" r="27" fill="#55B685" filter="url(#shN2)"/>
+    <rect x="-9" y="-14" width="18" height="28" rx="4" fill="#FFFFFF"/>
+    <rect x="-3.5" y="-10" width="7" height="2.5" rx="1.25" fill="#55B685"/>
+    <circle cx="0" cy="9" r="2" fill="#55B685"/>
+  </g>
+
+  <!-- ======== chat bubbles (left) ======== -->
+  <g transform="translate(118,196)">
+    <path d="M 20 52 L 14 68 L 38 52 Z" fill="#FFFFFF"/>
+    <rect x="0" y="0" width="94" height="54" rx="16" fill="#FFFFFF" filter="url(#shN2)"/>
+    <circle cx="30" cy="27" r="4.5" fill="#21346B"/>
+    <circle cx="47" cy="27" r="4.5" fill="#21346B"/>
+    <circle cx="64" cy="27" r="4.5" fill="#21346B"/>
+  </g>
+  <g transform="translate(94,302)">
+    <path d="M 56 42 L 68 56 L 42 42 Z" fill="#F7941D"/>
+    <rect x="0" y="0" width="74" height="44" rx="14" fill="#F7941D" filter="url(#shN2)"/>
+    <rect x="14" y="14" width="46" height="5" rx="2.5" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="14" y="25" width="32" height="5" rx="2.5" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- ======== giant envelope (centre) ======== -->
+  <g transform="translate(265,255)">
+    <rect x="30" y="-30" width="250" height="74" rx="6" fill="#F4FAFE" filter="url(#shN)"/>
+    <rect x="52" y="-10" width="128" height="6" rx="3" fill="#CFE4F4"/>
+    <rect x="52" y="6" width="96" height="5" rx="2.5" fill="#DDEBF6"/>
+    <circle cx="248" cy="-4" r="12" fill="#55B685"/>
+    <path d="M 242.5 -4 L 246.5 0 L 254 -7.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 0 34 L 155 140 L 310 34 L 310 181 Q 310 195 296 195 L 14 195 Q 0 195 0 181 Z" fill="#FFFFFF" filter="url(#shN)"/>
+    <path d="M 0 34 L 155 140 L 310 34" stroke="#E3EEF7" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="155" cy="152" r="22" fill="#F7941D"/>
+    <text x="155" y="161" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF">@</text>
+  </g>
+
+  <!-- ======== support agent (right) ======== -->
+  <g>
+    <ellipse cx="590" cy="550" rx="32" ry="6" fill="#0A3D66" opacity="0.12"/>
+    <ellipse cx="578" cy="545" rx="9" ry="4.5" transform="rotate(-10 578 545)" fill="#10253F"/>
+    <ellipse cx="602" cy="547" rx="9" ry="4.5" fill="#10253F"/>
+    <path d="M 580 545 C 578 521 578 501 582 480" stroke="#1E3A5F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 600 547 C 602 523 599 503 594 480" stroke="#16324F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 578 480 C 575 450 577 428 582 418 C 588 412 602 412 607 418 C 612 428 612 452 608 480 Z" fill="#1B75BB"/>
+    <path d="M 584 414 L 590 430 L 597 414 Z" fill="#FFFFFF"/>
+    <path d="M 583 422 C 570 402 559 378 552 356" stroke="#1B75BB" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="551" cy="352" r="5.2" fill="#9C6644"/>
+    <path d="M 545 342 C 548 336 553 332 559 330" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <path d="M 541 348 C 543 341 547 336 552 332" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <g transform="translate(598,446) rotate(8)">
+      <rect x="0" y="0" width="32" height="40" rx="4" fill="#FFFFFF" filter="url(#shN2)"/>
+      <rect x="10" y="-5" width="12" height="7" rx="3" fill="#21346B"/>
+      <rect x="6" y="10" width="20" height="4" rx="2" fill="#CFE4F4"/>
+      <rect x="6" y="19" width="20" height="4" rx="2" fill="#CFE4F4"/>
+      <rect x="6" y="28" width="13" height="4" rx="2" fill="#F7941D"/>
+    </g>
+    <path d="M 606 428 C 612 436 614 444 612 452" stroke="#1B75BB" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="611" cy="455" r="5" fill="#9C6644"/>
+    <circle cx="594" cy="398" r="13.5" fill="#9C6644"/>
+    <path d="M 580.5 395 C 581 384 587 378.5 594.5 378.5 C 603 378.5 608 385 608 393.5 Z" fill="#10253F"/>
+    <path d="M 581 394 C 583 379 588 373 594 373 C 600 373 605 379 607 394" stroke="#21346B" stroke-width="4" stroke-linecap="round"/>
+    <rect x="575" y="390" width="8" height="13" rx="4" fill="#21346B"/>
+    <path d="M 583 402 C 587 411 592 414 598 413" stroke="#21346B" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="600" cy="413" r="3.2" fill="#F7941D"/>
+    <circle cx="588" cy="400" r="2.2" fill="#7A4E33"/>
+  </g>
+
+  <!-- ======== female handing letter (left) ======== -->
+  <g>
+    <ellipse cx="232" cy="558" rx="30" ry="6" fill="#0A3D66" opacity="0.12"/>
+    <ellipse cx="221" cy="553" rx="8.5" ry="4.2" transform="rotate(-10 221 553)" fill="#10253F"/>
+    <ellipse cx="243" cy="555" rx="8.5" ry="4.2" fill="#10253F"/>
+    <path d="M 223 553 C 221 530 221 511 225 490" stroke="#16324F" stroke-width="9.5" stroke-linecap="round"/>
+    <path d="M 241 555 C 243 532 240 513 235 490" stroke="#1E3A5F" stroke-width="9.5" stroke-linecap="round"/>
+    <path d="M 221 490 C 218 462 220 440 225 430 C 231 424 245 424 250 430 C 255 440 255 463 251 490 Z" fill="#2D9CDB"/>
+    <path d="M 232 426 L 238 442 L 244 426 Z" fill="#FFFFFF"/>
+    <g transform="translate(234,458) rotate(-8)">
+      <rect x="0" y="0" width="48" height="34" rx="4" fill="#FFFFFF" filter="url(#shN2)"/>
+      <path d="M 2 3 L 24 19 L 46 3" stroke="#D9E7F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="37" y="5" width="7" height="7" rx="1.5" fill="#F7941D" opacity="0.85"/>
+    </g>
+    <path d="M 227 434 C 231 446 235 456 238 464" stroke="#2D9CDB" stroke-width="8.5" stroke-linecap="round"/>
+    <path d="M 248 434 C 248 446 248 456 249 464" stroke="#2D9CDB" stroke-width="8.5" stroke-linecap="round"/>
+    <circle cx="239" cy="467" r="4.6" fill="#F4A988"/>
+    <circle cx="250" cy="467" r="4.6" fill="#F4A988"/>
+    <circle cx="237" cy="404" r="13.5" fill="#F4A988"/>
+    <circle cx="237" cy="400" r="14" fill="#F7941D"/>
+    <circle cx="238" cy="406" r="12" fill="#F4A988"/>
+    <ellipse cx="226" cy="388" rx="6.5" ry="10" transform="rotate(22 226 388)" fill="#F7941D"/>
+    <path d="M 223 394 C 213 402 209 414 212 426 C 215 416 220 407 225 402 Z" fill="#F7941D"/>
+    <circle cx="233" cy="406" r="2.2" fill="#E88B65"/>
+  </g>
+
+  <!-- ======== plant (right edge) ======== -->
+  <g transform="translate(726,500) scale(0.8)">
+    <path d="M 0 34 C -2 8 -4 -12 -14 -30 M 4 34 C 6 6 8 -14 18 -30 M 2 34 C 2 4 2 -14 2 -34" stroke="#2E7D52" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="-16" cy="-32" rx="15" ry="6" transform="rotate(-32 -16 -32)" fill="#2E9E6B"/>
+    <ellipse cx="20" cy="-32" rx="15" ry="6" transform="rotate(30 20 -32)" fill="#57B98A"/>
+    <ellipse cx="2" cy="-38" rx="14" ry="6" transform="rotate(-88 2 -38)" fill="#1E7A52"/>
+    <path d="M -16 34 L 20 34 L 15 64 Q 2 70 -11 64 Z" fill="#16324F"/>
+    <rect x="-19" y="30" width="42" height="9" rx="4.5" fill="#1E3A5F"/>
+  </g>
+</svg>

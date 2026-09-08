@@ -101,7 +101,7 @@ export default function PayrollPage({
           <div className="row align-items-center height100">
             <div className="col-xs-12 col-sm-12 col-md-6">
               <div className="factura-intro">
-                <img src="/assets/img/payroll.svg" className="mobile-img" alt="" />
+                <img src="/assets/img/hero/payroll.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
                   An HRMS That’s Efficient, Flexible &amp; Complete
                 </h1>
@@ -123,10 +123,11 @@ export default function PayrollPage({
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 p0">
               <div className="main-illustration desktop-img">
-                <video className="videos" autoPlay loop muted playsInline>
-                  <source src="/assets/vid/payroll.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img
+                  src="/assets/img/hero/payroll.svg"
+                  className="hero-art"
+                  alt="HRPhelo — payroll and HR management, illustrated"
+                />
               </div>
             </div>
           </div>

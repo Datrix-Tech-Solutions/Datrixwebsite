@@ -67,7 +67,7 @@ export default function HomePage({
           <div className="row align-items-center height100">
             <div className="col-xs-12 col-sm-6 col-md-5">
               <div className="factura-intro">
-                <img src="/assets/img/payroll.svg" className="mobile-img" alt="" />
+                <img src="/assets/img/hero/home.svg" className="mobile-img" alt="" />
                 <h1>Smarter Ways to Run Your Business</h1>
                 <p className="paragraph2">
                   WorkPhelo bundles every tool you need to run, track and
@@ -84,10 +84,11 @@ export default function HomePage({
             </div>
             <div className="col-xs-12 col-sm-6 col-md-6 p0">
               <div className="main-illustration desktop-img">
-                <video className="videos" autoPlay loop muted playsInline>
-                  <source src="/assets/vid/Homepage-factura.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img
+                  src="/assets/img/hero/home.svg"
+                  className="hero-art"
+                  alt="WorkPhelo — the complete business suite, illustrated"
+                />
               </div>
             </div>
           </div>

@@ -306,6 +306,18 @@
  .videos{
         width:140%;
 }
+/* Hero illustration v2 (flat scene art) */
+.main-illustration .hero-art{
+        width:100%;
+        height:auto;
+        display:block;
+}
+.contactIllustrator .hero-art{
+        width:100%;
+        max-width:560px;
+        height:auto;
+        display:block;
+}
 .desktop-hidden{display: none;}
 
 

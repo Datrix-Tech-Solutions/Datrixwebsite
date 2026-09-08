@@ -271,7 +271,7 @@ export default function FinancialPage({
           <div className="row align-items-center height100">
             <div className="col-xs-12 col-sm-12 col-md-6">
               <div className="factura-intro">
-                <img src="/assets/img/Financials.svg" className="mobile-img" alt="" />
+                <img src="/assets/img/hero/financial.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
                   AccountingPhelo — online accounting
                   <br />
@@ -294,10 +294,11 @@ export default function FinancialPage({
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 p0">
               <div className="main-illustration desktop-img">
-                <video className="videos" autoPlay loop muted playsInline>
-                  <source src="/assets/vid/finance.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img
+                  src="/assets/img/hero/financial.svg"
+                  className="hero-art"
+                  alt="AccountingPhelo — online accounting dashboard, illustrated"
+                />
               </div>
             </div>
           </div>

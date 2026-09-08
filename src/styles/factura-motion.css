@@ -108,6 +108,24 @@ html {
   animation: dm-fade-in 0.9s var(--ease-soft) 0.15s both;
 }
 
+/* Gentle idle float on the hero illustration art. Transform-only so it
+   stays on the compositor; disabled globally by prefers-reduced-motion. */
+@keyframes dm-hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.main-illustration .hero-art,
+.contactIllustrator .hero-art {
+  animation: dm-hero-float 7s var(--ease-soft) 1.2s infinite;
+  will-change: transform;
+}
+
 /* ------------------------------------------------------------
    5. Scroll reveal (progressive enhancement driven by
    ScrollReveal.tsx — hidden state is only ever ADDED by JS,

@@ -81,7 +81,7 @@ export default function CrmPage({
           <div className="row align-items-center height100 pb-5">
             <div className="col-xs-12 col-sm-12 col-md-5">
               <div className="factura-intro">
-                <img src="/assets/img/CRM.svg" className="mobile-img" alt="" />
+                <img src="/assets/img/hero/crm.svg" className="mobile-img" alt="" />
                 <h1 className="mb-3">
                   CRM Built for Lifelong Customer Bonds
                 </h1>
@@ -103,10 +103,11 @@ export default function CrmPage({
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 p0">
               <div className="main-illustration desktop-img">
-                <video className="videos" autoPlay loop muted playsInline>
-                  <source src="/assets/vid/crm.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img
+                  src="/assets/img/hero/crm.svg"
+                  className="hero-art"
+                  alt="MarketingPhelo — CRM sales pipeline, illustrated"
+                />
               </div>
             </div>
           </div>
