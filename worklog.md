@@ -77,3 +77,20 @@ Work Log:
 Stage Summary:
 - Site is fully responsive 320px -> desktop with touch-friendly navigation; production build passes
 - All responsive rules isolated in src/styles/factura-fix.css (loaded last); factura.css untouched
+
+---
+Task ID: 6
+Agent: main (Super Z)
+Task: Continue/restore the smooth motion pass — workspace had rolled back to post-Task-4 state, wiping all Task 5 motion files; rebuilt the full motion system and extended it with footer/product-band/tab micro-interactions
+
+Work Log:
+- Detected rollback: factura-motion.css + ScrollReveal.tsx deleted, layout/FacturaApp/SlickSlider/DemoModal edits reverted, Task 5 worklog entry gone; Tasks 1-4 (branding, renames, responsive) intact; dev server healthy (200)
+- Recreated src/styles/factura-motion.css in full: easing tokens (cubic-bezier(0.22,0.61,0.36,1)), 8 keyframes, global easing refinement, page transition (.page-swap dm-page-in), home hero stagger (dm-rise-in), scroll-reveal classes (.rv/.rv-in/.rv-done), nav motion (hamburger morph, dm-sheet-in mobile menu/submenus, dm-drop-in desktop dropdowns, orange underline on nav links), button lift/press, form focus glow, modal in/out, slick arrows/dots polish
+- NEW in this pass: footer legal-link white shift + animated underline, footer logo hover lift, .our-products card float (-8px) with button brighten, service-tab pill 0.32s 4-property transitions; reduced-motion kill switch retained
+- Recreated ScrollReveal.tsx (IntersectionObserver, progressive enhancement, 90ms column stagger, hashchange/load re-scan, reduced-motion skip)
+- Re-applied edits: layout.tsx import, FacturaApp page-swap wrapper + ScrollReveal + instant scroll-to-top, SlickSlider cubic-bezier track easing, DemoModal is-closing exit + Escape close
+- bun run lint clean; verified via agent-browser (1440x900 + 375x812): hero stagger, home 5/5 + financial 13/13 reveals, dm-page-in on route swap, productMenu dm-drop-in on hover, modal dm-modal-in + Escape cleanup (display none, backdrop unmounted), product-card hover -8px lift + button -2px, footer link hover white + underline scaleX 1, service tab fade switch, mobile dm-sheet-in menu + dropdown, hamburger morph, scrollW=375 no overflow, zero console/page errors
+
+Stage Summary:
+- Full motion system restored after workspace rollback, now with extra micro-interaction polish (footer, product cross-sell cards, service tabs)
+- All motion rules in src/styles/factura-motion.css; JS behavior in ScrollReveal.tsx; component edits minimal and re-applied; original factura.css untouched

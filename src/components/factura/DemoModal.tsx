@@ -23,6 +23,27 @@ export default function DemoModal({
   const [phone, setPhone] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [closing, setClosing] = useState(false);
+
+  // glide the dialog out before unmounting so close feels as smooth
+  // as open; Escape also dismisses
+  const requestClose = React.useCallback(() => {
+    if (closing) return;
+    setClosing(true);
+    window.setTimeout(() => {
+      setClosing(false);
+      onClose();
+    }, 260);
+  }, [closing, onClose]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") requestClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, requestClose]);
 
   useEffect(() => {
     if (open) {
@@ -57,7 +78,7 @@ export default function DemoModal({
       setPhone("");
       setTimeout(() => {
         setSubmitted(false);
-        onClose();
+        requestClose();
       }, 2200);
     }
   };
@@ -65,7 +86,9 @@ export default function DemoModal({
   return (
     <>
       <div
-        className={`modal fade${open ? " show" : ""}`}
+        className={`modal fade${open ? " show" : ""}${
+          closing ? " is-closing" : ""
+        }`}
         id="request-demo-form"
         tabIndex={-1}
         role="dialog"
@@ -83,7 +106,7 @@ export default function DemoModal({
               type="button"
               className="close color"
               aria-label="Close"
-              onClick={onClose}
+              onClick={requestClose}
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -179,8 +202,11 @@ export default function DemoModal({
         </div>
       </div>
       </div>
-      {open ? (
-        <div className="modal-backdrop fade show" onClick={onClose} />
+      {(open || closing) ? (
+        <div
+          className={`modal-backdrop fade show${closing ? " is-closing" : ""}`}
+          onClick={requestClose}
+        />
       ) : null}
     </>
   );

@@ -12,6 +12,7 @@ import CrmPage from "./pages/CrmPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
+import ScrollReveal from "./ScrollReveal";
 
 const BODY_CLASSES: Record<RouteKey, { cls: string; id: string }> = {
   home: { cls: "body- index", id: "index" },
@@ -81,10 +82,13 @@ export default function FacturaApp() {
       setTimeout(() => {
         const el = document.getElementById(anchor);
         if (el) window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
-        else window.scrollTo({ top: 0 });
+        else window.scrollTo({ top: 0, behavior: "instant" });
       }, 60);
     } else {
-      window.scrollTo({ top: 0 });
+      // html { scroll-behavior: smooth } would turn this into a long
+      // animated crawl on deep pages — jump instantly instead; the
+      // keyed .page-swap fade already smooths the visual hand-off.
+      window.scrollTo({ top: 0, behavior: "instant" });
     }
   }, [route, anchor]);
 
@@ -136,7 +140,10 @@ export default function FacturaApp() {
   return (
     <>
       <Header route={route} onRequestDemo={openDemo} navigate={navigate} />
-      {page}
+      <div className="page-swap" key={route}>
+        {page}
+      </div>
+      <ScrollReveal />
       <Footer navigate={navigate} />
       {showProducts ? <OurProducts routeKey={route} navigate={navigate} /> : null}
       <DemoModal

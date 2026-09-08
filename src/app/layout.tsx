@@ -4,6 +4,7 @@ import "../styles/factura-fonts.css";
 import "../styles/bootstrap.css";
 import "../styles/factura.css";
 import "../styles/factura-fix.css";
+import "../styles/factura-motion.css";
 
 export const metadata: Metadata = {
   title: "Datrix Tech Solutions | WorkPhelo Business Management Software",

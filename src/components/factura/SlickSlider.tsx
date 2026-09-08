@@ -276,7 +276,9 @@ export default function SlickSlider({
           style={{
             transform: `translate3d(${trackX}px, 0px, 0px)`,
             transition:
-              animate && !dragging ? `transform ${speed}ms ease` : "none",
+              animate && !dragging
+                ? `transform ${speed}ms cubic-bezier(0.22, 0.61, 0.36, 1)`
+                : "none",
             width: `${(total + cloneCount * 2) * (slideWidth || 0)}px`,
           }}
         >
