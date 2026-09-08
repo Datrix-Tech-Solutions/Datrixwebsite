@@ -516,6 +516,30 @@ section[id], div[id], footer[id] { scroll-margin-top: 92px; }
   height: auto !important;
 }
 .desktop-screen img { border-radius: 12px; margin-top: 0 !important; }
+/* keep the device pane in view across the five feature slides (replaces the
+   legacy .active{position:fixed} script with plain sticky) */
+@media (min-width: 992px) {
+  #panImage {
+    position: sticky;
+    top: 92px;
+    height: calc(100vh - 92px);
+    min-height: 0 !important;
+  }
+}
+/* feature slides: the ≤600px .height100{height:100%} rule stretches every
+   slide to the full row height (~4000px each) leaving screens of blank
+   space — let each slide size to its own content */
+@media (max-width: 600px) {
+  #feature1 .feature-content.height100 {
+    height: auto;
+    min-height: 0;
+    padding: 44px 0;
+  }
+  #feature1 .feature-content .desktop-screen.mobile-img {
+    max-width: 420px;
+    margin: 0 auto 30px;
+  }
+}
 .desktop-screen:after {
   content: "";
   display: block;

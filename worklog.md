@@ -183,3 +183,22 @@ Stage Summary:
 - Whole site now speaks Apple-minimal: ink typography, frosted glass nav, hairlines + soft depth, gray surfaces, pill buttons, restrained brand accents; all content, structure, product names, brand colors and the motion system preserved
 - New layer isolated in src/styles/factura-apple.css (factura.css/fix/motion untouched); only TSX edits: layout.tsx import + FacturaApp OurProducts/Footer order fix
 - Known non-blockers: legacy raster screenshots (Balance Sheet etc.) still carry original "FACTURA" pixels; case-study button intentionally hidden by original design (display:none kept)
+
+---
+Task ID: 11
+Agent: main (Super Z)
+Task: Final refinement pass after the Apple-minimal redesign — replace the last legacy "FACTURA" raster screenshots with branded recreations and fix two pre-existing layout bugs surfaced during QA
+
+Work Log:
+- Verified Task 6-10 artifacts intact post context-continuation (factura-motion.css, ScrollReveal, apple layer import, product names) + dev server 200
+- Recreated all 5 FinancialPage feature screenshots as hand-authored 610x371 SVGs in macOS app-window style (traffic-light chrome, hairline tables, brand navy/blue/orange, Apple surface grays): screen-accounting.svg (Balance Sheet twin cards w/ balanced totals 24,354,589.09), screen-inventory.svg (Stock Summary zebra table + navy TOTAL 1,983,555.93), screen-sales-purchase.svg (Purchase Order Analysis grid + floating Jan 2025 date-picker w/ orange selected day + pagination), screen-pos.svg (POS form fields, items row w/ orange + chip, icon upload/print buttons), screen-bi.svg (dual Top-10 bar charts w/ orange AMT accent, 6-segment expense donut w/ brand legend, Profitability +18.4% sparkline card)
+- Updated FinancialPage.tsx FEATURE_SLIDES refs; deleted the 5 legacy JPGs (~168KB of FACTURA-pixel rasters removed); all 5 new SVGs served 200
+- Fixed pre-existing desktop UX gap: original site's pane-pinning script (.summary.active{position:fixed}) was never ported to React, so the feature screenshot pane scrolled away after slide 1 — replaced with CSS-only sticky (#panImage sticky top:92px height:calc(100vh-92px) @min-width:992px); pane now stays in view across all 5 slides
+- Fixed pre-existing mobile bug: ≤600px .height100{height:100%} stretched each of the 5 feature slides to the full row height (~4060px each) creating screens of blank space — scoped override lets slides size to content (640-792px each), inline device mockup capped at 420px
+- Verified zero NEW 404s via dev.log mark-and-diff across payroll+financial (historical lines only); computed-style check confirms feature-bg/payroll-feature/payroll-modules backgrounds stay unfetched
+- bun run lint clean; agent-browser verified 1440x900 + 375x812 on all 6 routes: scrollW == viewport (no overflow), 0 broken images, 0 console/page errors; all 5 slides screenshot-verified desktop + slide 1 on mobile; financial hero regression-checked
+
+Stage Summary:
+- Site is now 100% free of legacy FACTURA-branded artwork — every rendered pixel is Datrix-branded
+- Features scroller upgraded: sticky branded device pane (desktop), content-sized slides (mobile)
+- Artifacts: tool-results/qa11-*.png (slides, mobile, hero)
