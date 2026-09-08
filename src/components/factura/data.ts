@@ -70,7 +70,7 @@ export const PRODUCTS: Record<string, Product> = {
     className: "financial",
     title: "AccountingPhelo",
     desc: "AccountingPhelo brings your business accounting online, simply and securely.",
-    packImg: "/assets/img/pack-payroll.svg",
+    packImg: "/assets/img/pack-financial.svg",
   },
   payroll: {
     slug: "/payroll",
@@ -106,17 +106,17 @@ export const OTHER_PRODUCTS: Record<string, Product[]> = {
     { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "See how MarketingPhelo supports organisations across a wide range of industries." },
   ],
   payroll: [
-    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-financial.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
     { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "See how Datrix Customized Software supports organisations across a wide range of industries." },
     { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "See how MarketingPhelo supports organisations across a wide range of industries." },
   ],
   contract: [
-    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-financial.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
     { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how HRPhelo supports organisations across a wide range of industries." },
     { ...PRODUCTS.crm, title: "MarketingPhelo", packImg: "/assets/img/pack-crm.svg", desc: "See how MarketingPhelo supports organisations across a wide range of industries." },
   ],
   crm: [
-    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
+    { ...PRODUCTS.financial, title: "AccountingPhelo", packImg: "/assets/img/pack-financial.svg", desc: "See how AccountingPhelo supports organisations across a wide range of industries." },
     { ...PRODUCTS.payroll, title: "HRPhelo", packImg: "/assets/img/pack-payroll.svg", desc: "See how HRPhelo supports organisations across a wide range of industries." },
     { ...PRODUCTS.contract, title: "Customized Software", packImg: "/assets/img/pack-contract.svg", desc: "See how Datrix Customized Software supports organisations across a wide range of industries." },
   ],

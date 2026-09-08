@@ -134,3 +134,23 @@ Stage Summary:
 - Every page hero is now a bespoke branded flat illustration matching the example's style — videos retired from all heroes
 - Assets: public/assets/img/hero/{home,financial,payroll,crm,contract,contact}.svg; old videos/legacy hero SVGs left in place but unreferenced by heroes
 - Known stylistic follow-up (optional): home service-tab content illustrations still use the older green/teal art family — out of hero scope, flag for a future pass
+
+---
+Task ID: 9
+Agent: main (Super Z)
+Task: Content illustration harmonization — bring every remaining legacy art family (home service tabs, CRM showcase scenes, ONE APPLICATION diagram, cross-sell pack boxes, 68 small icons, per-product accent colors) into the Datrix flat-character brand style introduced by the Task 8 hero redesign
+
+Work Log:
+- Verified Task 6/7/8 artifacts intact after context continuation; audited every content illustration family and its palette (payroll icons purple #9028ad, contract icons red-orange #ee4124 family, financial icons cyan #00b5d3, CRM counters yellow-orange #f6c315, home tabs teal/purple/heavy-yellow scenes)
+- Wrote scripts/recolor_icons.py: remapped gradient stops + stray fills across 68 files (30 payroll feature/human/module icons, 16 financial features/industries icons, 3 CRM counters, 18 contract feature icons, 3 contract showcase strays) to brand navy #21346B / blue #1B75BB / light-blue #2D9CDB; verified zero legacy hexes remain outside fully-replaced files
+- Hand-authored 4 home service-tab scenes in the hero scene-kit style (blob gradient #3FB3EA->#1173B4, halo #D9EDFB, tone-on-tone clouds, flat characters with varied skin tones #F4A988/#C98850, orange/navy/green accents): Financials.svg (AccountingPhelo: dashboard+line chart, tilted invoice with green tick, coin stack, calculator/bank/pie chips, female pointing + male seated with laptop), payroll.svg (HRPhelo: 2x2 team board, tilted PAID payslip, ID badge, calendar chip, female with clipboard + male carrying badge), customized.svg (browser with 6 brand app tiles, orange/navy gears, </> code chip, green puzzle, female seated on browser + male with module card), CRM.svg (growth dashboard with orange arrow, customer card with hearts/stars, megaphone, envelope chip, female presenting + male with deal card)
+- Hand-authored CRM showcase scenes: page-crm/why-need-CRM.svg (unified customer hub with dashed connection lines to phone/chat/mail/chart/calendar chips + 2 characters) and page-crm/why-CRM.svg (modular CRM frame with filled slots + dashed empty slot, sliders chip, price-tag chip, male placing module)
+- Rebuilt page-financials/automate-finance.svg as brand ONE APPLICATION orbit diagram: orange gradient core, dashed blue orbit, 8 navy/blue icon nodes with labels (Inventory/Intelligence/Sales/Purchase/Accounting/Orders/Manufacturing/POS)
+- Replaced three ~1.25MB base64-raster pack boxes with lightweight branded SVG product boxes (Datrix mark + wordmark + per-product mini scene + accent base strip): pack-payroll/pack-contract/pack-crm; created NEW pack-financial.svg and fixed long-standing data.ts bug where AccountingPhelo reused the payroll box (PRODUCTS.financial + 3 OTHER_PRODUCTS entries)
+- CSS harmonization appended to factura-fix.css (factura.css kept pristine): per-product accents payroll purple #440E62->blue #1B75BB, contract red #E31B22->green #2E9E6B (buttons, mega-menu rails, featuresMenu, body-* link accents, testimonial bands), demo-btn gradient navy->purple now navy->blue, checklist ticks red->green, contract-intro ticks green, CRM feature tiles orange gradient, module-tabs active pill purple->blue; guard so page link accents never recolour CTA labels; cross-sell pack columns normalized (40/60) + financial CTA rendered as white pill on the navy band
+- bun run lint clean; verified via agent-browser 1440x900 + 375x812 on all 6 routes: scrollW equals viewport (no overflow), zero unloaded images, zero console/page errors; visual pass on all 4 tabs, CRM why sections, automate diagram, payroll benefits+modules tabs, contract hero/features, cross-sell band (consistent box sizes, blue/green/white CTAs), payroll testimonial band now brand blue
+
+Stage Summary:
+- Entire site illustration system is now one brand family: flat-character scenes (heroes + tabs + showcase), navy/blue orbit diagram, branded pack boxes, unified icon gradients
+- Site-wide palette is fully Datrix: navy #21346B / blue #1B75BB / light-blue #2D9CDB / orange #F7941D / green #2E9E6B — no purple, red or teal legacy hues remain in any rendered asset or accent
+- Bundle win: cross-sell art went from ~3.8MB raster-embedded SVGs to ~10KB hand-authored SVGs

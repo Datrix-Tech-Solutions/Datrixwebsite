@@ -206,3 +206,80 @@
 @media (max-width: 420px) {
   #chartdiv { height: 250px !important; }
 }
+
+/* ------------------------------------------------------------------ */
+/* 13. Product accent harmonization                                   */
+/*      Legacy per-product hues (payroll purple, contract red) mapped */
+/*      onto the Datrix family: navy #21346B / blue #1B75BB /         */
+/*      green #2E9E6B / orange #F7941D.                               */
+/* ------------------------------------------------------------------ */
+
+.payroll a.payroll,
+.body-payroll .color,
+.body-payroll a.color { color: #1B75BB !important; }
+.body-payroll .color { color: #1B75BB; }
+.body-payroll .background { background: #1B75BB; }
+
+.contract a.contract,
+.body-contract .color,
+.body-contract a.color { color: #2E9E6B !important; }
+.body-contract .color { color: #2E9E6B; }
+.body-contract .background { background: #2E9E6B; }
+
+.payroll .testimonial2 { background-color: #1B75BB !important; }
+.contract .testimonial2 { background-color: #2E9E6B !important; }
+
+/* Checklist ticks: green reads as "done" across every page */
+.checklist .fa-check-circle:before { color: #2E9E6B; }
+
+/* Buttons */
+.request-btn.payroll {
+  background: #1B75BB url('/assets/img/button-bg.svg') bottom right no-repeat !important;
+  color: #fff !important;
+}
+.request-btn.contract {
+  background: #2E9E6B url('/assets/img/button-bg.svg') bottom right no-repeat !important;
+  color: #fff !important;
+}
+.request-btn.demo-btn {
+  background: linear-gradient(90deg, #21346B 0%, #1B75BB 100%) !important;
+  color: #fff;
+}
+
+/* Product mega-menu rail accents */
+.productMenu .contract a { border-left-color: #2E9E6B; }
+.productMenu .payroll a { border-left-color: #1B75BB; }
+.featuresMenu a:last-child { background-color: #1B75BB !important; color: #fff; }
+
+/* Cross-sell pack art: consistent footprint across all cards */
+.our-products .product > .col:first-child { flex: 0 0 40%; max-width: 40%; }
+.our-products .product > .col:last-child { flex: 1 1 60%; max-width: 60%; }
+.our-products .product img { width: 100%; height: auto; }
+
+/* Financial CTA inside the navy cross-sell band: white pill so it reads */
+.our-products .request-btn.financial {
+  background: #FFFFFF url('/assets/img/button-bg.svg') bottom right no-repeat !important;
+}
+.our-products .request-btn.financial .fa-arrow-right { color: #21346B; }
+
+/* Payroll module tab switch: brand blue instead of legacy purple */
+.module-tabs .nav-tabs { border-color: #1B75BB !important; }
+.module-tabs .nav-tabs .nav-link.active { background: #1B75BB !important; color: #fff !important; }
+
+/* Keep CTA text white on product pages: the per-page link accent
+   (e.g. .contract a.contract) must not recolour button labels */
+.contract a.contract.request-btn,
+.payroll a.payroll.request-btn,
+.crm a.crm.request-btn,
+.financial a.financial.request-btn { color: #fff !important; }
+
+/* Page-wide link accent on payroll/contract pages follows the new hues */
+.body-payroll a { color: #1B75BB; }
+.body-contract a { color: #2E9E6B; }
+
+/* Contract hero intro ticks: green, not legacy red */
+.contract-intro-points .fa-check:before { color: #2E9E6B; }
+
+/* CRM feature tiles: brand orange gradient instead of legacy red-orange */
+.payroll-checklist span { background: linear-gradient(90deg, #FDB249 0%, #F7941D 100%) !important; }
+.crm-checklist span { background: linear-gradient(90deg, #FDB249 0%, #F7941D 100%) !important; }
