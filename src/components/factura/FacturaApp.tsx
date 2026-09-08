@@ -144,8 +144,8 @@ export default function FacturaApp() {
         {page}
       </div>
       <ScrollReveal />
-      <Footer navigate={navigate} />
       {showProducts ? <OurProducts routeKey={route} navigate={navigate} /> : null}
+      <Footer navigate={navigate} />
       <DemoModal
         open={demoOpen}
         productValue={modal.value}

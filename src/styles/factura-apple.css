@@ -1,0 +1,778 @@
+/* ============================================================
+   Datrix Tech Solutions — "Cupertino" refinement layer
+   An Apple-school pass over the existing minimal design:
+   same details, same brand, executed with restraint —
+   system typography, generous whitespace, hairlines instead
+   of borders, soft depth instead of heavy shadows, one
+   accent per moment.
+   Loaded LAST (after factura-motion.css).
+   ============================================================ */
+
+:root {
+  --da-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Helvetica Neue", "Rubik", "Segoe UI", Roboto, Arial, sans-serif;
+  --da-ink: #1d1d1f;          /* primary text  */
+  --da-ink-2: #515154;        /* body copy     */
+  --da-gray: #86868b;         /* secondary     */
+  --da-hairline: rgba(0, 0, 0, 0.08);
+  --da-surface: #f5f5f7;      /* Apple gray    */
+  --da-navy: #21346b;
+  --da-blue: #1b75bb;
+  --da-sky: #2d9cdb;
+  --da-orange: #f7941d;
+  --da-green: #2e9e6b;
+  --da-radius: 18px;
+  --da-radius-lg: 28px;
+  --da-shadow-1: 0 2px 12px rgba(0, 0, 0, 0.04), 0 12px 40px rgba(23, 43, 99, 0.06);
+  --da-shadow-2: 0 4px 16px rgba(0, 0, 0, 0.06), 0 24px 64px rgba(23, 43, 99, 0.12);
+}
+
+/* ------------------------------------------------------------
+   1. Typography — the loudest quiet change of all
+   ------------------------------------------------------------ */
+body {
+  font-family: var(--da-font);
+  font-size: 17px;
+  line-height: 1.47;
+  font-weight: 400;
+  color: var(--da-ink);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.mainHeading1, .mainHeading2, .mainHeading3, .mainHeading4,
+.mainHeading5, .mainHeading6 {
+  font-family: var(--da-font);
+  color: var(--da-ink);
+  font-weight: 600;
+}
+
+h1, .mainHeading1 {
+  font-size: clamp(2.125rem, 1.1rem + 2.9vw, 3.875rem);   /* ~34 → 62px */
+  line-height: 1.07;
+  letter-spacing: -0.022em;
+  font-weight: 700;
+}
+
+h2, .mainHeading2 {
+  font-size: clamp(1.75rem, 1.1rem + 2vw, 2.875rem);      /* ~28 → 46px */
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+h3, .mainHeading3 {
+  font-size: clamp(1.3rem, 1.1rem + 0.7vw, 1.625rem);     /* ~21 → 26px */
+  line-height: 1.32;
+  letter-spacing: -0.012em;
+  font-weight: 600;
+}
+
+h4, .mainHeading4 { font-size: 1.0625rem; line-height: 1.4; letter-spacing: -0.008em; }
+h5, .mainHeading5, label { font-size: 1rem; letter-spacing: 0; }
+h6, .mainHeading6 { font-size: 0.875rem; letter-spacing: 0.04em; }
+
+p, li { letter-spacing: -0.004em; }
+
+.paragraph2 {
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.3125rem);    /* 18 → 21px */
+  line-height: 1.55;
+  font-weight: 400;
+  color: var(--da-gray);
+}
+
+p { color: var(--da-ink-2); }
+
+::selection { background: rgba(45, 156, 219, 0.22); }
+
+/* Focus ring — visible for keyboard users only */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid rgba(45, 156, 219, 0.55);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Anchors clear the fixed header when jumped to */
+section[id], div[id], footer[id] { scroll-margin-top: 92px; }
+
+/* ------------------------------------------------------------
+   2. Header — fixed frosted-glass nav (the Cupertino signature)
+   ------------------------------------------------------------ */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--da-hairline);
+}
+
+.main-header .navbar { padding-top: 0.65rem; padding-bottom: 0.65rem; }
+
+.navbar-brand img {
+  width: 118px;
+  transition: width 0.32s var(--ease-soft);
+}
+
+/* product label under the logo, set as small caps whisper */
+.navbar-brand:after {
+  bottom: -14px;
+  right: 22px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--da-gray);
+}
+
+.navbar-nav a {
+  color: var(--da-ink);
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 22px;
+  opacity: 0.82;
+  transition: opacity 0.22s var(--ease-soft);
+}
+.navbar-nav a:hover { opacity: 1; }
+
+/* kill the orange underline — Apple signs with stillness */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav > li > .nav-link::before { display: none; }
+}
+
+/* caret a touch quieter */
+.navbar-nav a.dropdown-toggle::after { opacity: 0.5; }
+
+/* Book-a-demo pill inside the nav */
+.main-header .request-btn {
+  border-radius: 980px;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 22px;
+}
+
+.navbar-toggler span { background: var(--da-ink); height: 2px; border-radius: 2px; }
+
+/* --- dropdown panels: floating frosted cards ---------------- */
+.dropdown .dropdown-menu,
+.productMenu,
+.financialMegaMenu {
+  background: rgba(255, 255, 255, 0.96) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  backdrop-filter: saturate(180%) blur(24px);
+  border: 1px solid var(--da-hairline) !important;
+  border-radius: var(--da-radius-lg) !important;
+  box-shadow: var(--da-shadow-2);
+  overflow: hidden;
+}
+
+.dropdown .dropdown-menu { padding: 10px !important; }
+
+.dropdown .dropdown-menu a,
+.dropdown-item {
+  border-radius: 10px;
+  font-size: 14px !important;
+  padding: 9px 14px !important;
+  color: var(--da-ink);
+  transition: background-color 0.18s var(--ease-soft);
+}
+.dropdown .dropdown-menu a:hover,
+.dropdown-item:hover { background: var(--da-surface); }
+
+/* Products mega menu */
+.productMenu { padding: 18px 22px !important; }
+.productMenu a {
+  border: none !important;
+  border-radius: 8px;
+  font-size: 16px !important;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding: 2px 0 !important;
+  display: inline-block;
+}
+.productMenu a.financial { color: var(--da-navy); }
+.productMenu a.payroll   { color: var(--da-blue); }
+.productMenu a.crm       { color: #d97c06; }
+.productMenu a.contract  { color: var(--da-green); }
+.productMenu p {
+  font-size: 13.5px !important;
+  line-height: 1.55;
+  color: var(--da-gray);
+  margin-top: 4px;
+}
+.productMenu p:before { opacity: 0.9; }
+.productMenu .nav-item { border-radius: 14px; }
+.productMenu li ul li:hover a { border-left-width: 0; padding-left: 0; }
+.productMenu li ul li:hover p { padding-left: 0; }
+
+/* Financial features / industries mega menus */
+.financialMegaMenu h4 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--da-gray);
+}
+.financialMegaMenu a {
+  font-size: 14px;
+  color: var(--da-ink-2);
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: block;
+}
+.financialMegaMenu a:hover { background: var(--da-surface); color: var(--da-ink); }
+.featuresMenu a:last-child { border-radius: 10px; margin-top: 6px; }
+
+/* --- mobile sheet keeps the glass --------------------------- */
+@media (max-width: 991.98px) {
+  .main-header .navbar-collapse {
+    background: rgba(255, 255, 255, 0.985);
+    -webkit-backdrop-filter: saturate(180%) blur(24px);
+    backdrop-filter: saturate(180%) blur(24px);
+    border-bottom: 1px solid var(--da-hairline);
+    border-radius: 0 0 var(--da-radius-lg) var(--da-radius-lg);
+    box-shadow: 0 30px 60px rgba(23, 43, 99, 0.14);
+  }
+  .navbar-collapse .navbar-nav a.nav-link,
+  .navbar-collapse .dropdown .dropdown-toggle {
+    color: var(--da-ink);
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+  .navbar-collapse .request-btn {
+    border-radius: 980px;
+    margin: 14px 24px 6px;
+    padding: 13px 20px;
+    font-size: 15px;
+  }
+  .navbar-collapse .dropdown .dropdown-menu,
+  .navbar-collapse .productMenu,
+  .navbar-collapse .financialMegaMenu {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .navbar-collapse .productMenu a { color: var(--da-ink); }
+  .navbar-brand img { width: 104px; }
+  .navbar-brand:after { left: 4px; right: auto; bottom: -13px; }
+}
+
+/* ------------------------------------------------------------
+   3. Buttons — one pill to rule them all (kills button-bg.svg 404)
+   ------------------------------------------------------------ */
+.request-btn {
+  background: #ffffff !important;
+  background-image: none !important;
+  background-size: auto !important;
+  color: var(--da-ink);
+  border-radius: 980px;
+  font-family: var(--da-font);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  padding: 12px 26px;
+  line-height: 1.2;
+}
+
+.request-btn.big { padding: 16px 34px; font-size: 17px; }
+
+.request-btn.financial { background: var(--da-navy) !important; color: #fff !important; }
+.request-btn.payroll   { background: var(--da-blue) !important; color: #fff !important; }
+.request-btn.crm       { background: var(--da-orange) !important; color: #fff !important; }
+.request-btn.contract  { background: var(--da-green) !important; color: #fff !important; }
+.request-btn.demo-btn  { background: linear-gradient(96deg, #24356e 0%, #1b75bb 100%) !important; color: #fff !important; }
+.request-btn.demo-btn1 { background: var(--da-navy) !important; color: #fff !important; }
+
+.request-btn.outlined {
+  background: #fff !important;
+  border: 1px solid #d2d2d7;
+  color: var(--da-ink);
+}
+
+.request-btn:hover { filter: saturate(1.08) brightness(1.04); }
+
+/* ------------------------------------------------------------
+   4. Heroes — white field, two whisper-soft color washes
+   ------------------------------------------------------------ */
+.home-banner,
+.topBannerSection,
+.financial-banner,
+.contactSection {
+  background:
+    radial-gradient(880px 480px at 86% 8%, rgba(45, 156, 219, 0.10), transparent 62%),
+    radial-gradient(720px 460px at 4% 92%, rgba(247, 148, 29, 0.07), transparent 58%),
+    #ffffff;
+}
+
+/* clear the fixed glass header; keep optical centre high */
+.home-banner .height100,
+.topBannerSection .height100,
+.financial-banner .height100,
+.contactSection .height100 {
+  padding-top: 88px;
+  padding-bottom: 24px;
+}
+
+.factura-intro h1 { margin-bottom: 0.55em; }
+.factura-intro .paragraph2 { max-width: 36em; }
+.factura-intro .request-btn { margin-top: 18px; }
+
+/* soft halo + depth behind hero art */
+.main-illustration { position: relative; }
+.main-illustration::before {
+  content: "";
+  position: absolute;
+  left: -6%;
+  top: 4%;
+  width: 112%;
+  height: 104%;
+  background: radial-gradient(closest-side, rgba(45, 156, 219, 0.11), rgba(45, 156, 219, 0.04) 56%, transparent 74%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+.main-illustration img { position: relative; z-index: 1; }
+
+.hero-art {
+  filter: drop-shadow(0 22px 44px rgba(23, 43, 99, 0.10));
+}
+
+/* ------------------------------------------------------------
+   5. Sections — calmer rhythm, Apple gray surfaces
+   ------------------------------------------------------------ */
+.sectionPadding { padding: 128px 0; }
+.bgGray { background: var(--da-surface); }
+
+/* Overview intros read like Apple keynote copy: centered, measured */
+.overview .row.mb-5 .col-sm-12 > h2,
+.overview h2.text-center { text-align: center; }
+.overview .row.mb-5 p {
+  text-align: center;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 1.62;
+  color: var(--da-ink-2);
+}
+.overview .row.mb-5 h2 { margin-bottom: 26px; }
+
+/* Checklists — airy rows, quiet ticks */
+.checklist li {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  color: var(--da-ink-2);
+}
+.checklist .fa-check-circle:before { font-size: 18px; }
+.contract-intro-points li { color: var(--da-ink-2); }
+
+/* Home service tabs — quiet type, brand underline stays */
+.service-tabs .nav-link {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--da-gray);
+  border-bottom: 3px solid transparent !important;
+  padding-bottom: 10px;
+}
+.service-tabs .nav-link.active {
+  color: var(--da-ink);
+  font-weight: 600;
+  border-bottom-color: var(--da-orange) !important;
+}
+.service-tabs .nav-item { margin: 0 24px; }
+.home-services .main-illustration img { border-radius: 20px; }
+
+/* last legacy bg refs (404): module wall becomes the Apple-gray surface */
+.payroll-module { background: var(--da-surface) !important; }
+.summary:before { content: none; }
+
+/* Payroll module tab pill */
+.module-tabs .nav-tabs {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--da-hairline) !important;
+  border-radius: 980px;
+  padding: 5px;
+  box-shadow: var(--da-shadow-1);
+}
+.module-tabs .nav-tabs .nav-link {
+  border-radius: 980px !important;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--da-gray);
+}
+.module-tabs .nav-tabs .nav-link.active {
+  background: var(--da-blue) !important;
+  color: #fff !important;
+  box-shadow: 0 6px 18px rgba(27, 117, 187, 0.35);
+}
+
+/* ------------------------------------------------------------
+   6. Cards — hairline + soft depth, no more gray edge noise
+   ------------------------------------------------------------ */
+.payroll-checklist .checklist {
+  border-radius: var(--da-radius);
+  border: 1px solid rgba(0, 0, 0, 0.045);
+  box-shadow: var(--da-shadow-1);
+  transition: transform 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft);
+}
+.payroll-checklist .checklist:hover {
+  margin-top: 0;
+  transform: translateY(-6px);
+  box-shadow: var(--da-shadow-2);
+}
+.payroll-checklist span,
+.crm-checklist span {
+  border-radius: 12px !important;
+  box-shadow: 0 6px 16px rgba(247, 148, 29, 0.35);
+}
+/* white-tick.svg ships 404 — draw the tick in CSS */
+.payroll-checklist span:before,
+.crm-checklist span:before {
+  background: none !important;
+  content: "\2713";
+  color: #fff;
+  font-size: 21px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.module-list li .media {
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--da-shadow-1);
+  transition: transform 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft);
+}
+.module-list li .media:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--da-shadow-2);
+}
+.module-list h4 { font-weight: 600; }
+
+.crm-feature img { transition: transform 0.4s var(--ease-soft); }
+.crm-feature:hover img { transform: translateY(-6px) scale(1.02); }
+
+/* Pricing cards (Customized Software) */
+.pricing-table .col {
+  border-radius: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--da-shadow-1);
+}
+.pricing-table .featured {
+  border: 1px solid rgba(46, 158, 107, 0.35);
+  border-top: 6px solid var(--da-green);
+  transform: scale(1.04);
+  box-shadow: var(--da-shadow-2);
+}
+
+/* Comparison table section — its bg SVG ships 404, give it a field */
+.financial-table-section {
+  background:
+    radial-gradient(900px 520px at 88% 10%, rgba(45, 156, 219, 0.08), transparent 60%),
+    linear-gradient(180deg, #fbfbfd 0%, #f5f5f7 100%);
+}
+.financial-table-section ul { border-radius: 4px; }
+.financial-table-section ul:nth-child(2) {
+  border-radius: 18px;
+  transform: scale(1.06);
+  box-shadow: 0 10px 40px rgba(23, 43, 99, 0.10);
+}
+.financial-table-section li.active { border-radius: 14px 14px 0 0; }
+/* quiet competitor header band instead of heavy gray */
+.financial-table-section li:first-child {
+  background: #e8e8ed !important;
+  color: var(--da-ink) !important;
+  font-weight: 500;
+}
+/* red ✗ SVGs read as alarm — mute them to graphite, ticks stay green */
+.financial-table img[src*="cross"] {
+  filter: grayscale(1);
+  opacity: 0.45;
+}
+
+/* Feature screenshots: iMac frame art ships 404 — draw a quiet device */
+.desktop-screen {
+  background: #1d1d1f !important;
+  border-radius: 22px;
+  padding: 12px !important;
+  box-shadow: var(--da-shadow-2);
+  height: auto !important;
+}
+.desktop-screen img { border-radius: 12px; margin-top: 0 !important; }
+.desktop-screen:after {
+  content: "";
+  display: block;
+  width: 34%;
+  height: 5px;
+  border-radius: 0 0 10px 10px;
+  background: rgba(255, 255, 255, 0.22);
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------
+   7. Testimonials & clients — calm bands, glass-free cards
+   ------------------------------------------------------------ */
+.home-testimonial {
+  background: #ffffff !important;
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+.single-client-testimonial {
+  border-radius: 24px;
+  padding: 32px 44px !important;
+}
+.home-testimonial .single-client-testimonial { box-shadow: none; }
+.home-testimonial .slick-slide.slick-current.slick-active.slick-center .single-client-testimonial {
+  box-shadow: var(--da-shadow-2);
+}
+.home-testimonial .slick-prev:before,
+.home-testimonial .slick-next:before { color: #a1a1a6; opacity: 0.85; }
+
+/* product bands: kill 404 texture, keep brand color + subtle shade */
+.testimonial2,
+.financial .testimonial2,
+.payroll .testimonial2,
+.crm .testimonial2,
+.contract .testimonial2 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.07)) !important;
+}
+.testimonial2 .single-client-testimonial {
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: none;
+}
+.testimonial2 .slick-prev,
+.testimonial2 .slick-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  background: transparent !important;
+  transition: background-color 0.22s var(--ease-soft), border-color 0.22s var(--ease-soft);
+}
+.testimonial2 .slick-prev:hover,
+.testimonial2 .slick-next:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.testimonial2 .slick-prev:before,
+.testimonial2 .slick-next:before {
+  display: block !important;
+  font-family: var(--da-font);
+  font-size: 26px;
+  line-height: 40px;
+  color: #fff;
+  opacity: 0.9;
+}
+.testimonial2 .slick-prev:before { content: "\2039"; }
+.testimonial2 .slick-next:before { content: "\203A"; }
+.testimonial2 .slick-dots li button { background: rgba(255, 255, 255, 0.35); }
+.testimonial2 .slick-dots li.slick-active button { background: #fff; }
+.testimonial2 .media img,
+.single-client-testimonial .media img { border-radius: 50%; }
+
+/* client logo strip */
+.clients { padding: 92px 0; }
+.home-clients { background: #fafafc; border-top: 1px solid rgba(0, 0, 0, 0.05); }
+.clients-list img { opacity: 0.5; transition: opacity 0.3s var(--ease-soft), filter 0.3s var(--ease-soft); }
+.clients-list a:hover img { opacity: 1; }
+
+/* ------------------------------------------------------------
+   8. Cross-sell band (Explore the Rest of Our Products)
+   ------------------------------------------------------------ */
+.our-products {
+  background: linear-gradient(180deg, #22366f 0%, #1e2f63 100%) !important;
+}
+.our-products .mainHeading3 { font-weight: 600; letter-spacing: -0.015em; }
+.our-products p { color: rgba(255, 255, 255, 0.78); font-size: 15px; line-height: 1.7; }
+.our-products .product .request-btn {
+  border-radius: 980px !important;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+}
+.our-products .request-btn.financial { background: #ffffff !important; }
+.our-products .request-btn.financial .fa-arrow-right { color: var(--da-navy); }
+
+/* ------------------------------------------------------------
+   9. Footer — deep navy night, silver links, orange kept as a dot
+   ------------------------------------------------------------ */
+.home-footer {
+  background: linear-gradient(180deg, #1e2f63 0%, #16224a 100%) !important;
+  color: rgba(255, 255, 255, 0.72);
+}
+.home-footer p, .home-footer a { color: rgba(255, 255, 255, 0.72); }
+.home-footer a:hover { color: #ffffff; }
+.home-footer ul .header { color: #fff; font-weight: 600; letter-spacing: 0.02em; }
+.footer-brand { padding: 46px 0 34px; }
+.footer-brand .footer-tagline { color: rgba(255, 255, 255, 0.85); font-weight: 300; }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-bottom: calc(15px + env(safe-area-inset-bottom)); }
+.footer-bottom p { color: rgba(255, 255, 255, 0.6); }
+
+.subscribe-box {
+  border-radius: 20px;
+  box-shadow: 0 18px 44px rgba(247, 148, 29, 0.28);
+}
+#sub_email_footer, #sub_btn { border-radius: 0; }
+#sub_email_footer { border-top-left-radius: 980px !important; border-bottom-left-radius: 980px !important; }
+#sub_btn { border-top-right-radius: 980px !important; border-bottom-right-radius: 980px !important; background-color: #16224a; }
+
+/* ------------------------------------------------------------
+   10. Forms & modal — quiet fields on white, blue focus ring
+   ------------------------------------------------------------ */
+.form-default {
+  border-radius: 14px;
+  background: var(--da-surface);
+  border: 1.5px solid transparent;
+  box-shadow: none !important;
+  color: var(--da-ink);
+  font-family: var(--da-font);
+}
+.form-default::-webkit-input-placeholder { color: #86868b; }
+.form-default:focus,
+.form-control:focus {
+  background: #fff;
+  border-color: var(--da-sky);
+  box-shadow: 0 0 0 4px rgba(45, 156, 219, 0.14) !important;
+  outline: none;
+}
+
+.modal-dialog { max-width: 560px; }
+.modal-content {
+  border: none;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.30);
+}
+.modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 22px 34px;
+}
+.modal-title { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; }
+.modal-header .close {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 34px;
+  transition: background-color 0.2s var(--ease-soft);
+}
+.modal-header .close:hover { background: var(--da-surface); }
+#request-demo-form .modal-body {
+  background: #fff;
+  border-top: none;
+  padding: 28px 34px 34px;
+}
+.modal-backdrop.show { opacity: 0.44; }
+
+/* Contact page: the form sits on an Apple-gray card */
+.contactSection .height100 { align-items: center; }
+.contact-form-container {
+  background: var(--da-surface);
+  border-radius: var(--da-radius-lg);
+  padding: 42px 44px !important;
+  box-shadow: var(--da-shadow-1);
+}
+.contact-form-container .form-default { background: #fff; }
+.contanctInfo h3 { margin-bottom: 10px; }
+.contanctInfo p { color: var(--da-gray); font-size: 17px; }
+
+/* ------------------------------------------------------------
+   11. Whisper details — sidebar rails, legal pages, links
+   ------------------------------------------------------------ */
+.sidebar-navbar ul li a {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #a1a1a6;
+  font-weight: 500;
+}
+.sidebar-navbar ul li a:hover { color: var(--da-ink); }
+
+.normal-page { padding: 140px 0 110px; }
+.terms h5 { font-weight: 600; }
+.terms li { color: var(--da-ink-2); line-height: 1.6; }
+
+.body-financial a, .financial a.financial { color: var(--da-navy); }
+.body-payroll a { color: var(--da-blue); }
+.body-contract a { color: var(--da-green); }
+
+h2.text-center { margin-bottom: 0.6em; }
+
+/* utility colors must survive the new heading rules (equal-specificity ties) */
+.colorWhite { color: #fff; }
+.colorGreen { color: var(--da-orange); }
+
+/* cross-sell cards: headings sized to the narrow column */
+.our-products h2, .our-products .mainHeading2 {
+  font-size: 1.375rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ------------------------------------------------------------
+   12. Motion retune — Apple moves are smaller and slower
+   ------------------------------------------------------------ */
+@keyframes dm-hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+.main-illustration .hero-art,
+.contactIllustrator .hero-art {
+  animation: dm-hero-float 8s var(--ease-soft) 1.4s infinite;
+}
+.rv { transform: translateY(20px); }
+.request-btn:hover, .demo-btn:hover { box-shadow: 0 10px 26px rgba(23, 43, 99, 0.18); }
+
+/* ------------------------------------------------------------
+   13. Responsive scale-down (phones keep the hierarchy)
+   ------------------------------------------------------------ */
+@media (max-width: 1024px) {
+  .sectionPadding { padding: 100px 0; }
+}
+
+@media (max-width: 767.98px) {
+  .sectionPadding { padding: 76px 0; }
+  /* the fixed header + hero padding replaced these legacy offsets */
+  .home-banner,
+  .financial-banner,
+  .payroll-banner,
+  .crm-banner { margin-top: 0 !important; }
+  .home-testimonial { padding-top: 88px; }
+  .clients { padding: 64px 0; }
+  .single-client-testimonial { padding: 26px 26px !important; }
+  .contact-form-container { padding: 30px 22px !important; border-radius: 22px; }
+  #request-demo-form .modal-body { padding: 22px 20px 26px; }
+  .modal-header { padding: 18px 22px; }
+  .home-banner .height100,
+  .topBannerSection .height100,
+  .financial-banner .height100,
+  .contactSection .height100 { padding-top: 84px; padding-bottom: 10px; }
+  .normal-page { padding: 120px 0 80px; }
+  .our-products .product { margin-bottom: 40px; }
+  .financial-table-section ul:nth-child(2) { transform: none; }
+}
+
+@media (max-width: 420px) {
+  h1, .mainHeading1 { letter-spacing: -0.018em; }
+  .request-btn.big { padding: 15px 30px; font-size: 16px; }
+}
+

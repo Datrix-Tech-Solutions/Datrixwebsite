@@ -154,3 +154,32 @@ Stage Summary:
 - Entire site illustration system is now one brand family: flat-character scenes (heroes + tabs + showcase), navy/blue orbit diagram, branded pack boxes, unified icon gradients
 - Site-wide palette is fully Datrix: navy #21346B / blue #1B75BB / light-blue #2D9CDB / orange #F7941D / green #2E9E6B — no purple, red or teal legacy hues remain in any rendered asset or accent
 - Bundle win: cross-sell art went from ~3.8MB raster-embedded SVGs to ~10KB hand-authored SVGs
+
+---
+Task ID: 10
+Agent: main (Super Z)
+Task: Apple-school minimalist redesign of the whole website — "Steve Jobs eye" pass keeping all details/content/brand, elevating typography, surfaces, components and motion (user: "using the eye of a ui ux designer from steve jobs apple, redesign the whole website using the same details with a similar style of the current minimalism")
+
+Work Log:
+- Built src/styles/factura-apple.css (~800 lines) loaded LAST in layout.tsx; zero content changes, product/brand names untouched
+- Typography system: SF-first stack (-apple-system > SF Pro Display/Text > Helvetica Neue > Rubik self-hosted); ink #1d1d1f headings w/ tight tracking (h1 clamp 34-62px -0.022em, h2 28-46px, h3 21-26px); body 17px #1d1d1f, .paragraph2 18-21px Apple gray #6e6e73; antialiased rendering
+- Header: absolute -> FIXED frosted glass (rgba(255,255,255,.72) + saturate(180%) blur(20px), hairline bottom, z-1030); slimmer logo 118px; quiet ink nav links (orange hover underline removed); dropdown panels -> floating frosted cards (radius 28, blur 24, soft shadow); mobile sheet 0.985 glass with rounded bottom
+- Buttons: single 980px-radius pill language, flat brand fills (navy/blue/orange/green per product), button-bg.svg dependency removed (asset was 404); .big 17px
+- Heroes: white field + two radial color washes (sky top-right, orange bottom-left, ~7-10% alpha) on all banners incl. contract (financial-banner) + contact; hero art halo + drop-shadow; legacy margin-top offsets replaced by padding-top 88px under fixed header
+- Sections: sectionPadding 128px, bgGray -> #f5f5f7 (Apple surface); overview intros centered w/ 860px measure; checklists airy; service tabs quiet gray w/ orange active underline; module-tabs -> true segmented control (pill track + blue active w/ glow); payroll-module wall -> gray surface
+- Cards: payroll/crm feature cards + module cards -> hairline border + soft two-layer shadows, transform hover lift (replaced janky margin-top hover); pricing featured card green top border
+- Comparison table: heavy #9B9B9B header band -> #e8e8ed w/ ink text; red cross SVGs muted to graphite via grayscale filter; section bg -> soft field (its bg SVG was 404)
+- Desktop-screen iMac frame (imac.png was 404) -> CSS device bezel (dark rounded frame + stand bar)
+- Testimonials: home band wave.svg (404) -> clean white; cards radius 24; dark product bands keep brand colors w/ subtle gradient (texture 404 killed); rebuilt missing arrow SVGs as circular hairline chevron buttons; dots white on dark
+- Cross-sell band: FIXED pre-existing DOM bug in FacturaApp.tsx (OurProducts rendered AFTER Footer -> moved before); h2 scoped 22px (was overlapping cards); white headings guarded via .colorWhite re-assert (equal-specificity tie vs new heading rules); band+footer gradients matched to remove seam; arrows pill-shaped
+- Footer: deep navy gradient night (#1e2f63->#16224a), silver rgba-white links (orange reserved for tagline dot + subscribe), safe-area padding
+- Forms/modal: fields -> quiet gray fill w/ blue focus ring; modal 26px radius sheet; contact form on gray card w/ white fields
+- Misc: scroll-margin-top 92px for anchors under fixed header; sidebar rail whisper gray 12px; ::selection + :focus-visible rings; hero float softened (-7px/8s); .rv 20px; mobile scale-down + zero legacy offsets
+- 404 hygiene: verified via dev.log diff that button-bg/wave/testimonial-*/white-tick/imac/competitive-table refs no longer fetch; killed last 3 (feature-bg, payroll-feature, payroll-modules)
+- bun run lint clean; verified via agent-browser 1440x900 + 375x812 all 6 routes + privacy: scrollW == viewport (no overflow), 0 broken images, zero page/console errors; scroll-reveal still binding (progressive .rv-in on scroll); mega menu frosted card hover-verified; demo modal verified; mobile menu + Products submenu verified
+- Artifacts: tool-results/apple-before-*.png (before), apple-after-*/apple-final-*.png (after)
+
+Stage Summary:
+- Whole site now speaks Apple-minimal: ink typography, frosted glass nav, hairlines + soft depth, gray surfaces, pill buttons, restrained brand accents; all content, structure, product names, brand colors and the motion system preserved
+- New layer isolated in src/styles/factura-apple.css (factura.css/fix/motion untouched); only TSX edits: layout.tsx import + FacturaApp OurProducts/Footer order fix
+- Known non-blockers: legacy raster screenshots (Balance Sheet etc.) still carry original "FACTURA" pixels; case-study button intentionally hidden by original design (display:none kept)
