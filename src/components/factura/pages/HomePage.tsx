@@ -216,8 +216,8 @@ export default function HomePage({
               </p>
               <div className="reach-mail">
                 <span className="vibe-label">Email Us</span>
-                <a href="mailto:dps@datrixtechsolutions.com">
-                  dps@datrixtechsolutions.com
+                <a href="mailto:info@datrixtechsolutions.com">
+                  info@datrixtechsolutions.com
                 </a>
               </div>
             </div>

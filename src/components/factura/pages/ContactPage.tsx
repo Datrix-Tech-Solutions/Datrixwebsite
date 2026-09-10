@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CONTACT_EMAIL = "dps@datrixtechsolutions.com";
+const CONTACT_EMAIL = "info@datrixtechsolutions.com";
 
 type SendStatus = "idle" | "sending" | "success" | "error";
 

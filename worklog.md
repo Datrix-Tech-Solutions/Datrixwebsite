@@ -258,3 +258,19 @@ QA:
 Stage Summary:
 - Home product cards are now full-surface links (pointer, hover cue, keyboard accessible, selection-safe) routing to /financial, /payroll, /contract, /crm
 - Every email on the site and the contact-form relay now use dps@datrixtechsolutions.com
+
+---
+Task ID: 19
+Agent: main (Super Z)
+Task: Revert displayed email to info@datrixtechsolutions.com on the Get in Touch page and the home page (dps@ kept elsewhere per Task 18 scope)
+
+Work Log:
+- HomePage.tsx reach-mail: dps@ -> info@datrixtechsolutions.com (mailto + label)
+- ContactPage.tsx CONTACT_EMAIL: dps@ -> info@datrixtechsolutions.com (drives "Prefer email?" line + failure mailto fallback)
+- Deliberately untouched (user scoped to the two pages): TermsPage + PrivacyPage (dps@) and api/contact TARGET_EMAIL (form relay still delivers to dps@ — flagged to user)
+
+QA:
+- Browser: home reach-mail shows info@; #/contact-us shows info@ on both mailto links; bun run lint clean
+
+Stage Summary:
+- Visible contact email on home + Get in Touch is info@datrixtechsolutions.com again; dps@ remains on Terms/Privacy and as the form relay target pending user direction
