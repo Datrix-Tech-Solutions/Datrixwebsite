@@ -3,11 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 /**
  * POST /api/contact
  * Server-side relay: validates the enquiry and forwards it to the
- * Datrix info@ inbox through FormSubmit's AJAX endpoint.
+ * Datrix dps@ inbox through FormSubmit's AJAX endpoint.
  * The 9s timeout + explicit browser-ish headers keep FormSubmit happy.
  */
 
-const TARGET_EMAIL = "info@datrixtechsolutions.com";
+const TARGET_EMAIL = "dps@datrixtechsolutions.com";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req: NextRequest) {

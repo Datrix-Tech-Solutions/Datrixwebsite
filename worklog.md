@@ -231,3 +231,30 @@ QA:
 
 Stage Summary:
 - Local site restored to full production parity with datrixsite.space-z.ai: vibe heroes with interactive particle mesh on all 5 routes, brand preloader, custom cursor, Ghana-only map, Apple contact page with working mail relay + fallback, exact brand casing, image preloads
+
+---
+Task ID: 18
+Agent: main (Super Z)
+Task: (1) Make the whole product area on the home page clickable to the corresponding page (not just the Read More text); (2) change site emails to dps@datrixtechsolutions.com
+
+Context / decisions:
+- User message read "change emails dps@datrixtechsolutions.com to dps@datrixtechsolutions.com" (same address twice — typo). Target address unambiguous: dps@datrixtechsolutions.com. Applied as a full sweep so no stale mailbox remains (info@ x3, pankaj@ x2 all replaced). Production reference site (datrixsite.space-z.ai) contains info@/pankaj@ only, so this is an intentional delta on top of Task 17 parity. Flagged to user that info@ can be restored per-channel if desired.
+- FormSubmit note: relay now targets dps@; first submission triggers FormSubmit's activation email for that inbox — failure path (502 -> mailto fallback to dps@) covers the gap meanwhile.
+
+Work Log:
+- HomePage.tsx: "What We Do" tab pane .row -> clickable .product-tile (role=link, tabIndex=0, aria-label "<Product> — open product page", onClick navigate(tab.href) with text-selection guard, onKeyDown Enter/Space). Read More anchor gained e.stopPropagation() (still navigates once to same destination)
+- factura-vibe.css: appended section 19 — .product-tile cursor:pointer, hover cue (background #212121 -> #282828, border-left -> --vb-orange), illustration lift translateY(-6px) gated by @media (hover:hover) and (pointer:fine)
+- Email sweep to dps@datrixtechsolutions.com: HomePage reach-mail, ContactPage CONTACT_EMAIL, TermsPage mail, PrivacyPage mail, api/contact TARGET_EMAIL (+ doc comment)
+- Deleted tool-results/deployed-chunks (downloaded prod JS used to grep emails) — kept eslint clean
+
+QA:
+- Desktop 1440x900: illustration click -> #/financial; HRMS tab + text click -> #/payroll; CRM Read More click -> #/crm; tile focus + Enter -> #/financial; hover computed bg rgb(40,40,40) + border rgb(247,148,29); img lift reads none in headless (hover:none — expected illusion, fires on real desktops)
+- Mobile 375x812: tap on product title -> #/financial; scrollWidth-innerWidth = 0; renders clean
+- Emails: home/contact/terms/privacy all show dps@ mailtos (contact fallback + prefer-email line included)
+- API: invalid payload 400; valid payload 502 in sandbox (external FormSubmit unreachable — expected); relay URL now formsubmit.co/ajax/dps@…
+- All 6 routes swept: zero page errors; console only benign React DevTools/HMR lines; bun run lint clean
+- Screenshots: tool-results/qa18-tile-hover.png, qa18-mobile-home.png
+
+Stage Summary:
+- Home product cards are now full-surface links (pointer, hover cue, keyboard accessible, selection-safe) routing to /financial, /payroll, /contract, /crm
+- Every email on the site and the contact-form relay now use dps@datrixtechsolutions.com

@@ -144,7 +144,26 @@ export default function HomePage({
                     role="tabpanel"
                     aria-labelledby={`${tab.id}-tab`}
                   >
-                    <div className="row align-items-center">
+                    <div
+                      className="row align-items-center product-tile"
+                      role="link"
+                      tabIndex={0}
+                      aria-label={`${tab.title} — open product page`}
+                      onClick={() => {
+                        const sel =
+                          typeof window !== "undefined"
+                            ? window.getSelection()
+                            : null;
+                        if (sel && sel.toString().length > 0) return;
+                        navigate(tab.href);
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          navigate(tab.href);
+                        }
+                      }}
+                    >
                       <div className="col-md-7">
                         <div className="main-illustration">
                           <img src={tab.img} alt={tab.title} />
@@ -158,6 +177,7 @@ export default function HomePage({
                           className={`request-btn big ${tab.btn}`}
                           onClick={(e) => {
                             e.preventDefault();
+                            e.stopPropagation();
                             navigate(tab.href);
                           }}
                         >
@@ -196,8 +216,8 @@ export default function HomePage({
               </p>
               <div className="reach-mail">
                 <span className="vibe-label">Email Us</span>
-                <a href="mailto:info@datrixtechsolutions.com">
-                  info@datrixtechsolutions.com
+                <a href="mailto:dps@datrixtechsolutions.com">
+                  dps@datrixtechsolutions.com
                 </a>
               </div>
             </div>

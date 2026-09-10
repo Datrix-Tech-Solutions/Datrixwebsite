@@ -3,7 +3,7 @@
 import React from "react";
 
 export default function TermsPage() {
-  const mail = "pankaj@datrixtechsolutions.com";
+  const mail = "dps@datrixtechsolutions.com";
   return (
     <div className="wrapper">
       <section className="normal-page">

@@ -174,3 +174,14 @@ html.da-cursor-hidden .da-cursor-dot>span,html.da-cursor-hidden .da-cursor-ring>
 @media (hover:none),(pointer:coarse){.da-cursor-dot,.da-cursor-ring{display:none}
 }
 
+
+/* ============================================================
+   19. Home "What We Do" product tiles — the whole card is
+       clickable through to the product page (plus hover cue)
+   ============================================================ */
+.home-services .product-tile{cursor:pointer}
+.home-services .tab-pane>.row.product-tile{transition:background var(--motion-base) var(--ease-soft),border-left-color var(--motion-base) var(--ease-soft)}
+.home-services .tab-pane>.row.product-tile:hover{background:#282828;border-left-color:var(--vb-orange)}
+.home-services .product-tile .main-illustration img{transition:transform .5s var(--ease-soft)}
+@media (hover:hover) and (pointer:fine){.home-services .product-tile:hover .main-illustration img{transform:translateY(-6px)}
+}
