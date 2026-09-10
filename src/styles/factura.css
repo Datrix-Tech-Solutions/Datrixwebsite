@@ -249,7 +249,7 @@
 }
 .productMenu a{
         margin:0;
-        text-transform: capitalize;
+        text-transform: none;
         padding:10px; 
         font-weight: 500;
         display: block;

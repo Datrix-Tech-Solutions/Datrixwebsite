@@ -13,6 +13,8 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import ScrollReveal from "./ScrollReveal";
+import Preloader from "./Preloader";
+import CustomCursor from "./CustomCursor";
 
 const BODY_CLASSES: Record<RouteKey, { cls: string; id: string }> = {
   home: { cls: "body- index", id: "index" },
@@ -139,6 +141,8 @@ export default function FacturaApp() {
 
   return (
     <>
+      <Preloader />
+      <CustomCursor />
       <Header route={route} onRequestDemo={openDemo} navigate={navigate} />
       <div className="page-swap" key={route}>
         {page}

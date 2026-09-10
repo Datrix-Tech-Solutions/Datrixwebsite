@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ParticleField from "./../ParticleField";
 import { ProductTestimonialSlider, ClientsSlider } from "./../TestimonialSliders";
 import { HOME_CLIENTS } from "./../data";
 
@@ -85,51 +86,40 @@ export default function ContractPage({
         </ul>
       </div>
 
-      <section className="financial-banner">
-        <div className="container">
-          <div className="row align-items-center height100 pb-5">
-            <div className="col-xs-12 col-sm-12 col-md-5">
-              <div className="factura-intro">
-                <img src="/assets/img/hero/contract.svg" className="mobile-img" alt="" />
-                <h1 className="mb-3">
-                  Customized Software,
-                  <br />
-                  Made Around You.
-                </h1>
-                <ul className="contract-intro-points ml-4">
-                  {[
-                    "Shaped To Your Workflows",
-                    "Web & Mobile Applications",
-                    "Effortless Integrations",
-                    "Grows With You, Securely",
-                  ].map((p) => (
-                    <li key={p}>
-                      <span className="fa-check"></span>
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#"
-                  className="request-btn big contract"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    onRequestDemo();
-                  }}
-                >
-                  Book a Demo
-                </a>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 p0">
-              <div className="main-illustration desktop-img">
-                <img
-                  src="/assets/img/hero/contract.svg"
-                  className="hero-art"
-                  alt="Datrix Customized Software — built around your workflows, illustrated"
-                />
-              </div>
-            </div>
+      <section className="financial-banner vibe-hero vibe-hero--navy">
+        <ParticleField interactive />
+        <div className="container vibe-hero-inner">
+          <div className="factura-intro">
+            <span className="vibe-kicker">Datrix Tech Solutions</span>
+            <h1>
+              Customized Software,
+              <br />
+              Made Around You.
+            </h1>
+            <span className="vibe-divider" aria-hidden="true" />
+            <ul className="contract-intro-points ml-4">
+              {[
+                "Shaped To Your Workflows",
+                "Web & Mobile Applications",
+                "Effortless Integrations",
+                "Grows With You, Securely",
+              ].map((p) => (
+                <li key={p}>
+                  <span className="fa-check"></span>
+                  {p}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="#"
+              className="request-btn ghost big"
+              onClick={(e) => {
+                e.preventDefault();
+                onRequestDemo();
+              }}
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       </section>

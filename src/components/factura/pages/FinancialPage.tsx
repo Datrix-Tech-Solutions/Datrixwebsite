@@ -2,7 +2,8 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import SlickSlider from "./../SlickSlider";
-import { ProductTestimonialSlider, ClientsSlider } from "./../TestimonialSliders";
+import ParticleField from "./../ParticleField";
+import { ClientsSlider } from "./../TestimonialSliders";
 import { HOME_CLIENTS } from "./../data";
 
 const CHECKLIST = [
@@ -53,23 +54,6 @@ const FEATURE_SLIDES = [
       {
         h: "Measure, Report & Visualise",
         p: "Operational and financial data is tracked against each business driver, giving you stronger reporting power and a full picture of your organization. Build any report, dashboard or visualization you need — with precisely the metrics that matter.",
-      },
-    ],
-  },
-  {
-    img: "/assets/img/page-financials/screen-pos.svg",
-    title: "Order & POS",
-    blocks: [
-      {
-        p: "AccountingPhelo’s built-in business processes keep order fulfillment and returns flowing smoothly.",
-      },
-      {
-        h: "A POS solution that just fits",
-        p: "Follow inventory across every store with stock syncing seamlessly in the background. Automated reordering keyed to your set stock levels — with adjustable reorder and restock points — means shelves are never over- or under-stocked.",
-      },
-      {
-        h: "Inventory Lookups in Seconds",
-        p: "Shift stock between stores or the warehouse using stock transfers, and run fast inventory lookups across every sales channel.",
       },
     ],
   },
@@ -166,7 +150,6 @@ const INDUSTRIES = [
 
 const SIDEBAR_LINKS = [
   ["#clients", "Clients"],
-  ["#testimonials", "Testimonials"],
   ["#industries", "Industries"],
   ["#features", "Features"],
 ];
@@ -266,41 +249,30 @@ export default function FinancialPage({
         </ul>
       </div>
 
-      <section className="financial-banner topBannerSection">
-        <div className="container">
-          <div className="row align-items-center height100">
-            <div className="col-xs-12 col-sm-12 col-md-6">
-              <div className="factura-intro">
-                <img src="/assets/img/hero/financial.svg" className="mobile-img" alt="" />
-                <h1 className="mb-3">
-                  AccountingPhelo — online accounting
-                  <br />
-                  built for your business.
-                </h1>
-                <p className="paragraph2 mb-4">
-                  Discover why over 6,000 users run on AccountingPhelo.
-                </p>
-                <a
-                  href="#"
-                  className="request-btn big financial"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    onRequestDemo();
-                  }}
-                >
-                  Book a Demo
-                </a>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 p0">
-              <div className="main-illustration desktop-img">
-                <img
-                  src="/assets/img/hero/financial.svg"
-                  className="hero-art"
-                  alt="AccountingPhelo — online accounting dashboard, illustrated"
-                />
-              </div>
-            </div>
+      <section className="financial-banner topBannerSection vibe-hero vibe-hero--navy">
+        <ParticleField interactive />
+        <div className="container vibe-hero-inner">
+          <div className="factura-intro">
+            <span className="vibe-kicker">Datrix Tech Solutions</span>
+            <h1>
+              AccountingPhelo — online accounting
+              <br />
+              built for your business.
+            </h1>
+            <span className="vibe-divider" aria-hidden="true" />
+<p className="paragraph2">
+              Discover why over 6,000 users run on AccountingPhelo.
+            </p>
+            <a
+              href="#"
+              className="request-btn ghost big"
+              onClick={(e) => {
+                e.preventDefault();
+                onRequestDemo();
+              }}
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       </section>
@@ -450,15 +422,6 @@ export default function FinancialPage({
         </div>
       </section>
 
-      <section className="testimonial2 sectionPadding" id="testimonials">
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-md-center">
-            <div className="col-md-8 col-sm-12 col-xs-12">
-              <ProductTestimonialSlider />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="clients" id="clients">
         <h2 className="text-center mb-4">Trusted By</h2>

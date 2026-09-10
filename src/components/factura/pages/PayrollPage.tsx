@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { ProductTestimonialSlider, ClientsSlider } from "./../TestimonialSliders";
+import ParticleField from "./../ParticleField";
+import { ClientsSlider } from "./../TestimonialSliders";
 import { PAYROLL_CLIENTS } from "./../data";
 
 const BENEFITS = [
@@ -88,48 +89,34 @@ export default function PayrollPage({
             <a href="#clients" onClick={scrollTo("#clients")}>Clients</a>
           </li>
           <li>
-            <a href="#testimonials" onClick={scrollTo("#testimonials")}>Testimonials</a>
-          </li>
-          <li>
             <a href="#features" onClick={scrollTo("#features")}>Features</a>
           </li>
         </ul>
       </div>
 
-      <section className="payroll-banner topBannerSection">
-        <div className="container">
-          <div className="row align-items-center height100">
-            <div className="col-xs-12 col-sm-12 col-md-6">
-              <div className="factura-intro">
-                <img src="/assets/img/hero/payroll.svg" className="mobile-img" alt="" />
-                <h1 className="mb-3">
-                  An HRMS That’s Efficient, Flexible &amp; Complete
-                </h1>
-                <p className="paragraph2 mb-4">
-                  HRPhelo takes the hassle out of Payroll and HR management
-                  for organizations of every size.
-                </p>
-                <a
-                  href="#"
-                  className="request-btn big payroll"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    onRequestDemo();
-                  }}
-                >
-                  Book a Demo
-                </a>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 p0">
-              <div className="main-illustration desktop-img">
-                <img
-                  src="/assets/img/hero/payroll.svg"
-                  className="hero-art"
-                  alt="HRPhelo — payroll and HR management, illustrated"
-                />
-              </div>
-            </div>
+      <section className="payroll-banner topBannerSection vibe-hero vibe-hero--navy">
+        <ParticleField interactive />
+        <div className="container vibe-hero-inner">
+          <div className="factura-intro">
+            <span className="vibe-kicker">Datrix Tech Solutions</span>
+            <h1>
+              An HRMS That’s Efficient, Flexible &amp; Complete
+            </h1>
+            <span className="vibe-divider" aria-hidden="true" />
+<p className="paragraph2">
+              HRPhelo takes the hassle out of Payroll and HR management
+              for organizations of every size.
+            </p>
+            <a
+              href="#"
+              className="request-btn ghost big"
+              onClick={(e) => {
+                e.preventDefault();
+                onRequestDemo();
+              }}
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       </section>
@@ -280,15 +267,6 @@ export default function PayrollPage({
         </div>
       </section>
 
-      <section className="testimonial2 sectionPadding" id="testimonials">
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-md-center">
-            <div className="col-md-8 col-sm-12 col-xs-12">
-              <ProductTestimonialSlider />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="clients" id="clients">
         <h2 className="text-center">Trusted By</h2>

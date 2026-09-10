@@ -124,20 +124,11 @@ export const OTHER_PRODUCTS: Record<string, Product[]> = {
 
 export interface MapMarker {
   name: string;
-  email: string;
   latitude: number;
   longitude: number;
 }
 
+// Ghana only — per brand request the map carries a single market
 export const MAP_MARKERS: MapMarker[] = [
-  { name: "Ghana", email: "africa@datrixtechsolutions.com", latitude: 7.8984774, longitude: -3.2749691 },
-  { name: "Nigeria", email: "africa@datrixtechsolutions.com", latitude: 9.0065062, longitude: 4.1795106 },
-  { name: "Kenya", email: "africa@datrixtechsolutions.com", latitude: 0.1540843, longitude: 33.4099521 },
-  { name: "Sierra Leone", email: "africa@datrixtechsolutions.com", latitude: 8.420697, longitude: -12.9588643 },
-  { name: "Liberia", email: "africa@datrixtechsolutions.com", latitude: 6.4059651, longitude: -11.6970099 },
-  { name: "Rwanda", email: "africa@datrixtechsolutions.com", latitude: -1.9435638, longitude: 29.3199475 },
-  { name: "UAE", email: "uae@datrixtechsolutions.com", latitude: 23.7680866, longitude: 53.979308 },
-  { name: "Baharain", email: "baharain@datrixtechsolutions.com", latitude: 26.0865374, longitude: 50.5227181 },
-  { name: "Bangladesh", email: "bangladesh@datrixtechsolutions.com", latitude: 23.7286471, longitude: 90.1296852 },
-  { name: "INDIA", email: "india@datrixtechsolutions.com", latitude: 21.493825, longitude: 78.1573341 },
+  { name: "Ghana", latitude: 7.8984774, longitude: -3.2749691 },
 ];

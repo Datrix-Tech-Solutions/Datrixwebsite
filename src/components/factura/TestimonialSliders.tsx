@@ -50,23 +50,6 @@ function SlideInner({ t, dark }: { t: Testimonial; dark?: boolean }) {
   );
 }
 
-/** Home page client-quotes slider (white cards) */
-export function HomeTestimonialSlider() {
-  return (
-    <SlickSlider
-      className="clients-slider testimonial-slider"
-      settings={TESTIMONIAL_SETTINGS}
-      responsive={TESTIMONIAL_SLICK_RESPONSIVE}
-    >
-      {TESTIMONIALS.map((t) => (
-        <div key={t.name}>
-          <SlideInner t={t} />
-        </div>
-      ))}
-    </SlickSlider>
-  );
-}
-
 /** Product page dark testimonial slider + case-study button */
 export function ProductTestimonialSlider() {
   return (

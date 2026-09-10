@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import SlickSlider from "./../SlickSlider";
 import WorldMap from "./../WorldMap";
-import { HomeTestimonialSlider, ClientsSlider } from "./../TestimonialSliders";
+import ParticleField from "./../ParticleField";
+import { ClientsSlider } from "./../TestimonialSliders";
 import { HOME_CLIENTS } from "./../data";
 
 const SERVICE_TABS = [
@@ -62,35 +62,44 @@ export default function HomePage({
 
   return (
     <div className="wrapper">
-      <section className="home-banner topBannerSection">
-        <div className="container">
-          <div className="row align-items-center height100">
-            <div className="col-xs-12 col-sm-6 col-md-5">
-              <div className="factura-intro">
-                <img src="/assets/img/hero/home.svg" className="mobile-img" alt="" />
-                <h1>Smarter Ways to Run Your Business</h1>
-                <p className="paragraph2">
-                  WorkPhelo bundles every tool you need to run, track and
-                  grow your business in one smart suite.
-                </p>
-                <a
-                  href="#services"
-                  className="smoothScroll request-btn big financial"
-                  onClick={scrollToServices}
-                >
-                  Explore More
-                </a>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-6 col-md-6 p0">
-              <div className="main-illustration desktop-img">
-                <img
-                  src="/assets/img/hero/home.svg"
-                  className="hero-art"
-                  alt="WorkPhelo — the complete business suite, illustrated"
+      <section className="home-banner topBannerSection vibe-hero vibe-hero--orange">
+        <ParticleField interactive />
+        <div className="container vibe-hero-inner">
+          <div className="factura-intro">
+            <img
+              src="/assets/img/datrix-logo-white.png"
+              className="vibe-hero-mark"
+              alt="Datrix Tech Solutions"
+            />
+            <h1>Smarter Ways to Run Your Business</h1>
+            <span className="vibe-divider" aria-hidden="true" />
+            <p className="paragraph2">
+              WorkPhelo bundles every tool you need to run, track and grow
+              your business in one smart suite.
+            </p>
+            <a
+              href="#services"
+              className="smoothScroll request-btn ghost big"
+              onClick={scrollToServices}
+            >
+              Explore More
+              <svg
+                className="vibe-arrow"
+                width="10"
+                height="12"
+                viewBox="0 0 10 12"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 1v9M1.5 6.5 5 10l3.5-3.5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
-              </div>
-            </div>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -99,6 +108,7 @@ export default function HomePage({
         <div className="container">
           <div className="row">
             <div className="col-12">
+              <h2 className="text-center">What We Do</h2>
               <ul
                 className="nav service-tabs justify-content-center"
                 id="myTab"
@@ -166,8 +176,8 @@ export default function HomePage({
       <section className="home-reach sectionPadding">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-4">
-              <h3>A Global Reach</h3>
+            <div className="col-md-4 vibe-rv-l">
+              <h3 className="vibe-label">A Global Reach</h3>
               <p>
                 We work across the global business landscape and understand
                 how much local context matters — it’s why Datrix is always
@@ -184,20 +194,15 @@ export default function HomePage({
                 affordable technology assistance your business genuinely
                 needs.
               </p>
+              <div className="reach-mail">
+                <span className="vibe-label">Email Us</span>
+                <a href="mailto:info@datrixtechsolutions.com">
+                  info@datrixtechsolutions.com
+                </a>
+              </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8 vibe-rv-r">
               <WorldMap />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-testimonial">
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-md-center">
-            <div className="col-md-8">
-              <h3>What Our Clients Say</h3>
-              <HomeTestimonialSlider />
             </div>
           </div>
         </div>

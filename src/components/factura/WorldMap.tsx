@@ -65,7 +65,7 @@ export default function WorldMap() {
             map: "worldLow",
             images: MAP_MARKERS.map((m) => ({
               svgPath: TARGET_SVG,
-              title: `<div class='customeMapToltip'><h3>${m.name}</h3><p>${m.email}</p></div>`,
+              title: `<div class='customeMapToltip'><h3>${m.name}</h3></div>`,
               latitude: m.latitude,
               longitude: m.longitude,
             })),

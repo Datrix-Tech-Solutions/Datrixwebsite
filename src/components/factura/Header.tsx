@@ -31,7 +31,6 @@ const FEATURES_MENU: Partial<
     { label: "Accounting", slug: "/financial#features" },
     { label: "Inventory", slug: "/financial#features" },
     { label: "Sales & Purchase", slug: "/financial#features" },
-    { label: "Order & POS", slug: "/financial#features" },
     { label: "Business Intelligence", slug: "/financial#features" },
   ],
   payroll: [
@@ -78,7 +77,7 @@ const FINANCIAL_FEATURE_COLUMNS: { title: string; items: string[] }[] = [
     title: "Sales",
     items: [
       "Quotations/Enquiries", "Sales Orders", "Invoicing",
-      "Customisable Templates", "POS", "Delivery Notes/Waybills",
+      "Customisable Templates", "Delivery Notes/Waybills",
       "Sales Returns", "Sales Commission", "O/S Receivables",
       "Aging Analysis", "Multiple Price Levels", "Cost Centers",
     ],

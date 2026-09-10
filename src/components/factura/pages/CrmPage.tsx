@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { ProductTestimonialSlider, ClientsSlider } from "./../TestimonialSliders";
+import ParticleField from "./../ParticleField";
+import { ClientsSlider } from "./../TestimonialSliders";
 import { HOME_CLIENTS } from "./../data";
 
 const CRM_FEATURES = [
@@ -68,48 +69,34 @@ export default function CrmPage({
             <a href="#clients" onClick={scrollTo("#clients")}>Clients</a>
           </li>
           <li>
-            <a href="#testimonials" onClick={scrollTo("#testimonials")}>Testimonials</a>
-          </li>
-          <li>
             <a href="#features" onClick={scrollTo("#features")}>Features</a>
           </li>
         </ul>
       </div>
 
-      <section className="crm-banner topBannerSection">
-        <div className="container">
-          <div className="row align-items-center height100 pb-5">
-            <div className="col-xs-12 col-sm-12 col-md-5">
-              <div className="factura-intro">
-                <img src="/assets/img/hero/crm.svg" className="mobile-img" alt="" />
-                <h1 className="mb-3">
-                  CRM Built for Lifelong Customer Bonds
-                </h1>
-                <p className="paragraph2 mb-4">
-                  Keep your sales pipeline moving, track team activity and
-                  win more deals.
-                </p>
-                <a
-                  href="#"
-                  className="request-btn big crm"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    onRequestDemo();
-                  }}
-                >
-                  Book a Demo
-                </a>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 p0">
-              <div className="main-illustration desktop-img">
-                <img
-                  src="/assets/img/hero/crm.svg"
-                  className="hero-art"
-                  alt="MarketingPhelo — CRM sales pipeline, illustrated"
-                />
-              </div>
-            </div>
+      <section className="crm-banner topBannerSection vibe-hero vibe-hero--navy">
+        <ParticleField interactive />
+        <div className="container vibe-hero-inner">
+          <div className="factura-intro">
+            <span className="vibe-kicker">Datrix Tech Solutions</span>
+            <h1>
+              CRM Built for Lifelong Customer Bonds
+            </h1>
+            <span className="vibe-divider" aria-hidden="true" />
+<p className="paragraph2">
+              Keep your sales pipeline moving, track team activity and
+              win more deals.
+            </p>
+            <a
+              href="#"
+              className="request-btn ghost big"
+              onClick={(e) => {
+                e.preventDefault();
+                onRequestDemo();
+              }}
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       </section>
@@ -239,15 +226,6 @@ export default function CrmPage({
         </div>
       </section>
 
-      <section className="testimonial2 sectionPadding" id="testimonials">
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-md-center">
-            <div className="col-md-8 col-sm-12 col-xs-12">
-              <ProductTestimonialSlider />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="clients" id="clients">
         <h2 className="text-center">Trusted By</h2>
