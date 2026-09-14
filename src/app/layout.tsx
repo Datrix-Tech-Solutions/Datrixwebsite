@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import ReactDOM from "react-dom";
 import "./globals.css";
-import "../styles/factura-fonts.css";
+import "../styles/WorkPhelo-fonts.css";
 import "../styles/bootstrap.css";
-import "../styles/factura.css";
-import "../styles/factura-fix.css";
-import "../styles/factura-motion.css";
-import "../styles/factura-apple.css";
-import "../styles/factura-vibe.css";
+import "../styles/WorkPhelo.css";
+import "../styles/WorkPhelo-fix.css";
+import "../styles/WorkPhelo-motion.css";
+import "../styles/WorkPhelo-apple.css";
+import "../styles/WorkPhelo-vibe.css";
 
 export const metadata: Metadata = {
   title: "Datrix Tech Solutions | WorkPhelo Business Management Software",
@@ -29,16 +29,11 @@ const PRELOADS: [string, string][] = [
   ["/assets/img/payroll.svg", "image"],
   ["/assets/img/customized.svg", "image"],
   ["/assets/img/CRM.svg", "image"],
-  ["/assets/img/page-financials/clogo-eib-logo.jpg", "image"],
-  ["/assets/img/page-financials/clogo-dainikamadershomoy-logo.png", "image"],
-  ["/assets/img/page-financials/clogo-delta-airlines-logo.png", "image"],
-  ["/assets/img/page-financials/clogo-emerald-logo.jpg", "image"],
-  ["/assets/img/page-financials/clogo-GNLOGO.png", "image"],
-  ["/assets/img/page-financials/clogo-jewels-mart-logo.png", "image"],
-  ["/assets/img/page-financials/clogo-rrgobal-logo.png", "image"],
-  ["/assets/img/page-financials/clogo-ustc-logo.png", "image"],
-  ["/assets/img/page-financials/clogo-baxoil-logo.png", "image"],
-  ["/assets/img/page-financials/clogo-pbsl-logo.png", "image"],
+  ["/assets/img/page-financials/silverline", "image"],
+  ["/assets/img/page-financials/eye360.png", "image"],
+  ["/assets/img/page-financials/iriskre.png", "image"],
+  ["/assets/img/page-financials/sahare.jpg", "image"],
+ 
 ];
 
 export default function RootLayout({

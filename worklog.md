@@ -1,15 +1,15 @@
 ---
 Task ID: 1
 Agent: main (Super Z)
-Task: Replace site logo with uploaded Datrix Tech Solutions logo and re-theme the entire rebuilt Factura website using the logo's colors (expert UI/UX pass)
+Task: Replace site logo with uploaded Datrix Tech Solutions logo and re-theme the entire rebuilt WorkPhelo website using the logo's colors (expert UI/UX pass)
 
 Work Log:
 - Sampled exact brand colors from upload/logo (1).png: Navy #21346B, Orange #F7941D, Red #E31B22, Purple #440E62, Gray #4C4D4D
 - Generated brand assets (scripts/make_datrix_assets.py): datrix-logo.png (color, header), datrix-logo-white.png (white wordmark for navy footer), datrix-mark.png (square favicon cropped from circle mark)
-- Recolored subscribe-bg.svg green gradient to orange; re-themed src/styles/factura.css: 100+ color tokens mapped (financial->navy, payroll/HRMS->purple, contract->red, crm->orange, headings/footer/buttons->navy, footer links->orange, demo-btn gradient navy->purple, payroll gradient purple, crm gradient red->orange)
+- Recolored subscribe-bg.svg green gradient to orange; re-themed src/styles/WorkPhelo.css: 100+ color tokens mapped (financial->navy, payroll/HRMS->purple, contract->red, crm->orange, headings/footer/buttons->navy, footer links->orange, demo-btn gradient navy->purple, payroll gradient purple, crm gradient red->orange)
 - Swapped header logo (Header.tsx), added footer brand row with white logo + tagline (Footer.tsx), updated WorldMap colors (orange landmass, navy markers/balloon), updated layout.tsx metadata + favicon
-- Rebranded all user-visible "Factura" -> "Datrix" / "Factura Softwares" -> "Datrix Tech Solutions", emails/URLs -> datrixtechsolutions.com across pages + data.ts
-- Repaired broken PNG CRCs in pack-*.svg mockups (Sketch export bug), located old "factura" logo block on 3D box art, erased and pasted Datrix logo, re-embedded base64 (scripts/extract_pack_pngs.py, fix_pack_crcs.py, rebrand_pack_svgs.py)
+- Rebranded all user-visible "WorkPhelo" -> "Datrix" / "WorkPhelo Softwares" -> "Datrix Tech Solutions", emails/URLs -> datrixtechsolutions.com across pages + data.ts
+- Repaired broken PNG CRCs in pack-*.svg mockups (Sketch export bug), located old "WorkPhelo" logo block on 3D box art, erased and pasted Datrix logo, re-embedded base64 (scripts/extract_pack_pngs.py, fix_pack_crcs.py, rebrand_pack_svgs.py)
 - Verified visually via agent-browser: home, financial, payroll, contract, crm, contact pages + testimonial bands, competitive table, module tabs, demo modal, footer, mobile viewport + mobile menu
 - bun run build: compiled successfully
 
@@ -49,9 +49,9 @@ Work Log:
 - FinancialPage.tsx: hero, Why AccountingPhelo?, Automate Finance, feature slides, reports grid, competitive table (name + active-class check) -> AccountingPhelo
 - PayrollPage.tsx: hero, Why HRPhelo?, benefits heading -> HRPhelo
 - CrmPage.tsx: Why MarketingPhelo? (x2), copy, pricing -> MarketingPhelo
-- FacturaApp.tsx: demo modal hidden product values -> AccountingPhelo/HRPhelo/MarketingPhelo
+- WorkPheloApp.tsx: demo modal hidden product values -> AccountingPhelo/HRPhelo/MarketingPhelo
 - layout.tsx: title "Datrix Tech Solutions | WorkPhelo Business Management Software" + suite-focused meta description
-- factura.css: .navbar-brand:after text-transform capitalize -> none so CamelCase names render correctly
+- WorkPhelo.css: .navbar-brand:after text-transform capitalize -> none so CamelCase names render correctly
 - Restarted dev server (stale .next after concurrent production build); verified via agent-browser: home hero, service tabs, mega menu, all 3 product pages (logo data-title + hero), competitive table header, demo modal product values (AccountingPhelo/HRPhelo/MarketingPhelo), testimonial band
 - bun run build: compiled successfully
 
@@ -65,9 +65,9 @@ Agent: main (Super Z)
 Task: Make the entire site mobile responsive (phones + tablets), desktop unchanged
 
 Work Log:
-- Audited existing media queries in factura.css (1025/769/600) and found gaps: rebuilt sections + renamed menus uncovered; hamburger styled only <=769 while collapse active <=991; dropdowns rely on :hover (touch never opens them); fixed widths overflow (desktop-screen 360px, financial tables, world map 600px height)
+- Audited existing media queries in WorkPhelo.css (1025/769/600) and found gaps: rebuilt sections + renamed menus uncovered; hamburger styled only <=769 while collapse active <=991; dropdowns rely on :hover (touch never opens them); fixed widths overflow (desktop-screen 360px, financial tables, world map 600px height)
 - Browser-audited at 375x812 / 768 / 900 / 1440: home, financial, payroll, contract, crm, contact, menus, modals; measured scrollWidth overflow offenders
-- Rebuilt src/styles/factura-fix.css responsive layer:
+- Rebuilt src/styles/WorkPhelo-fix.css responsive layer:
   * <=991.98: hamburger icon styles (was invisible 770-991), absolute white dropdown sheet with shadow + own scroll, full-width left-aligned tap targets with per-row borders, caret right, pill CTA; .dropdown .dropdown-menu.show{display:block} so Products/Features/Industries open on touch; productMenu + financialMegaMenu render as static fluid stacked lists (inline width:1024 neutralized)
   * <=1024: competitive comparison table becomes swipeable (overflow-x auto, position static)
   * <=767.98: overflow-x guard, #chartdiv 600->300px (250 <=420), .desktop-screen fluid, footer brand stacked + centered (text-right overridden), payroll module media centered, hero spacing tightened (banner margin 68px, intro img padding 20px), modal/form padding, product banner offset 108px, momentum-scroll tab strip
@@ -76,7 +76,7 @@ Work Log:
 
 Stage Summary:
 - Site is fully responsive 320px -> desktop with touch-friendly navigation; production build passes
-- All responsive rules isolated in src/styles/factura-fix.css (loaded last); factura.css untouched
+- All responsive rules isolated in src/styles/WorkPhelo-fix.css (loaded last); WorkPhelo.css untouched
 
 ---
 Task ID: 6
@@ -84,16 +84,16 @@ Agent: main (Super Z)
 Task: Continue/restore the smooth motion pass — workspace had rolled back to post-Task-4 state, wiping all Task 5 motion files; rebuilt the full motion system and extended it with footer/product-band/tab micro-interactions
 
 Work Log:
-- Detected rollback: factura-motion.css + ScrollReveal.tsx deleted, layout/FacturaApp/SlickSlider/DemoModal edits reverted, Task 5 worklog entry gone; Tasks 1-4 (branding, renames, responsive) intact; dev server healthy (200)
-- Recreated src/styles/factura-motion.css in full: easing tokens (cubic-bezier(0.22,0.61,0.36,1)), 8 keyframes, global easing refinement, page transition (.page-swap dm-page-in), home hero stagger (dm-rise-in), scroll-reveal classes (.rv/.rv-in/.rv-done), nav motion (hamburger morph, dm-sheet-in mobile menu/submenus, dm-drop-in desktop dropdowns, orange underline on nav links), button lift/press, form focus glow, modal in/out, slick arrows/dots polish
+- Detected rollback: WorkPhelo-motion.css + ScrollReveal.tsx deleted, layout/WorkPheloApp/SlickSlider/DemoModal edits reverted, Task 5 worklog entry gone; Tasks 1-4 (branding, renames, responsive) intact; dev server healthy (200)
+- Recreated src/styles/WorkPhelo-motion.css in full: easing tokens (cubic-bezier(0.22,0.61,0.36,1)), 8 keyframes, global easing refinement, page transition (.page-swap dm-page-in), home hero stagger (dm-rise-in), scroll-reveal classes (.rv/.rv-in/.rv-done), nav motion (hamburger morph, dm-sheet-in mobile menu/submenus, dm-drop-in desktop dropdowns, orange underline on nav links), button lift/press, form focus glow, modal in/out, slick arrows/dots polish
 - NEW in this pass: footer legal-link white shift + animated underline, footer logo hover lift, .our-products card float (-8px) with button brighten, service-tab pill 0.32s 4-property transitions; reduced-motion kill switch retained
 - Recreated ScrollReveal.tsx (IntersectionObserver, progressive enhancement, 90ms column stagger, hashchange/load re-scan, reduced-motion skip)
-- Re-applied edits: layout.tsx import, FacturaApp page-swap wrapper + ScrollReveal + instant scroll-to-top, SlickSlider cubic-bezier track easing, DemoModal is-closing exit + Escape close
+- Re-applied edits: layout.tsx import, WorkPheloApp page-swap wrapper + ScrollReveal + instant scroll-to-top, SlickSlider cubic-bezier track easing, DemoModal is-closing exit + Escape close
 - bun run lint clean; verified via agent-browser (1440x900 + 375x812): hero stagger, home 5/5 + financial 13/13 reveals, dm-page-in on route swap, productMenu dm-drop-in on hover, modal dm-modal-in + Escape cleanup (display none, backdrop unmounted), product-card hover -8px lift + button -2px, footer link hover white + underline scaleX 1, service tab fade switch, mobile dm-sheet-in menu + dropdown, hamburger morph, scrollW=375 no overflow, zero console/page errors
 
 Stage Summary:
 - Full motion system restored after workspace rollback, now with extra micro-interaction polish (footer, product cross-sell cards, service tabs)
-- All motion rules in src/styles/factura-motion.css; JS behavior in ScrollReveal.tsx; component edits minimal and re-applied; original factura.css untouched
+- All motion rules in src/styles/WorkPhelo-motion.css; JS behavior in ScrollReveal.tsx; component edits minimal and re-applied; original WorkPhelo.css untouched
 
 ---
 Task ID: 7
@@ -102,10 +102,10 @@ Task: Paraphrase all English copy across the entire website — same meaning, fr
 
 Work Log:
 - Inventoried every user-visible text block across data.ts, 8 pages, Header/Footer/DemoModal/TestimonialSliders, layout metadata
-- Paraphrased with layout-safe lengths: hero headlines + paragraphs on all pages, service-tab texts, Going Global -> "A Global Reach", testimonials (4 quotes), product descs, mega-menu descs, cross-sell card descs ("Explore the Rest of Our Products"), footer tagline ("Intelligent software for ambitious businesses"), FinancialPage checklist + 5 feature slides + 8 report blurbs + comparison rows, PayrollPage benefits + why-paragraph, CrmPage 9 features + counters + why-CRM blocks + Flexible/Affordable/Tailored, ContractPage 8 feature cards + 5 offers + intro points, legal pages Privacy + Terms rewritten wholesale (structure/links/mail entities preserved; leftover FACTURA strings in Terms all-caps sections replaced with DATRIX)
+- Paraphrased with layout-safe lengths: hero headlines + paragraphs on all pages, service-tab texts, Going Global -> "A Global Reach", testimonials (4 quotes), product descs, mega-menu descs, cross-sell card descs ("Explore the Rest of Our Products"), footer tagline ("Intelligent software for ambitious businesses"), FinancialPage checklist + 5 feature slides + 8 report blurbs + comparison rows, PayrollPage benefits + why-paragraph, CrmPage 9 features + counters + why-CRM blocks + Flexible/Affordable/Tailored, ContractPage 8 feature cards + 5 offers + intro points, legal pages Privacy + Terms rewritten wholesale (structure/links/mail entities preserved; leftover Datrix strings in Terms all-caps sections replaced with DATRIX)
 - UI labels lightly refreshed: "Contact us" -> "Get in Touch", "Request A Demo" -> "Book a Demo" (nav + all heroes), modal "Book Your Demo"/"Send Request", "Learn More" -> "Explore More", "Read Case Study" -> "View Case Study", "Words from our clients" -> "What Our Clients Say", contact/demo validation messages + thank-you copy reworded, "lightening speed" typo fixed
 - Kept intact: product names (WorkPhelo/AccountingPhelo/HRPhelo/MarketingPhelo/Customized Software), Datrix brand, feature/module labels, industry names, competitor names in comparison table, routes/anchors
-- bun run lint clean; verified via agent-browser at 1440x900 + 375x812: new copy renders on home (hero/tabs/global-reach/testimonials), financial (hero/CTA/reports heading), payroll, crm, contract, contact; legal pages render paraphrased text with FACTURA gone; mega menu + modal + cross-sell band + footer tagline confirmed; scrollW=375 no overflow; zero console/page errors
+- bun run lint clean; verified via agent-browser at 1440x900 + 375x812: new copy renders on home (hero/tabs/global-reach/testimonials), financial (hero/CTA/reports heading), payroll, crm, contract, contact; legal pages render paraphrased text with WorkPhelo gone; mega menu + modal + cross-sell band + footer tagline confirmed; scrollW=375 no overflow; zero console/page errors
 
 Stage Summary:
 - Entire site copy is now original paraphrased English — unique wording site-wide with identical meaning and product/brand naming
@@ -126,7 +126,7 @@ Work Log:
   * contract.svg — Customized Software: code editor window with syntax-line blocks + side rail, </> chip, meshing gears, orange puzzle piece, modular icon block stack, seated female with laptop, male with wrench
   * contact.svg — open envelope with letter + orange @ wax seal, chat bubbles, location pin, phone chip, paper plane, headset support agent waving, female handing letter
 - Wired all 6 pages: HomePage/FinancialPage/PayrollPage/CrmPage hero <video> replaced with hero-art <img>; ContractPage mockup SVG replaced; ContactPage contact.svg replaced; mobile-img slots now point at the same per-page scene (desktop/mobile parity)
-- CSS: .hero-art sizing rules in factura.css (100% width in .main-illustration, max-560px in .contactIllustrator); dm-hero-float 7s transform-only idle float in factura-motion.css (covered by existing prefers-reduced-motion kill switch)
+- CSS: .hero-art sizing rules in WorkPhelo.css (100% width in .main-illustration, max-560px in .contactIllustrator); dm-hero-float 7s transform-only idle float in WorkPhelo-motion.css (covered by existing prefers-reduced-motion kill switch)
 - Iterated on renders via temp gallery page + per-file screenshots; fixes: removed antennae-like lanyard lines on payroll badge, moved contract puzzle piece off the seated character's head, slimmed/recolored wrench, nudged contact phone chip clear of the agent; removed temp gallery
 - bun run lint clean; verified via agent-browser at 1440x900 + 375x812 on all 6 routes: heroes render crisp, scrollW=375 (no overflow), 0 unloaded images, zero page errors, dm-hero-float running, scroll reveal still binding/revealing below the fold
 
@@ -147,7 +147,7 @@ Work Log:
 - Hand-authored CRM showcase scenes: page-crm/why-need-CRM.svg (unified customer hub with dashed connection lines to phone/chat/mail/chart/calendar chips + 2 characters) and page-crm/why-CRM.svg (modular CRM frame with filled slots + dashed empty slot, sliders chip, price-tag chip, male placing module)
 - Rebuilt page-financials/automate-finance.svg as brand ONE APPLICATION orbit diagram: orange gradient core, dashed blue orbit, 8 navy/blue icon nodes with labels (Inventory/Intelligence/Sales/Purchase/Accounting/Orders/Manufacturing/POS)
 - Replaced three ~1.25MB base64-raster pack boxes with lightweight branded SVG product boxes (Datrix mark + wordmark + per-product mini scene + accent base strip): pack-payroll/pack-contract/pack-crm; created NEW pack-financial.svg and fixed long-standing data.ts bug where AccountingPhelo reused the payroll box (PRODUCTS.financial + 3 OTHER_PRODUCTS entries)
-- CSS harmonization appended to factura-fix.css (factura.css kept pristine): per-product accents payroll purple #440E62->blue #1B75BB, contract red #E31B22->green #2E9E6B (buttons, mega-menu rails, featuresMenu, body-* link accents, testimonial bands), demo-btn gradient navy->purple now navy->blue, checklist ticks red->green, contract-intro ticks green, CRM feature tiles orange gradient, module-tabs active pill purple->blue; guard so page link accents never recolour CTA labels; cross-sell pack columns normalized (40/60) + financial CTA rendered as white pill on the navy band
+- CSS harmonization appended to WorkPhelo-fix.css (WorkPhelo.css kept pristine): per-product accents payroll purple #440E62->blue #1B75BB, contract red #E31B22->green #2E9E6B (buttons, mega-menu rails, featuresMenu, body-* link accents, testimonial bands), demo-btn gradient navy->purple now navy->blue, checklist ticks red->green, contract-intro ticks green, CRM feature tiles orange gradient, module-tabs active pill purple->blue; guard so page link accents never recolour CTA labels; cross-sell pack columns normalized (40/60) + financial CTA rendered as white pill on the navy band
 - bun run lint clean; verified via agent-browser 1440x900 + 375x812 on all 6 routes: scrollW equals viewport (no overflow), zero unloaded images, zero console/page errors; visual pass on all 4 tabs, CRM why sections, automate diagram, payroll benefits+modules tabs, contract hero/features, cross-sell band (consistent box sizes, blue/green/white CTAs), payroll testimonial band now brand blue
 
 Stage Summary:
@@ -161,7 +161,7 @@ Agent: main (Super Z)
 Task: Apple-school minimalist redesign of the whole website — "Steve Jobs eye" pass keeping all details/content/brand, elevating typography, surfaces, components and motion (user: "using the eye of a ui ux designer from steve jobs apple, redesign the whole website using the same details with a similar style of the current minimalism")
 
 Work Log:
-- Built src/styles/factura-apple.css (~800 lines) loaded LAST in layout.tsx; zero content changes, product/brand names untouched
+- Built src/styles/WorkPhelo-apple.css (~800 lines) loaded LAST in layout.tsx; zero content changes, product/brand names untouched
 - Typography system: SF-first stack (-apple-system > SF Pro Display/Text > Helvetica Neue > Rubik self-hosted); ink #1d1d1f headings w/ tight tracking (h1 clamp 34-62px -0.022em, h2 28-46px, h3 21-26px); body 17px #1d1d1f, .paragraph2 18-21px Apple gray #6e6e73; antialiased rendering
 - Header: absolute -> FIXED frosted glass (rgba(255,255,255,.72) + saturate(180%) blur(20px), hairline bottom, z-1030); slimmer logo 118px; quiet ink nav links (orange hover underline removed); dropdown panels -> floating frosted cards (radius 28, blur 24, soft shadow); mobile sheet 0.985 glass with rounded bottom
 - Buttons: single 980px-radius pill language, flat brand fills (navy/blue/orange/green per product), button-bg.svg dependency removed (asset was 404); .big 17px
@@ -171,7 +171,7 @@ Work Log:
 - Comparison table: heavy #9B9B9B header band -> #e8e8ed w/ ink text; red cross SVGs muted to graphite via grayscale filter; section bg -> soft field (its bg SVG was 404)
 - Desktop-screen iMac frame (imac.png was 404) -> CSS device bezel (dark rounded frame + stand bar)
 - Testimonials: home band wave.svg (404) -> clean white; cards radius 24; dark product bands keep brand colors w/ subtle gradient (texture 404 killed); rebuilt missing arrow SVGs as circular hairline chevron buttons; dots white on dark
-- Cross-sell band: FIXED pre-existing DOM bug in FacturaApp.tsx (OurProducts rendered AFTER Footer -> moved before); h2 scoped 22px (was overlapping cards); white headings guarded via .colorWhite re-assert (equal-specificity tie vs new heading rules); band+footer gradients matched to remove seam; arrows pill-shaped
+- Cross-sell band: FIXED pre-existing DOM bug in WorkPheloApp.tsx (OurProducts rendered AFTER Footer -> moved before); h2 scoped 22px (was overlapping cards); white headings guarded via .colorWhite re-assert (equal-specificity tie vs new heading rules); band+footer gradients matched to remove seam; arrows pill-shaped
 - Footer: deep navy gradient night (#1e2f63->#16224a), silver rgba-white links (orange reserved for tagline dot + subscribe), safe-area padding
 - Forms/modal: fields -> quiet gray fill w/ blue focus ring; modal 26px radius sheet; contact form on gray card w/ white fields
 - Misc: scroll-margin-top 92px for anchors under fixed header; sidebar rail whisper gray 12px; ::selection + :focus-visible rings; hero float softened (-7px/8s); .rv 20px; mobile scale-down + zero legacy offsets
@@ -181,25 +181,25 @@ Work Log:
 
 Stage Summary:
 - Whole site now speaks Apple-minimal: ink typography, frosted glass nav, hairlines + soft depth, gray surfaces, pill buttons, restrained brand accents; all content, structure, product names, brand colors and the motion system preserved
-- New layer isolated in src/styles/factura-apple.css (factura.css/fix/motion untouched); only TSX edits: layout.tsx import + FacturaApp OurProducts/Footer order fix
-- Known non-blockers: legacy raster screenshots (Balance Sheet etc.) still carry original "FACTURA" pixels; case-study button intentionally hidden by original design (display:none kept)
+- New layer isolated in src/styles/WorkPhelo-apple.css (WorkPhelo.css/fix/motion untouched); only TSX edits: layout.tsx import + WorkPheloApp OurProducts/Footer order fix
+- Known non-blockers: legacy raster screenshots (Balance Sheet etc.) still carry original "WorkPhelo" pixels; case-study button intentionally hidden by original design (display:none kept)
 
 ---
 Task ID: 11
 Agent: main (Super Z)
-Task: Final refinement pass after the Apple-minimal redesign — replace the last legacy "FACTURA" raster screenshots with branded recreations and fix two pre-existing layout bugs surfaced during QA
+Task: Final refinement pass after the Apple-minimal redesign — replace the last legacy "WorkPhelo" raster screenshots with branded recreations and fix two pre-existing layout bugs surfaced during QA
 
 Work Log:
-- Verified Task 6-10 artifacts intact post context-continuation (factura-motion.css, ScrollReveal, apple layer import, product names) + dev server 200
+- Verified Task 6-10 artifacts intact post context-continuation (WorkPhelo-motion.css, ScrollReveal, apple layer import, product names) + dev server 200
 - Recreated all 5 FinancialPage feature screenshots as hand-authored 610x371 SVGs in macOS app-window style (traffic-light chrome, hairline tables, brand navy/blue/orange, Apple surface grays): screen-accounting.svg (Balance Sheet twin cards w/ balanced totals 24,354,589.09), screen-inventory.svg (Stock Summary zebra table + navy TOTAL 1,983,555.93), screen-sales-purchase.svg (Purchase Order Analysis grid + floating Jan 2025 date-picker w/ orange selected day + pagination), screen-pos.svg (POS form fields, items row w/ orange + chip, icon upload/print buttons), screen-bi.svg (dual Top-10 bar charts w/ orange AMT accent, 6-segment expense donut w/ brand legend, Profitability +18.4% sparkline card)
-- Updated FinancialPage.tsx FEATURE_SLIDES refs; deleted the 5 legacy JPGs (~168KB of FACTURA-pixel rasters removed); all 5 new SVGs served 200
+- Updated FinancialPage.tsx FEATURE_SLIDES refs; deleted the 5 legacy JPGs (~168KB of WorkPhelo-pixel rasters removed); all 5 new SVGs served 200
 - Fixed pre-existing desktop UX gap: original site's pane-pinning script (.summary.active{position:fixed}) was never ported to React, so the feature screenshot pane scrolled away after slide 1 — replaced with CSS-only sticky (#panImage sticky top:92px height:calc(100vh-92px) @min-width:992px); pane now stays in view across all 5 slides
 - Fixed pre-existing mobile bug: ≤600px .height100{height:100%} stretched each of the 5 feature slides to the full row height (~4060px each) creating screens of blank space — scoped override lets slides size to content (640-792px each), inline device mockup capped at 420px
 - Verified zero NEW 404s via dev.log mark-and-diff across payroll+financial (historical lines only); computed-style check confirms feature-bg/payroll-feature/payroll-modules backgrounds stay unfetched
 - bun run lint clean; agent-browser verified 1440x900 + 375x812 on all 6 routes: scrollW == viewport (no overflow), 0 broken images, 0 console/page errors; all 5 slides screenshot-verified desktop + slide 1 on mobile; financial hero regression-checked
 
 Stage Summary:
-- Site is now 100% free of legacy FACTURA-branded artwork — every rendered pixel is Datrix-branded
+- Site is now 100% free of legacy WorkPhelo-branded artwork — every rendered pixel is Datrix-branded
 - Features scroller upgraded: sticky branded device pane (desktop), content-sized slides (mobile)
 - Artifacts: tool-results/qa11-*.png (slides, mobile, hero)
 
@@ -209,14 +209,14 @@ Agent: main (Super Z)
 Task: Make the site exactly like https://datrixsite.space-z.ai/ (user's production deployment)
 
 Context / root cause:
-- The sandbox workspace had been restored from a ~Sep-8 (end of Task 11) snapshot — Task 12-16 work was partially wiped (factura-vibe.css deleted, ParticleField/Preloader/CustomCursor deleted, api/contact deleted, HomePage/ContactPage/WorldMap/data.ts/TestimonialSliders/Header/factura.css reverted). Product pages survived with Task-15 edits from earlier in the day but were re-reverted mid-session by the snapshot restore.
+- The sandbox workspace had been restored from a ~Sep-8 (end of Task 11) snapshot — Task 12-16 work was partially wiped (WorkPhelo-vibe.css deleted, ParticleField/Preloader/CustomCursor deleted, api/contact deleted, HomePage/ContactPage/WorldMap/data.ts/TestimonialSliders/Header/WorkPhelo.css reverted). Product pages survived with Task-15 edits from earlier in the day but were re-reverted mid-session by the snapshot restore.
 - The production deployment IS the target state (Task 16 complete + extra image preloads + hero mark/arrow CSS). Remote SSR HTML, CSS chunks and JS chunks were downloaded as the authoritative reference (tool-results/remote-home-sections.html).
 
 Work Log (rebuild to production parity):
-- factura-vibe.css RESTORED by extracting the vibe layer from the production CSS chunk (span from `:root{--vb-orange` to chunk end, pretty-printed) — includes hero mark/arrow, service pill tabs, reach-mail, contactApple, preloader and cursor sections
+- WorkPhelo-vibe.css RESTORED by extracting the vibe layer from the production CSS chunk (span from `:root{--vb-orange` to chunk end, pretty-printed) — includes hero mark/arrow, service pill tabs, reach-mail, contactApple, preloader and cursor sections
 - ParticleField.tsx recreated (canvas constellation; DPR<=2; reduced-motion static; visibilitychange pause; pointer constellation 150px links + 2.6px cursor dot + 120px click repulsion ±2.2; particle-to-particle mesh links 130px added to match production's network look)
-- Preloader.tsx + CustomCursor.tsx recreated exactly as Task 16; mounted in FacturaApp outside keyed page div
-- layout.tsx: restored factura-vibe.css import + 17 ReactDOM.preload image links in production order (verified emitted in SSR; attribute order differs from prod but functionally identical)
+- Preloader.tsx + CustomCursor.tsx recreated exactly as Task 16; mounted in WorkPheloApp outside keyed page div
+- layout.tsx: restored WorkPhelo-vibe.css import + 17 ReactDOM.preload image links in production order (verified emitted in SSR; attribute order differs from prod but functionally identical)
 - HomePage.tsx rewritten from production SSR markup: vibe-hero--orange hero (white datrix-logo mark, divider, ghost Explore More with inline arrow SVG, smooth scroll to #services, ParticleField), What We Do charcoal band with service tabs, Global Reach with vibe-label + Ghana map + Email Us reach-mail line, clients strip; home testimonial section removed; hero/home.svg no longer used
 - ContactPage.tsx rebuilt to the Apple design (contactApple/ca-* classes from restored CSS; copy strings extracted verbatim from production JS): kicker "Contact Us", h1 "Get in Touch", ca-sub, card form (Your Name / Your email address / Your contact number / Message), Sending… state, success panel, failure mailto fallback (Website Enquiry — name), "Prefer email?" line
 - api/contact/route.ts recreated: JSON validation (name 2-25, email regex), FormSubmit AJAX relay to info@datrixtechsolutions.com with Mozilla UA + production Referer, 9s AbortController, 502 on failure
@@ -243,7 +243,7 @@ Context / decisions:
 
 Work Log:
 - HomePage.tsx: "What We Do" tab pane .row -> clickable .product-tile (role=link, tabIndex=0, aria-label "<Product> — open product page", onClick navigate(tab.href) with text-selection guard, onKeyDown Enter/Space). Read More anchor gained e.stopPropagation() (still navigates once to same destination)
-- factura-vibe.css: appended section 19 — .product-tile cursor:pointer, hover cue (background #212121 -> #282828, border-left -> --vb-orange), illustration lift translateY(-6px) gated by @media (hover:hover) and (pointer:fine)
+- WorkPhelo-vibe.css: appended section 19 — .product-tile cursor:pointer, hover cue (background #212121 -> #282828, border-left -> --vb-orange), illustration lift translateY(-6px) gated by @media (hover:hover) and (pointer:fine)
 - Email sweep to dps@datrixtechsolutions.com: HomePage reach-mail, ContactPage CONTACT_EMAIL, TermsPage mail, PrivacyPage mail, api/contact TARGET_EMAIL (+ doc comment)
 - Deleted tool-results/deployed-chunks (downloaded prod JS used to grep emails) — kept eslint clean
 

@@ -315,70 +315,70 @@ var map = AmCharts.makeChart("chartdiv", {
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Ghana</h3><p>africa@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Ghana</h3><p>africa@WorkPhelosoftwares.com</p></div>",
         latitude: 7.8984774,
         longitude: -3.2749691,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Nigeria</h3><p>africa@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Nigeria</h3><p>africa@WorkPhelosoftwares.com</p></div>",
         latitude: 9.0065062,
         longitude: 4.1795106,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Kenya</h3><p>africa@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Kenya</h3><p>africa@WorkPhelosoftwares.com</p></div>",
         latitude: 0.1540843,
         longitude: 33.4099521,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Sierra Leone</h3><p>africa@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Sierra Leone</h3><p>africa@WorkPhelosoftwares.com</p></div>",
         latitude: 8.420697,
         longitude: -12.9588643,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Liberia</h3><p>africa@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Liberia</h3><p>africa@WorkPhelosoftwares.com</p></div>",
         latitude: 6.4059651,
         longitude: -11.6970099,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Rwanda</h3><p>africa@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Rwanda</h3><p>africa@WorkPhelosoftwares.com</p></div>",
         latitude: -1.9435638,
         longitude: 29.3199475,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>UAE</h3><p>uae@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>UAE</h3><p>uae@WorkPhelosoftwares.com</p></div>",
         latitude: 23.7680866,
         longitude: 53.979308,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Baharain</h3><p>baharain@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Baharain</h3><p>baharain@WorkPhelosoftwares.com</p></div>",
         latitude: 26.0865374,
         longitude: 50.5227181,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>Bangladesh</h3><p>bangladesh@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>Bangladesh</h3><p>bangladesh@WorkPhelosoftwares.com</p></div>",
         latitude: 23.7286471,
         longitude: 90.1296852,
       },
       {
         svgPath: targetSVG,
         title:
-          "<div class='customeMapToltip'><h3>INDIA</h3><p>india@facturasoftwares.com</p></div>",
+          "<div class='customeMapToltip'><h3>INDIA</h3><p>india@WorkPhelosoftwares.com</p></div>",
         latitude: 21.493825,
         longitude: 78.1573341,
       },

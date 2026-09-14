@@ -1,7 +1,7 @@
 'use client'
 
-import FacturaApp from '@/components/factura/FacturaApp'
+import WorkPheloApp from '@/components/WorkPhelo/WorkPheloApp'
 
 export default function Home() {
-  return <FacturaApp />
+  return <WorkPheloApp />
 }
