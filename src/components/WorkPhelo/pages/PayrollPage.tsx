@@ -134,8 +134,8 @@ export default function PayrollPage({
                 is simple, third-party integration is seamless, training
                 takes hardly any time and workloads shrink noticeably.
                 Recruitment, onboarding, transactions and history all live
-                efficiently in one place within this pan-geographic,
-                multi-lingual solution. Timely notifications, assessment and
+                efficiently in one place within this pan-geographic solution.
+                Timely notifications, assessment and
                 appraisal features, memos and payslips are all at hand — and
                 employees join HR processes transparently through HRPhelo’s
                 highly approachable software.
