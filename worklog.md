@@ -52,7 +52,7 @@ Work Log:
 - WorkPheloApp.tsx: demo modal hidden product values -> AccountingPhelo/HRPhelo/MarketingPhelo
 - layout.tsx: title "Datrix Tech Solutions | WorkPhelo Business Management Software" + suite-focused meta description
 - WorkPhelo.css: .navbar-brand:after text-transform capitalize -> none so CamelCase names render correctly
-- Restarted dev server (stale .next after concurrent production build); verified via agent-browser: home hero, service tabs, mega menu, all 3 product pages (logo data-title + hero), competitive table header, demo modal product values (AccountingPhelo/HRPhelo/MarketingPhelo), testimonial band
+- Restarted dev server (stale .next after concurrent production build); verified via agent-browser: home hero, service tabs, mega menu, all 3 product pages (logo data-title + hero), competitive table header, demo modal product values (AccountingPhelo/HRPhelo/MarketingPheloCRM), testimonial band
 - bun run build: compiled successfully
 
 Stage Summary:
